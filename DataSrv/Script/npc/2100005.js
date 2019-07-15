@@ -1,11 +1,9 @@
 /*
-	BY ANK - LEADERMS
-2100005
+ * LeaderMS Revision
+ * @author Ank 
+ * 2100005 (Mini) - Ariant HairStyle
 */
 
-/* Mini
-	Ariant HairStyle
-*/
 var status = 0;
 var beauty = 0;
 var mhair = Array(30320, 30330, 30150, 30800, 30680, 30900, 30170, 30180, 30820, 30410, 30460);

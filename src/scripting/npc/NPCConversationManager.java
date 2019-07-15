@@ -730,10 +730,10 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
                             percent = 100.0D;
                         }
                         String quantity = new StringBuilder().append("anywhere from ").append(de.Minimum).append("to ").append(de.Maximum).append(" quantity.").toString();
-                        if (quantity.equals("em qualquer lugar a partir de 1 até 1.") || quantity.equals("anywhere from 1 to 1 quantity.")) {
+                        if (quantity.equals("anywhere from 1 to 1 quantity.")) {
                             text = new StringBuilder().append(text).append("#i").append(de.itemId).append("# ").append(percent).append("% chance.\r\n").append((de.questid > 0) && (MapleQuest.getInstance(de.questid).getName().length() > 0) ? new StringBuilder().append("#eQuest Req#n: ").append(MapleQuest.getInstance(de.questid).getName()).append(" to be started.\r\n").toString() : "\r\n").toString();
                         } else {
-                          text = new StringBuilder().append(text).append("#i").append(de.itemId).append("# anywhere from ").append(de.Minimum).append(" to ").append(de.Maximum).append(", with ").append(percent).append("% chance.\r\n").append((de.questid > 0) && (MapleQuest.getInstance(de.questid).getName().length() > 0) ? new StringBuilder().append("#eQuest Req#n:").append(MapleQuest.getInstance(de.questid).getName()).append(" to be started.").toString() : "\r\n").toString();
+                            text = new StringBuilder().append(text).append("#i").append(de.itemId).append("# anywhere from ").append(de.Minimum).append(" to ").append(de.Maximum).append(", with ").append(percent).append("% chance.\r\n").append((de.questid > 0) && (MapleQuest.getInstance(de.questid).getName().length() > 0) ? new StringBuilder().append("#eQuest Req#n: ").append(MapleQuest.getInstance(de.questid).getName()).append(" to be started.").toString() : "\r\n").toString();
                         }
                         num++;
                     }
@@ -771,7 +771,6 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
     
     public void searchToItemId(String message) {
         int itemid = Integer.parseInt(message);
-        System.out.println("item : " + itemid);
         if (itemid == 0 || itemid < 0) {
             sendOk("You must place an item number.");
             dispose();
@@ -815,7 +814,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
                     msg = new StringBuilder().append(msg).append("[").append(num).append("] ").append(singleRetMob).append("\r\n").toString();
                     num++;
                 }
-                sendSimple(msg);  
+                sendOk(msg);  
             } else {
                 sendOk("No monster drops this item.");
             }
@@ -849,7 +848,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
                 msg = new StringBuilder().append(msg).append("[").append(num).append("] ").append(singleRetMob).append("\r\n").toString();
                 num++;
             }
-           sendSimple(msg);  
+           sendOk(msg);  
         } else {
             sendOk("No monster found!");
         }
@@ -877,7 +876,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
                 msg = new StringBuilder().append(msg).append("[").append(num).append("] ").append(singleRetItem).append("\r\n").toString();
                 num++;
             }
-          sendSimple(msg);   
+            sendOk(msg);   
         } else {
             sendOk("No items found!");
         }
@@ -907,7 +906,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
             sendOk("No monster found!");
             dispose();
         } else {
-          sendSimple(text);
+            sendSimple(text);
         }
     }
     

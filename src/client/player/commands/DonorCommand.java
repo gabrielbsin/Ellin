@@ -10,7 +10,7 @@ import constants.CommandConstants.CoomandRank;
 
 /**
  * 
- * @author Sammy Guergachi <sguergachi at gmail.com>
+ * @author GabrielSin
  */
 public class DonorCommand {
 

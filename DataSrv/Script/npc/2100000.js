@@ -1,8 +1,9 @@
 /*
  * LeaderMS Revision
- * @autor Gabriel A. <javascriptz@leaderms.com.br>
- * Deposito - 2100000
+ * @autor GabrielSin
+ * Storage - 2100000
 */
+
 var status;
  
 function start() {

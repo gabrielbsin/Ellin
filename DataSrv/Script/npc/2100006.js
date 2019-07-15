@@ -1,11 +1,9 @@
 /*
-	by ANK - LeaderMS
-2100005
+ * LeaderMS Revision
+ * @author Ank 
+ * 2100006 (Natalie) - Ariant VIP Hair/Hair Color Change
 */
 
-/* Natalie
-	Ariant VIP Hair/Hair Color Change.
-*/
 var status = 0;
 var beauty = 0;
 var mhair = Array(30320, 30330, 30150, 30900, 30170, 30180, 30820, 30410, 30460);

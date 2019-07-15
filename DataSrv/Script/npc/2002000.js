@@ -22,7 +22,7 @@
 
 /*
  * LeaderMS Revision
- * @autor Gabriel A. <javascriptz@leaderms.com.br>
+ * @autor GabrielSin
  * Rupi - 2002000
 */
 

@@ -32,7 +32,7 @@ import packet.creators.PetPackets;
 import scripting.event.EventInstanceManager;
 import server.itens.InventoryManipulator;
 import server.itens.ItemInformationProvider;
-import server.events.RoletaRussa;
+import server.events.RussianRoulette;
 import server.expeditions.MapleExpedition;
 import server.expeditions.MapleExpeditionType;
 import server.transitions.Boats;
@@ -249,7 +249,7 @@ public class AbstractPlayerInteraction {
             case "Genio":  
                 return Genie.genioOpen();
             case "RoletaRussa":  
-                return RoletaRussa.RoletaDisponivel();
+                return RussianRoulette.RoletaDisponivel();
             case "ElevadorDescendo":  
                 return Elevator.elevatorIsDown();
             case "ElevadorSubindo":  
@@ -617,22 +617,6 @@ public class AbstractPlayerInteraction {
         
     public final void worldMessage(final int type, final String message) {
         BroadcastService.broadcastMessage(PacketCreator.ServerNotice(type, message));
-    }
-        
-    public int getZakumLevel() {
-        return getPlayer().getZakumLevel();
-    }
-
-    public void setZakumLevel(int level) {
-        getPlayer().setZakumLevel(level);
-    }
-
-    public void addZakumLevel() {
-        getPlayer().addZakumLevel();
-    }
-
-    public void subtractZakumLevel() {
-        getPlayer().subtractZakumLevel();
     }
 
     /**

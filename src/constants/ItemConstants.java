@@ -16,7 +16,7 @@ import tools.Pair;
 
 /*
  * GabrielSin (http://forum.ragezone.com/members/822844.html)
- * LeaderMS v.62
+ * Ellin v.62
  * ItemConstants
  */ 
 
@@ -45,16 +45,8 @@ public class ItemConstants {
         new Pair<>(4031531, 250)
     };
     
-    public static final int [] ZAKUM_HELMET = {
-        1002357, 1002390, 1002430 
-    };
-    
     public static final int [] CARDS_4HRS = {
         5211048, 5360042
-    };
-    
-    public static final int[] LETTERS_RICHE = {
-        3994102, 3994103, 3994104, 3994105
     };
     
     public static final int[] WIZET_ITEMS = {
@@ -85,11 +77,6 @@ public class ItemConstants {
     public static int [] CHARM_ITEM = {
         5130000, 4031283, 4140903
     };
-    
-    public static int[] OWL_ITEMS = new int[]{
-        1082002, 2070005, 2070006, 1022047,
-        1102041, 2044705, 2340000, 2040017,
-        1092030, 2040804};
     
     public static int[] BLOCKED_CS = {
         1812006, 1812007, 5230000, 5400000, 

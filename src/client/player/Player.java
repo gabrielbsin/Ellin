@@ -293,7 +293,7 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
     private String chalkBoardText;
     private boolean challenged = false, allowMapChange = true, canSmega = true, smegaEnabled = true;
     private boolean changedTrockLocations, changedRegrockLocations, changedSavedLocations, changedReports, changedSkillMacros;
-    protected int zakumLvl, votePoints, ariantPoints, ringRequest;
+    protected int votePoints, ariantPoints, ringRequest;
     private long lastPortalEntry = 0, lastCatch = 0, useTime = 0;
     private Date time;
     private CashShop cashShop;
@@ -4722,22 +4722,6 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
                 field.broadcastMessage(Player.this, EffectPackets.BuffMapVisualEffect(getId(), DarkKnight.Beholder, PlayerEffects.SKILL_AFFECTED.getEffect()), false);
             }, buffInterval, buffInterval);
 	}
-    }
-
-    public void setZakumLevel(int level) {
-        this.zakumLvl = level;
-    }
-
-    public int getZakumLevel() {
-        return this.zakumLvl;
-    }
-
-    public void addZakumLevel() {
-        this.zakumLvl += 1;
-    }
-
-    public void subtractZakumLevel() {
-        this.zakumLvl -= 1;
     }
     
     public int getPartnerId() {

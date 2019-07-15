@@ -1,7 +1,6 @@
 /*
-* @autor Java
-* LeaderMS MapleStory Private Server
-* APQ
+* @autor GabrielSin
+* LeaderMS Revision
 */
 
 var status = 0;

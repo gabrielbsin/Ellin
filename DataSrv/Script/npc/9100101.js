@@ -1,9 +1,7 @@
 /*
- * Criado por JavaScriptz
- * LeaderMS 2014
+ * LeaderMS Revision
+ * @author GabrielSin
  * Gachapon - Ellinia
- * www.leaderms.com.br
- EDITADO
  */
 
 /*            Variaveis         */

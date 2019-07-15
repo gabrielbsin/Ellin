@@ -1,9 +1,7 @@
 /*
- * Criado por JavaScriptz
- * LeaderMS 2014
+ * LeaderMS Revision
+ * @author GabrielSin
  * Gachapon - Perion
- * www.leaderms.com.br
- * EDITADO
  */
 
 /*            Variaveis         */

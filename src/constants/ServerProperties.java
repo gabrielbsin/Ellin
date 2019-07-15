@@ -6,7 +6,7 @@ import java.util.Properties;
 
 /*
  * GabrielSin (http://forum.ragezone.com/members/822844.html)
- * LeaderMS v.62
+ * Ellin v.62
  * ServerProperties
  */
 
@@ -64,7 +64,7 @@ public class ServerProperties {
                 EVENTS = p.getProperty("ChannelEvents");
                 
             } catch (IOException e) { 
-                System.out.println("Failed loading World.ini - " + e);
+                System.out.println("Failed loading Channel.ini - " + e);
             }
         }
     }
@@ -159,7 +159,7 @@ public class ServerProperties {
                 WEB_SITE = p.getProperty("WebSiteLink");
 
             } catch (IOException e) {
-                System.out.println("Failed loading Database.ini - " + e);
+                System.out.println("Failed loading Misc.ini - " + e);
             }
         }
     }  

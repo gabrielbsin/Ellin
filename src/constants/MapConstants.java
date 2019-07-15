@@ -13,7 +13,7 @@ import server.maps.object.FieldObjectType;
 
 /*
  * GabrielSin (http://forum.ragezone.com/members/822844.html)
- * LeaderMS v.62
+ * Ellin v.62
  * MapConstants
  */
 

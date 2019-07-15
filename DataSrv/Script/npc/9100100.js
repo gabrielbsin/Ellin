@@ -1,8 +1,7 @@
 /*
- * Criado por JavaScriptz
- * LeaderMS 2014
+ * LeaderMS Revision
+ * @author GabrielSin
  * Gachapon - Henesys
- * www.leaderms.com.br
  */
 
 /*            Variaveis         */
@@ -69,7 +68,7 @@ function action(mode, type, selection){
             if (selection == 0) {
                 cm.sendNext("Jogando no Gachapon você pode ganhar scrolls raros, equipamentos, cadeiras, livros de maestria, e outros artigos legais! Tudo que você precisa é de um #bGachapon Ticket#k para poder obter algum desses items raros.");
             } else if (selection == 1) {
-                cm.sendNext("Bilhete Gachapon estao disponiveis através dos monstros do jogo. O LeaderMS colocou uma (%) de drop do Ticket em cada mob.");
+                cm.sendNext("Bilhete Gachapon estao disponiveis através dos monstros do jogo. O Ellin colocou uma (%) de drop do Ticket em cada mob.");
                 cm.dispose();
             } else if (status == 2) {
                 cm.sendNext("Você vai encontrar uma variedade de itens da " + cm.getPlayer().getMap().getMapName() + " Gachapon, mas você provavelmente vai encontrar varios itens e pergaminhos relacionados a cidade de " + cm.getPlayer().getMap().getMapName() + ".");

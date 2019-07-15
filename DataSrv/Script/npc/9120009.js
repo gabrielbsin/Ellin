@@ -1,7 +1,7 @@
 /*
  * LeaderMS Revision
- * @autor Gabriel A. <javascriptz@leaderms.com.br>
- * Deposito - 9120009
+ * @author GabrielSin
+ * Storage - 9120009
 */
 var status;
  

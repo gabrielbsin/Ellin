@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="0911.img">
+	<imgdir name="9110000">
+		<canvas name="icon" width="28" height="28">
+			<vector name="origin" x="-2" y="28"/>
+		</canvas>
+		<string name="name" value="&amp;#43690;&amp;#43691;&amp;#43692;&amp;#43693;&amp;#43694;&amp;#43695;&amp;#43696;&amp;#43697;&amp;#43698;&amp;#43699;&amp;#43700;"/>
+		<int name="delta" value="8"/>
+	</imgdir>
+	<imgdir name="9111000">
+		<canvas name="icon" width="28" height="28">
+			<vector name="origin" x="-2" y="28"/>
+		</canvas>
+		<string name="name" value="&amp;#43690;&amp;#43691;&amp;#43692;&amp;#43693;&amp;#43694;&amp;#43695;&amp;#43696;&amp;#43697;&amp;#43698;&amp;#43699;&amp;#43700;"/>
+		<int name="delta" value="8"/>
+	</imgdir>
+	<imgdir name="9112000">
+		<canvas name="icon" width="28" height="28">
+			<vector name="origin" x="-2" y="28"/>
+		</canvas>
+		<string name="name" value="&amp;#43690;&amp;#43691;&amp;#43692;&amp;#43693;&amp;#43694;&amp;#43695;&amp;#43696;&amp;#43697;&amp;#43698;&amp;#43699;&amp;#43700;"/>
+		<int name="delta" value="8"/>
+	</imgdir>
+	<imgdir name="9113000">
+		<canvas name="icon" width="28" height="28">
+			<vector name="origin" x="-2" y="28"/>
+		</canvas>
+		<string name="name" value="&amp;#43690;&amp;#43691;&amp;#43692;&amp;#43693;&amp;#43694;&amp;#43695;&amp;#43696;&amp;#43697;&amp;#43698;&amp;#43699;&amp;#43700;"/>
+		<int name="delta" value="8"/>
+	</imgdir>
+	<imgdir name="9114000">
+		<canvas name="icon" width="28" height="28">
+			<vector name="origin" x="-2" y="28"/>
+		</canvas>
+		<string name="name" value="&amp;#43690;&amp;#43691;&amp;#43692;&amp;#43693;&amp;#43694;&amp;#43695;&amp;#43696;&amp;#43697;&amp;#43698;&amp;#43699;&amp;#43700;"/>
+		<int name="delta" value="8"/>
+	</imgdir>
+</imgdir>

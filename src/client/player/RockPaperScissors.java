@@ -12,7 +12,7 @@ import tools.Randomizer;
 
 /**
  * @brief RockPaperScissors
- * @author GabrielSin <gabrielsin@playellin.net>
+ * @author AuraSEA/kevintjuh93 
  * @date   03/08/2018
  */
 

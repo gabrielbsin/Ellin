@@ -10,7 +10,7 @@ import client.player.Player;
 
 /*
  * GabrielSin (http://forum.ragezone.com/members/822844.html)
- * LeaderMS v.62
+ * Ellin v.62
  * GameConstants
  */
 public class CommandConstants {

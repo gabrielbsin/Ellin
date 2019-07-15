@@ -1,0 +1,1991 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="OXQuiz.img">
+    <imgdir name="1">
+        <imgdir name="1">
+            <string name="q" value="The weakest monster in MapleStory is the BLUE SNAIL."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The weakest monster is the GREEN SNAIL. (LV. 1)"/>
+        </imgdir>
+        <imgdir name="2">
+            <string name="q" value="The most powerful monster in MapleStory is the JR. BALROG."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Currently the most powerful monster is the CRIMSON BALROG."/>
+        </imgdir>
+        <imgdir name="3">
+            <string name="q" value="RED SNAILS can only be found at the Maple Island, where the beginners play."/>
+            <int name="a" value="0"/>
+            <string name="d" value="There&apos;s quite a lot of them at Victoria Island, too."/>
+        </imgdir>
+        <imgdir name="4">
+            <string name="q" value="You&apos;ll occasionaly obtain [Pig Tail] after defeating the PIG."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll occasionally obtain [Pig Head]."/>
+        </imgdir>
+        <imgdir name="5">
+            <string name="q" value="You&apos;ll obtain [Blue Ribbon] by defeating the RIBBONED PIG."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll obtain [Red Ribbon]."/>
+        </imgdir>
+        <imgdir name="6">
+            <string name="q" value="The weakest among the mushrooms is the ORANGE MUSHROOM."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The weakest among the mushrooms is the SPORE. (LV. 2)"/>
+        </imgdir>
+        <imgdir name="7">
+            <string name="q" value="You&apos;ll obtain [Lupin&apos;s Doll] by defeating the cute monkey monster called LUPIN."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You&apos;ll obtain Lupin&apos;s Doll, banana, and others."/>
+        </imgdir>
+        <imgdir name="8">
+            <string name="q" value="DRAKE is a monster that lives deep in the Dungeon. You&apos;ll occasionally obtain [Drake&apos;s Toenail] by defeating it."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll obtain [Drake&apos;s Skin]."/>
+        </imgdir>
+        <imgdir name="9">
+            <string name="q" value="When you defeat the PIG, WILD BOAR, or the HORNED MUSHROOM, you&apos;ll obtain [leather]."/>
+            <int name="a" value="0"/>
+            <string name="d" value="HORNED MUSHROOM does not provide [leather]."/>
+        </imgdir>
+        <imgdir name="10">
+            <string name="q" value="The slimes you&apos;ll see often at the beginner&apos;s map or around Ellinia are the BLUE SLIMES."/>
+            <int name="a" value="0"/>
+            <string name="d" value="At the beginner&apos;s map, you&apos;ll see the GREEN SLIMES."/>
+        </imgdir>
+        <imgdir name="11">
+            <string name="q" value="The GREEN MUSHROOM that you&apos;ll see often around the field, forrest, or the construction site has a grey horn on its cap."/>
+            <int name="a" value="0"/>
+            <string name="d" value="GREEN MUSHROOMS do not have horns."/>
+        </imgdir>
+        <imgdir name="12">
+            <string name="q" value="The WILD CARGO that lives deep in the Dungeon is very adept at attacking both up-close and long-range."/>
+            <int name="a" value="0"/>
+            <string name="d" value="WILD CARGO only attacks up-close."/>
+        </imgdir>
+        <imgdir name="13">
+            <string name="q" value="EVIL EYE, CURSE EYE, and COLD EYE all look similar, but only EVIL EYE has two eyes."/>
+            <int name="a" value="0"/>
+            <string name="d" value="They all have one eye."/>
+        </imgdir>
+        <imgdir name="14">
+            <string name="q" value="The LIGATORS that live around the swamps look a lot like spiders."/>
+            <int name="a" value="0"/>
+            <string name="d" value="They resemble alligators."/>
+        </imgdir>
+        <imgdir name="15">
+            <string name="q" value="The WILD CARGO that live deep in the Dungeon is the mutant version of a cat with a single horn at the center of its head."/>
+            <int name="a" value="0"/>
+            <string name="d" value="WILD CARGO has 2 huge horns."/>
+        </imgdir>
+        <imgdir name="16">
+            <string name="q" value="The JR. BALROG that lives in the cursed altar is a LV. 80 monster."/>
+            <int name="a" value="1"/>
+            <string name="d" value="JR. BALROG is a LV. 80 monster."/>
+        </imgdir>
+        <imgdir name="17">
+            <string name="q" value="The fastest monster in MapleStory is the STONE GOLLEM."/>
+            <int name="a" value="0"/>
+            <string name="d" value="STONE GOLLEM and DARK STONE GOLLEM is considered the slowest monsters in the game."/>
+        </imgdir>
+        <imgdir name="18">
+            <string name="q" value="The nasty ZOMBIE LUPIN&apos;s are made of black magic and the cursed doll through Grendel the Really Old. "/>
+            <int name="a" value="1"/>
+            <string name="d" value="It&apos;s a monster made out of Grendel the Really Old&apos;s black magic."/>
+        </imgdir>
+        <imgdir name="19">
+            <string name="q" value="MUSHMOM, a humongous mushroom monster, is basically a giant version of the ORANGE MUSHROOM."/>
+            <int name="a" value="1"/>
+            <string name="d" value="MUSHMOM is a giant version of the ORANGE MUSHROOM."/>
+        </imgdir>
+        <imgdir name="20">
+            <string name="q" value="BUBBLINGS that reside in subways attack by firing bubbles from long range."/>
+            <int name="a" value="0"/>
+            <string name="d" value="BUBBLINGS only attack up-close."/>
+        </imgdir>
+        <imgdir name="21">
+            <string name="q" value="STIRGE, a flying monster, usually flies around for a long time, and then takes a break by hanging on the ceiling."/>
+            <int name="a" value="0"/>
+            <string name="d" value="They never stop flying."/>
+        </imgdir>
+        <imgdir name="22">
+            <string name="q" value="You&apos;ll obtain [Jr. Necki&apos;s Skin] by defeating the JR. NECKI, and when eaten, you&apos;ll recover some of your MP."/>
+            <int name="a" value="0"/>
+            <string name="d" value="[Jr. Necki&apos;s Skin] is not edible."/>
+        </imgdir>
+        <imgdir name="23">
+            <string name="q" value="JR. WRAITH, a monster that resembles ghost, occasionally offers a [Blue Tablecloth]."/>
+            <int name="a" value="0"/>
+            <string name="d" value="They only offer [White Tablecloth]."/>
+        </imgdir>
+        <imgdir name="24">
+            <string name="q" value="LORANG, a crab-resembling monster around Florina Beach, occasionally attacks while jumping."/>
+            <int name="a" value="1"/>
+            <string name="d" value="They do resemble crabs, but they do attack while jumping, too."/>
+        </imgdir>
+        <imgdir name="25">
+            <string name="q" value="LORANG, a crab-resembling monster, digs the sand and hides in there if they are near death."/>
+            <int name="a" value="0"/>
+            <string name="d" value="They&apos;ll fight til they die. (Bravo...)"/>
+        </imgdir>
+        <imgdir name="26">
+            <string name="q" value="UMTI, the monster that resembles a sea turtle, usually attacks long-range with force."/>
+            <int name="a" value="1"/>
+            <string name="d" value="UMTI&apos;s attack long-range."/>
+        </imgdir>
+        <imgdir name="27">
+            <string name="q" value="[Iron Hog&apos;s Metal Hoof] is obtainable through IRON HOG, a metal armor-dressed monster that resembles a horse."/>
+            <int name="a" value="0"/>
+            <string name="d" value="IRON HOG is a pig."/>
+        </imgdir>
+        <imgdir name="28">
+            <string name="q" value="[Medicine with Weird Vibes], an item given by Wraith, will make you really feel weird if consumed."/>
+            <int name="a" value="0"/>
+            <string name="d" value="[Medicine with Weird Vibes] cannot be consumed."/>
+        </imgdir>
+        <imgdir name="29">
+            <string name="q" value="MALADY, a monster that flies around with the broom, fires away laser beams from far out."/>
+            <int name="a" value="0"/>
+            <string name="d" value="MALADY only attacks up-close."/>
+        </imgdir>
+        <imgdir name="100">
+            <string name="q" value="RED DRAKE is the only Drake that attacks long-range."/>
+            <int name="a" value="1"/>
+            <string name="d" value="RED DRAKE attacks long-range with force."/>
+        </imgdir>
+        <imgdir name="101">
+            <string name="q" value="CROKO, which lives around swamps, is higher leveled than COPPER DRAKE."/>
+            <int name="a" value="1"/>
+            <string name="d" value="CROKO is LV. 52, and COPPER DRAKE is LV. 45."/>
+        </imgdir>
+        <imgdir name="102">
+            <string name="q" value="COPPER DRAKE can be found near Perion, and is known for attacking from long-range."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It only attacks from up-close."/>
+        </imgdir>
+        <imgdir name="103">
+            <string name="q" value="Every monster from El Nath is weak against fire-based attacks."/>
+            <int name="a" value="0"/>
+            <string name="d" value="DARK YETI and DARK PEPE are weak against religious attacks."/>
+        </imgdir>
+        <imgdir name="104">
+            <string name="q" value="JR. YETI and the Transforming JR. YETI have the same level and HP."/>
+            <int name="a" value="1"/>
+            <string name="d" value="They are both LV. 50 with HP 3700."/>
+        </imgdir>
+        <imgdir name="105">
+            <string name="q" value="CRIMSON BALROG, LV 100, does not get poisoned from posion-based attacks."/>
+            <int name="a" value="1"/>
+            <string name="d" value="It cancels out poison-based attacks, but is vulnerable against religious attacks."/>
+        </imgdir>
+        <imgdir name="106">
+            <string name="q" value="MALADY, the monster flying around in broom, is an undead monster."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It&apos;s weak against religious attacks, but is NOT an undead monster."/>
+        </imgdir>
+        <imgdir name="107">
+            <string name="q" value="The monsters that offer [Stiff Feather] are HECTOR, DARK YETI, and LYCANTHROPE."/>
+            <int name="a" value="0"/>
+            <string name="d" value="HECTOR, DARK YETI, and LYCANTHROPE offer [Stiff Feather]."/>
+        </imgdir>
+        <imgdir name="108">
+            <string name="q" value="The monsters that offer [Soft Feather] are YETI, JR. YETI, WHITE FANG, LYCANTHROPE, AND LUPIN."/>
+            <int name="a" value="0"/>
+            <string name="d" value="LUPIN offers [Stiff Feather]."/>
+        </imgdir>
+        <imgdir name="109">
+            <string name="q" value="AXE STUMP is a monster borne of rage towards a lumberjack that forgot to take off the axe from the tree."/>
+            <int name="a" value="1"/>
+            <string name="d" value="There&apos;s a legend where AXE STUMP is a monster borne of rage towards a lumberjack that forgot to take off the axe from the tree."/>
+        </imgdir>
+        <imgdir name="110">
+            <string name="q" value="WEREWOLF summons its other self to attack."/>
+            <int name="a" value="0"/>
+            <string name="d" value="WEREWOLF does not have its other self."/>
+        </imgdir>
+        <imgdir name="111">
+            <string name="q" value="NEPENDEATH and DARK NEPENDEATH are the only monsters that do not move around."/>
+            <int name="a" value="1"/>
+            <string name="d" value="NEPENDEATH does not move around and attack."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2">
+        <imgdir name="1">
+            <string name="q" value="You&apos;ll need 15 tree branches to make 1 Processed Wood. "/>
+            <int name="a" value="0"/>
+            <string name="d" value="10 tree branches is enough."/>
+        </imgdir>
+        <imgdir name="2">
+            <string name="q" value="You&apos;ll make a set of screws, 15 screws in total, with a Bronze Plate and a Steel Plate."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Screws are useful for making or upgrading items."/>
+        </imgdir>
+        <imgdir name="3">
+            <string name="q" value="Fusion Mace, a one-handed blunt weapon, is only available to Warriors and Magicians."/>
+            <int name="a" value="1"/>
+            <string name="d" value="It&apos;s only available to Warriors and Magicians."/>
+        </imgdir>
+        <imgdir name="4">
+            <string name="q" value="Mace, a one-handed blunt weapon, is only available to Warriors and Magicians."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Mace is only available to Warriors and Magicians."/>
+        </imgdir>
+        <imgdir name="5">
+            <string name="q" value="Long Sword, a one-handed sword, is available to everyone BUT the beginners."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Beginners can use it, too."/>
+        </imgdir>
+        <imgdir name="6">
+            <string name="q" value="Balanche, a weapon for Bowman sold at Henesys, has an item option of STR + 2 attached to it."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Balanche has an item option of STR + 1 attached to it."/>
+        </imgdir>
+        <imgdir name="7">
+            <string name="q" value="The One-side Only Earring is available through stores, but NOT the Amethyst Earring."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Amethyst Earring can be purchased at the Henesys Department Store."/>
+        </imgdir>
+        <imgdir name="8">
+            <string name="q" value="The Blue Whitebottom Shoes that can be worn from LV. 26 on, is available to everyone, including the beginners."/>
+            <int name="a" value="1"/>
+            <string name="d" value="It is available to everyone."/>
+        </imgdir>
+        <imgdir name="9">
+            <string name="q" value="The Armor Scroll consists of two types - the one for DEF, and the one for HP."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You can check through the Perion Department Store."/>
+        </imgdir>
+        <imgdir name="10">
+            <string name="q" value="When purchasing a 100% scroll at the store, the scroll for two-handed weapon is more expensive than the one for one-handed weapon."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The price for the scrolls for both the two-handed or one-handed weapon are the same."/>
+        </imgdir>
+        <imgdir name="11">
+            <string name="q" value="The weapon store at Ellinia only sells scrolls for Staff and Wand."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The scrolls for earrings are also available."/>
+        </imgdir>
+        <imgdir name="12">
+            <string name="q" value="The weapon store at Lith Harbor is the only place without the Subi Throwing-Star."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The Subi Throwing-Star is also available at Lith Harbor."/>
+        </imgdir>
+        <imgdir name="13">
+            <string name="q" value="The Stolen Fence is only available at Lith Harbor."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The Square Wooden Shield is available at Lith Harbor."/>
+        </imgdir>
+        <imgdir name="14">
+            <string name="q" value="The item options for the White &amp; Black Korean Rubber Shoes are diferent."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The colors are different, but the options are the same."/>
+        </imgdir>
+        <imgdir name="15">
+            <string name="q" value="If you use the 100% Scroll for Claw for ATT, then the ATT will be +1, as will be the accuracy."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Only the ATT goes up by 1. The accuracy stays the same."/>
+        </imgdir>
+        <imgdir name="16">
+            <string name="q" value="A single item slot can hold upto 100 ores of same kind at once."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The ores can be stored up to 100 per slot."/>
+        </imgdir>
+        <imgdir name="17">
+            <string name="q" value="The item that&apos;s dropped onto the field will not disappear, even after a long period of time."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It disappears after a certain amount of time."/>
+        </imgdir>
+        <imgdir name="100">
+            <string name="q" value="To make the Mithril Tower Shield, you&apos;ll need Steel Tower Shield, 10 Mithril Plates, and 50,000 mesos."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Not 50,000 mesos, but 100,000 mesos."/>
+        </imgdir>
+        <imgdir name="101">
+            <string name="q" value="To make the Moon Rock, you&apos;ll need to take the a Plate of Mithril, Steel, Bronze, Adamantium, Silver, Orihalcon, and Gold each at Arwen the Fairy."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You also need 10,000 mesos along with the items."/>
+        </imgdir>
+        <imgdir name="102">
+            <string name="q" value="To make the Mithril Brist, you&apos;ll need Steel Brist, 5 Mithril Plates, and 55,000 mesos."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Mr. Smith of Perion makes it."/>
+        </imgdir>
+        <imgdir name="103">
+            <string name="q" value="Steel Pride, a hat for Magicians, has the item option of INT + 1 and LUK + 1"/>
+            <int name="a" value="0"/>
+            <string name="d" value="Only INT + 1 is available."/>
+        </imgdir>
+        <imgdir name="104">
+            <string name="q" value="To make Steel Trigger, which can be worn at LV. 30 for Warriors, you&apos;ll need 30 pieces of Drake&apos;s Skin."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It&apos;ll take 30 leathers and 20 pieces of Drake&apos;s Skin."/>
+        </imgdir>
+        <imgdir name="105">
+            <string name="q" value="Green Jack Boots, which is available for Bowman over LV. 25, has the item option of DEX + 2"/>
+            <int name="a" value="0"/>
+            <string name="d" value="An option of DEX + 1 is attached to it."/>
+        </imgdir>
+        <imgdir name="106">
+            <string name="q" value="Blue White-Lined Boots, which is available for thieves over LV. 35, has the item option of LUK + 1 and DEX + 1."/>
+            <int name="a" value="1"/>
+            <string name="d" value="It&apos;s available through Chrishrama of Sleepywood."/>
+        </imgdir>
+        <imgdir name="107">
+            <string name="q" value="To make Metal Koif, a helmet for Warriors, you&apos;ll need a Bronze Koif, a Steel Plate, and 500 mesos."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Mr. Thunder of Perion makes it."/>
+        </imgdir>
+        <imgdir name="108">
+            <string name="q" value="To make Green Diros, a glove for Bowman, you&apos;ll need Red Diros as one of the materials."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Not Red Diros, but Blue Diros."/>
+        </imgdir>
+        <imgdir name="109">
+            <string name="q" value="To make the Basic Archer Glove, you&apos;ll need 20 leathers."/>
+            <int name="a" value="0"/>
+            <string name="d" value="To make the Basic Archer Glove, you&apos;ll need 15 leathers."/>
+        </imgdir>
+        <imgdir name="110">
+            <string name="q" value="To make Work Glove, a glove for thieves, you&apos;ll need 20 leathers and 1,000 mesos."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You need 15 leathers and 1,000 mesos."/>
+        </imgdir>
+        <imgdir name="111">
+            <string name="q" value="To make Dark Wolfskin, a Thief glove, you&apos;ll need Steel Wolfskin as one of the materials."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Not Steel Wolfskin, but Bronze Wolfskin."/>
+        </imgdir>
+        <imgdir name="112">
+            <string name="q" value="To make Steel Titans, a claw for thieves, you&apos;ll need 5 screws as one of the materials. "/>
+            <int name="a" value="1"/>
+            <string name="d" value="JM from tha Streetz of Kerning City makes it."/>
+        </imgdir>
+        <imgdir name="113">
+            <string name="q" value="To make Steel Igor, a claw for thieves, you&apos;ll need Bronze Igor, 2 Steel Plates, and 3,000 mesos. "/>
+            <int name="a" value="1"/>
+            <string name="d" value="JM from tha Streetz of Kerning City makes it."/>
+        </imgdir>
+        <imgdir name="114">
+            <string name="q" value="To make Red Lutia, a glove for Magicians, you&apos;ll need 60 leathers."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Francois of Ellinia makes it."/>
+        </imgdir>
+        <imgdir name="115">
+            <string name="q" value="Dark Arten, a glove for Magicians, has the item option of INT + 2 and LUK + 1."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The only option attached to it is INT + 3."/>
+        </imgdir>
+        <imgdir name="116">
+            <string name="q" value="The level limit for Juno, a glove for Warriors, is 15."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The level limit is 10."/>
+        </imgdir>
+        <imgdir name="117">
+            <string name="q" value="To make Yellow Briggon, a glove for Warriors, you&apos;ll need 2 Topaz&apos;s."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Not 2, but 3 Topaz&apos;s"/>
+        </imgdir>
+        <imgdir name="118">
+            <string name="q" value="All weapons that can be used by everyone are only limited by levels, not stats."/>
+            <int name="a" value="0"/>
+            <string name="d" value="There are weapons that are affected by the stats."/>
+        </imgdir>
+        <imgdir name="119">
+            <string name="q" value="To make Bronze Husk, a glove for Warriors, you&apos;ll need 2 Power Crystals as one of the materials."/>
+            <int name="a" value="1"/>
+            <string name="d" value="An option of STR + 2 is attached to it."/>
+        </imgdir>
+        <imgdir name="120">
+            <string name="q" value="Snowshoes, which enables you not to slip through snow, is available to everyone with the level limit of 30."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The boots differ from different jobs."/>
+        </imgdir>
+        <imgdir name="121">
+            <string name="q" value="To make a crossbow called Rower, you&apos;ll need 45 screws."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You need 40 screws."/>
+        </imgdir>
+        <imgdir name="122">
+            <string name="q" value="The most expensive one to refine is the Star Rock."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The most expensive one to refine is Dark Crystal, which will cost you 50,000 mesos."/>
+        </imgdir>
+        <imgdir name="123">
+            <string name="q" value="At the Repair Shop, you&apos;ll be able to acquire a Steel Plate with 100 pieces of Iron Hog&apos;s Metal Hoof and 1,000 mesos."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The Repair Shop is at Kerning City."/>
+        </imgdir>
+        <imgdir name="124">
+            <string name="q" value="The Bronze Arrows and Steel Arrows are available through Vicious of Henesys."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Vicious only makes Bronze Arrows."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="3">
+        <imgdir name="1">
+            <string name="q" value="You get 5 mesos for selling one Mushroom Spore."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You get 3 mesos for selling one Mushroom Spore."/>
+        </imgdir>
+        <imgdir name="2">
+            <string name="q" value="Slime Bubble costs more than the Squishy Liquid."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Slime Bubble DOES cost more than the Squishy Liquid."/>
+        </imgdir>
+        <imgdir name="3">
+            <string name="q" value="You get 100 mesos for selling 1 ore of Bronze."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You get 100 mesos for selling 1 ore of Bronze."/>
+        </imgdir>
+        <imgdir name="4">
+            <string name="q" value="Drake&apos;s Skull from Red Drake costs more than the Drake&apos;s Skull of other Drakes."/>
+            <int name="a" value="0"/>
+            <string name="d" value="They all cost the same."/>
+        </imgdir>
+        <imgdir name="5">
+            <string name="q" value="To refine one Black Crystal, it&apos;ll cost you 3,000 mesos."/>
+            <int name="a" value="1"/>
+            <string name="d" value="It costs 3,000 mesos to refine a black crystal."/>
+        </imgdir>
+        <imgdir name="6">
+            <string name="q" value="You get 8 mesos for selling one Orange Mushroom Cap."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You get 4 mesos for selling one Orange Mushroom Cap."/>
+        </imgdir>
+        <imgdir name="7">
+            <string name="q" value="You get 50 mesos for selling 10 tree branches."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You get 4 mesos for selling 1 tree branch."/>
+        </imgdir>
+        <imgdir name="8">
+            <string name="q" value="You get 300 mesos for selling 3 leathers."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You get 100 mesos for selling 1 leather."/>
+        </imgdir>
+        <imgdir name="9">
+            <string name="q" value="The price of 10 ores of Gold and one Gold Plate is of same price."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll get 3,000 mesos for selling 10 ores of Gold, 1,200 mesos for a Gold Plate."/>
+        </imgdir>
+        <imgdir name="10">
+            <string name="q" value="The most expensive Return Scroll is the one to Sleepywood."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The Return Scroll : Sleepywood costs 600 mesos."/>
+        </imgdir>
+        <imgdir name="11">
+            <string name="q" value="Sell 5 of Malady&apos;s Experiemental Frogs, buy Arrows for Bow, sell them back to the store, and you&apos;ll get 300 mesos."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You don&apos;t get anything for selling arrows at the store. Doesn&apos;t that blow?"/>
+        </imgdir>
+        <imgdir name="12">
+            <string name="q" value="To purchase [Old Wisconsin], you&apos;ll need 3,000 mesos."/>
+            <int name="a" value="1"/>
+            <string name="d" value="[Old Wisconsin] is available through the weapon store at Henesys."/>
+        </imgdir>
+        <imgdir name="13">
+            <string name="q" value="If you purchase Arrow for Bow at the store, it&apos;ll cost you 1 meso per arrow, but you won’t be able to sell the arrows for any money."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Arrow for Bow and Crossbow will not get you any money for selling them at the store."/>
+        </imgdir>
+        <imgdir name="14">
+            <string name="q" value="The Watermelon at MapleStory costs 3,100 mesos."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It costs 3,200 mesos."/>
+        </imgdir>
+        <imgdir name="15">
+            <string name="q" value="The Red Bean Sundae at MapleStory costs 4,000 mesos."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You can buy it from an NPC for 4,000 mesos."/>
+        </imgdir>
+        <imgdir name="16">
+            <string name="q" value="The Ice Cream Suckers at MapleStory costs 2,100 mesos."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It costs 2,300 mesos."/>
+        </imgdir>
+        <imgdir name="17">
+            <string name="q" value="The price of 150 Huge Bubbles of Bubbling is LOWER than 200 Slime Bubbles."/>
+            <int name="a" value="1"/>
+            <string name="d" value="200 Slime Bubbles : 10,000 mesos. 150 Huge Bubbles of Bubbling : 1,500 mesos."/>
+        </imgdir>
+        <imgdir name="100">
+            <string name="q" value="The price of Jr. Neck Skin and Stirge Wing is the same."/>
+            <int name="a" value="1"/>
+            <string name="d" value="They both go for 12 mesos."/>
+        </imgdir>
+        <imgdir name="101">
+            <string name="q" value="The price of 2 Jr. Necki skins is LOWER than 1 Ligator skin."/>
+            <int name="a" value="1"/>
+            <string name="d" value="2 Jr. Neck Skins = 24 mesos. 1 Ligator Skin = 25 mesos."/>
+        </imgdir>
+        <imgdir name="102">
+            <string name="q" value="Sell 10 Tablecloths from Jr. Wraith, and you&apos;ll be able to buy a Lemon with it."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Lemon costs 305 mesos, so you&apos;ll be short of 5 mesos."/>
+        </imgdir>
+        <imgdir name="103">
+            <string name="q" value="1 Lorang Claw has the same price as 1 Cold Eye Tail."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Lorang Claw = 32 mesos. Cold Eye Tail = 35 mesos."/>
+        </imgdir>
+        <imgdir name="104">
+            <string name="q" value="1 Clang Claw has the same price as the price of 5 Blue Mushroom Caps."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Clang Claw = 60 mesos. Blue Mushroom Cap = 12."/>
+        </imgdir>
+        <imgdir name="105">
+            <string name="q" value="The price of Umti Shell and Slime Bubble is the same."/>
+            <int name="a" value="1"/>
+            <string name="d" value="They both go for 50 mesos."/>
+        </imgdir>
+        <imgdir name="106">
+            <string name="q" value="If you sell 100 pieces of Iron Hog&apos;s Metal Hoof, you&apos;ll be able to buy a Dark Moon Conehat."/>
+            <int name="a" value="1"/>
+            <string name="d" value="100 pieces of Iron Hog&apos;s Metal Hoof = 3,800 mesos. Yes, you can buy Dark Moon Conehat with that."/>
+        </imgdir>
+        <imgdir name="107">
+            <string name="q" value="The Medicine with Weird Vibes from Wraith will go for the same price as 1 Processed Wood."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Medicine with Weird Vibes = 50 mesos. Processed Wood = 20 mesos."/>
+        </imgdir>
+        <imgdir name="108">
+            <string name="q" value="The price of 128 pieces of Croko Skin is 6,500 mesos."/>
+            <int name="a" value="0"/>
+            <string name="d" value="128 x 50 = 6,400, not 6,500."/>
+        </imgdir>
+        <imgdir name="109">
+            <string name="q" value="If you sell 10 Pig Ribbons to the store, you can buy a Red Potion with those mesos."/>
+            <int name="a" value="1"/>
+            <string name="d" value="10 Pig Ribbons = 50 mesos."/>
+        </imgdir>
+        <imgdir name="110">
+            <string name="q" value="A Mushmom Spore has the same price as a Tauromacis Horn."/>
+            <int name="a" value="1"/>
+            <string name="d" value="They both go for 100 mesos."/>
+        </imgdir>
+        <imgdir name="111">
+            <string name="q" value="If you sell the Star Rock at the store, you&apos;ll get 10,000 mesos per."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You&apos;ll get 10,000 mesos per Star Rock."/>
+        </imgdir>
+        <imgdir name="112">
+            <string name="q" value="If you sell 2 Red Snail Shells, 2 Pig Heads, and 1 Slime Bubble at the store, you&apos;ll get 140 mesos."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You&apos;ll get 30+60+50=140 mesos."/>
+        </imgdir>
+        <imgdir name="113">
+            <string name="q" value="Both the Yellow Umbrella and the Sky-Blue Umbrella will get you 1 meso if you sell them at the stores."/>
+            <int name="a" value="0"/>
+            <string name="d" value="1 meso for Sky-Blue Umbrella, but 50,000 mesos for Yellow Umbrella. "/>
+        </imgdir>
+        <imgdir name="114">
+            <string name="q" value="It costs the same whereever in MapleStory to refine the ores."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It&apos;s a little bit cheaper at Kerning City."/>
+        </imgdir>
+        <imgdir name="115">
+            <string name="q" value="If you sell your screws at the store, it&apos;ll fetch you 100 mesos per screw."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It goes fo 50 mesos."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="4">
+        <imgdir name="1">
+            <string name="q" value="Red Potion increases the HP by 100."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Increases the HP by 50."/>
+        </imgdir>
+        <imgdir name="2">
+            <string name="q" value="Lemon increases the MP by 150."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Increases the MP by 150."/>
+        </imgdir>
+        <imgdir name="3">
+            <string name="q" value="The Warrior Potion increases the Weapon ATT by 10 for 3 min."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Increases the Weapon ATT by 5 for 3 min."/>
+        </imgdir>
+        <imgdir name="4">
+            <string name="q" value="Blue Potion is 8 mesos cheaper at the Ellinia Department Store than other places."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The Blue Potion is cheaper in Ellinia Department Store."/>
+        </imgdir>
+        <imgdir name="5">
+            <string name="q" value="If you take the Orange Potion, it&apos;ll improve your HP by 150, and it costs 150 mesos at stores."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It costs 160 mesos."/>
+        </imgdir>
+        <imgdir name="6">
+            <string name="q" value="The Speed Potion will increase your speed for 5 min."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Increases the speed for 3 min."/>
+        </imgdir>
+        <imgdir name="7">
+            <string name="q" value="The Wizard Potion will increase your Magic ATT by 10 for 5 min."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Increases the Magic ATT by 5 for 3 min."/>
+        </imgdir>
+        <imgdir name="8">
+            <string name="q" value="The Sap of an Ancient Tree will increase your Magic ATT by 10 for 5 min."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Increases the Magic ATT by 10 for 5 min."/>
+        </imgdir>
+        <imgdir name="9">
+            <string name="q" value="The Drake&apos;s Meat will increase your Weapon DEF by 10 for 3 min."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Increases the Weapon DEF by 10 for 3 min."/>
+        </imgdir>
+        <imgdir name="10">
+            <string name="q" value="Drake&apos;s Blood will increase your Weapon ATT by 10 for 5 min."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Increases the Weapon ATT by 8 for 5 min."/>
+        </imgdir>
+        <imgdir name="11">
+            <string name="q" value="Take one Power Elixir, and it&apos;ll restore your HP and MP back to 100%."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Power Elixir recovers all HP and MP."/>
+        </imgdir>
+        <imgdir name="12">
+            <string name="q" value="Meat can be bought at stores for 106 mesos, and it recovers HP 100."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Increases the HP by 100."/>
+        </imgdir>
+        <imgdir name="100">
+            <string name="q" value="Sniper Potion will increase your accuracy by 5 for 5 min."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Increases accuracy by 5 for 5 min."/>
+        </imgdir>
+        <imgdir name="101">
+            <string name="q" value="Pizza costs 420 mesos, and one slice will recover HP 400."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Pizza costs 450 mesos."/>
+        </imgdir>
+        <imgdir name="102">
+            <string name="q" value="Cake costs 320 mesos, and one piece will recover HP 100 and MP 100."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Check the 24 Hr Mobile Store"/>
+        </imgdir>
+        <imgdir name="103">
+            <string name="q" value="The Pure Water that can be purchased at 24 Hr Mobile Store costs 1600 mesos and recovers MP 800."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The Pure Water that can be purchased at 24 Hr Mobile Store costs 1650 mesos"/>
+        </imgdir>
+        <imgdir name="104">
+            <string name="q" value="Hot Dog costs 320 mesos and one will recover HP 300."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Check the 24 Hr Mobile Store"/>
+        </imgdir>
+        <imgdir name="105">
+            <string name="q" value="Hamburger costs 430 mesos and one will recover HP 400."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Hamburger costs 450 mesos."/>
+        </imgdir>
+        <imgdir name="106">
+            <string name="q" value="You&apos;ll get 2,750 mesos from the stores if you sell your Power Elixir."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It fetches 2,500 mesos."/>
+        </imgdir>
+        <imgdir name="107">
+            <string name="q" value="DEX Potion increases your avoidability by 5 for 3 min."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Increases the avoidability by 5 for 3 min."/>
+        </imgdir>
+        <imgdir name="108">
+            <string name="q" value="Sunset Dew recovers MP 5000"/>
+            <int name="a" value="1"/>
+            <string name="d" value="It recovers MP 5,000."/>
+        </imgdir>
+        <imgdir name="109">
+            <string name="q" value="Sunrise Dew recovers HP 4000."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It recovers MP 4,000."/>
+        </imgdir>
+        <imgdir name="110">
+            <string name="q" value="Sunrise Dew can be sold to the stores for 4,050 mesos."/>
+            <int name="a" value="1"/>
+            <string name="d" value="It&apos;s sold for 4,050 mesos."/>
+        </imgdir>
+        <imgdir name="111">
+            <string name="q" value="Sunset Dew can be sold to the stores for 5,050 mesos."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It&apos;s sold for 5,100 mesos."/>
+        </imgdir>
+        <imgdir name="112">
+            <string name="q" value="Pure Water can be bought through 24 Hr Mobile Store, Jane, Valen, Hana, or Mr. Sweatbottom."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Hana of El Nath does NOT sell pure water."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="5">
+        <imgdir name="1">
+            <string name="q" value="Once you complete the quest of &quot;Sera and Her Mirror&quot; at the Maple Island, you&apos;ll gain a little bit of EXP and mesos."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Only EXP, not mesos."/>
+        </imgdir>
+        <imgdir name="2">
+            <string name="q" value="During the quest of &quot;Nina &amp; Sen&apos;s Dinner&quot; at the Maple Island, Sen asks for the Mushroom Soup."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Sen wants the Mushroom Soup."/>
+        </imgdir>
+        <imgdir name="3">
+            <string name="q" value="Once you complete the quest of &quot;Roger and the Apple&quot; at the Maple Island, you&apos;ll get a watermelon from him."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Gives away an apple."/>
+        </imgdir>
+        <imgdir name="4">
+            <string name="q" value="Once you complete the quest of &quot;Deliver the Letter to the Chief&quot; at the Maple Island, you&apos;ll gain Wooden Shield."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Gives away a bandana."/>
+        </imgdir>
+        <imgdir name="5">
+            <string name="q" value="Once you complete the quest of &quot;Biggs&apos; Collection of Items&quot; at the Maple Island, you&apos;ll gain a Wooden Sword."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll get either a Fruit Knife or a Razor."/>
+        </imgdir>
+        <imgdir name="6">
+            <string name="q" value="The quest of &quot;Fixing Blackbull&apos;s House&quot; at Perion can only be cleared by the ones that have gone through the 1st job adv."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The quest can be completed even without a job adv."/>
+        </imgdir>
+        <imgdir name="7">
+            <string name="q" value="To clear the quest of &quot;Pia and the Blue Mushroom&quot; at Henesys, you&apos;ll need 60 Horned Mushroom Caps and 60 Blue Mushroom Caps."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Not Horned Mushroom Caps, but Green Mushroom Caps."/>
+        </imgdir>
+        <imgdir name="8">
+            <string name="q" value="Once you complete the quest of &quot;Jane and the Wild Boar&quot; at Lith Harbor, you&apos;ll gain a Scroll for Armor DEF."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Not the scroll for armor, but the scroll for weapon."/>
+        </imgdir>
+        <imgdir name="9">
+            <string name="q" value="To clear the quest of &quot;Alex the Runaway Kid&quot; at Kerning City, you&apos;ll need to get a gold watch from Chief Stan and deliver it back to Alex."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Chief Stan is at Henesys, Alex at Kerning City."/>
+        </imgdir>
+        <imgdir name="10">
+            <string name="q" value="The quest of &quot;Arwen and the Glass Shoes&quot; at Ellinia can only be completed once."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The &quot;Glass Shoes&quot; quest can be repeated over and over again."/>
+        </imgdir>
+        <imgdir name="11">
+            <string name="q" value="To clear the quest of &quot;Fixing Blackbull&apos;s House,&quot; you&apos;ll need 50 tree branches and 30 firewoods."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You need 30 tree branches and 50 firewoods."/>
+        </imgdir>
+        <imgdir name="12">
+            <string name="q" value="The time limit for Party Quest at Kerning City is 30 min."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Has to be cleared within the 30 min. time limit."/>
+        </imgdir>
+        <imgdir name="13">
+            <string name="q" value="If you&apos;re over LV. 40, even without the 2nd job adv., you&apos;ll be able to take on the quest of &quot;Jane the Alchemist&quot;"/>
+            <int name="a" value="0"/>
+            <string name="d" value="You need to have 2nd job adv. in order to take on the quest."/>
+        </imgdir>
+        <imgdir name="14">
+            <string name="q" value="You won&apos;t be able to enter the Party Quest at Kerning City if some other party is already in there."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Only one party can enter the map to take on the Party Quest at a time."/>
+        </imgdir>
+        <imgdir name="15">
+            <string name="q" value="Alex the runaway kid from Kerning City&apos;s father is Mr. Wetbottom of the VIP sauna at Sleepywood."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Alex&apos;s father is Chief Stan of Henesys."/>
+        </imgdir>
+        <imgdir name="16">
+            <string name="q" value="Once you clear the quest of &quot;John&apos;s Pink Flower Basket,&quot; you&apos;ll receive 30 screws from him as a reward."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You&apos;ll receive 30 screws from John."/>
+        </imgdir>
+        <imgdir name="17">
+            <string name="q" value="Mr. Wetbottom&apos;s Secret Book is blue."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It&apos;s in red."/>
+        </imgdir>
+        <imgdir name="18">
+            <string name="q" value="The ticket sold at the subway construction site for B1, B2, and B3 all cost 2,000 mesos."/>
+            <int name="a" value="0"/>
+            <string name="d" value="B1 - 500 mesos. B2 - 1,200 mesos. B3 - 2,000 mesos."/>
+        </imgdir>
+        <imgdir name="19">
+            <string name="q" value="The level limit for Party Quest at Kerning City is between 20 and 30."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The level limit is between 21 and 30."/>
+        </imgdir>
+        <imgdir name="20">
+            <string name="q" value="To take on the quest of &quot;Building a New House for Blackbull,&quot; your fame level needs to be at least 5."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The fame level has to be at least 10."/>
+        </imgdir>
+        <imgdir name="21">
+            <string name="q" value="Every time you clear Shumi&apos;s quest, your fame level will increase by 1, all 3 times."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You&apos;ll earn a total of +3 on fame level through her quests."/>
+        </imgdir>
+        <imgdir name="22">
+            <string name="q" value="Once the quest of &quot;Sabirtrama and the Anti-Aging Medicine&quot; is cleared, you&apos;ll be able to gain either a Star Rock or a Moon Rock."/>
+            <int name="a" value="1"/>
+            <string name="d" value="If the items are NOT of the ones Sabitrama requested, you&apos;ll get a Moon Rock instead."/>
+        </imgdir>
+        <imgdir name="23">
+            <string name="q" value="For the quest of &quot;Sabitrama and the Diet Medicine,&quot; the color of the flowers he asks for are the same throughout."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The color of flowers differ everytime you ask him."/>
+        </imgdir>
+        <imgdir name="24">
+            <string name="q" value="The Party Quest of Kerning City consists of 5 stages."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You need to clear 5 stages. There&apos;s also a bonus stage available."/>
+        </imgdir>
+        <imgdir name="25">
+            <string name="q" value="The quest of &quot;Jane the Alchemist&quot; asks for materials 3 different times."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You need to gather up the materials 3 times to clear the quest."/>
+        </imgdir>
+        <imgdir name="26">
+            <string name="q" value="For the quest of &quot;Sabitrama and the Diet Medicine,&quot; if you clear it without delivering the right herb, you&apos;ll just receive EXP 500."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You&apos;ll receive EXP 500 while clearing it."/>
+        </imgdir>
+        <imgdir name="100">
+            <string name="q" value="Once you clear the quest of &quot;Jane and the Wild Boar,&quot; you&apos;ll receive a random weapon attack scroll of either 100%, 60%, or 10%."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll receive EXP 500 and a 60% Scroll for Weapon Att."/>
+        </imgdir>
+        <imgdir name="101">
+            <string name="q" value="The Forest of Patience consists of 5 levels."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Diet Medicine (LV 1, 2). Anti-Aging Medicine (LV 3, 4, 5)"/>
+        </imgdir>
+        <imgdir name="102">
+            <string name="q" value="Shumi&apos;s quest goes from &amp;lt;Lost Coin - Lots of Money - Sack of Money&gt; "/>
+            <int name="a" value="0"/>
+            <string name="d" value="The 2nd quest is &quot;Shumi and the Lost Bundle of Money&quot;"/>
+        </imgdir>
+        <imgdir name="103">
+            <string name="q" value="The Unagi Special you&apos;ll need for Mr. Wetbottom&apos;s quests consists of Lupin Banana, Curse Eye Tail, and Pig Head."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Lupin Banana does NOT go in the Unagi Special."/>
+        </imgdir>
+        <imgdir name="104">
+            <string name="q" value="The Deep Forest of Patience consists of 7 levels."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Deep Forest of Patience consists of 7 levels."/>
+        </imgdir>
+        <imgdir name="105">
+            <string name="q" value="To clear the quest of &quot;Luke the Security Guy,&quot; you&apos;ll need 100 pieces of Jr. Necki Skin, 10 Stirge Wings, and 1 Pure Water. "/>
+            <int name="a" value="0"/>
+            <string name="d" value="1 Bowl of Salad, not Pure Water."/>
+        </imgdir>
+        <imgdir name="106">
+            <string name="q" value="To clear the quest of &quot;Rowen and the Cursed Dolls,&quot; you&apos;ll need a total of 2,300 cursed dolls."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You&apos;ll need 100. 200, 400, 600, and 1,000 cursed dolls per quest."/>
+        </imgdir>
+        <imgdir name="107">
+            <string name="q" value="To reawaken the Ragged Gladius from the quest of &quot;Manji&apos;s Ragged Gladius,&quot; you&apos;ll need the Moon Rock for it."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You need the Star Rock."/>
+        </imgdir>
+        <imgdir name="108">
+            <string name="q" value="Once you clear the quest of &quot;Building a New House for Blackbull,&quot; you&apos;ll randomly receive a 10% Scroll for Weapon Att. "/>
+            <int name="a" value="0"/>
+            <string name="d" value="The scrolls can be chosen according to your occupation."/>
+        </imgdir>
+        <imgdir name="109">
+            <string name="q" value="The Deed to the Land you need to clear the quest of &quot;Building a New House for Blackbull&quot; can be obtained through Cold Eye."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The Deed can be obtained through Curse Eye."/>
+        </imgdir>
+        <imgdir name="110">
+            <string name="q" value="Once you clear the quest of &quot;Ronnie &amp; the Fairies Building a New House,&quot; you&apos;ll receive EXP 4,000."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll receive EXP 3,900."/>
+        </imgdir>
+        <imgdir name="111">
+            <string name="q" value="Once you clear the quest of &quot;Sabitrama and the Anti-Aging  Medicine,&quot; your fame level will increase by 2."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Your fame level will increase, along with gaining some EXP and items."/>
+        </imgdir>
+        <imgdir name="112">
+            <string name="q" value="Once you clear the quest of &quot;Pia&apos;s Present for a Friend,&quot; you&apos;ll receive an overall armor for Thief with the level limit of 60."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll receive a set of LV. 60 top and bottom."/>
+        </imgdir>
+        <imgdir name="113">
+            <string name="q" value="The quest of &quot;Trade with Sergeant Charlie&quot; can be done regardless of the level."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The quest is available even to the beginners."/>
+        </imgdir>
+        <imgdir name="114">
+            <string name="q" value="The NPC&apos;s that you need to see for the quest of &quot;Alpha Platoon&apos;s Network of Communication&quot; are Master Sergeant Fox, Staff Sergeant Bravo, Sergeant Charlie, and Corporal Easy."/>
+            <int name="a" value="0"/>
+            <string name="d" value="They are Master Sergeant Fox, Staff Sergeant Bravo, Sergeant Charlie, and Corporal Easy."/>
+        </imgdir>
+        <imgdir name="115">
+            <string name="q" value="For the quest of &quot;Looking For a Book of Ancient,&quot; all users over LV. 50, regardless of the job, can take part in it."/>
+            <int name="a" value="0"/>
+            <string name="d" value="All users LV. 55 and over, minus the beginners, can take part in it."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="6">
+        <imgdir name="1">
+            <string name="q" value="In order to become a Bowman, beginners need to head over to Bowman Training School."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The beginners can become bowmen at the Bowman Instructional School."/>
+        </imgdir>
+        <imgdir name="2">
+            <string name="q" value="In order to become a Warrior, beginners need to head over to the Warrior Sanctuary."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The beginners can become Warriors at the Warrior Sanctuary."/>
+        </imgdir>
+        <imgdir name="3">
+            <string name="q" value="In order to become a Magician, beginners need to head over to the Magic Library."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The beginners can become Magicians at the Magic Library."/>
+        </imgdir>
+        <imgdir name="4">
+            <string name="q" value="The item you need to collect to make the 2nd job adv., all 30 of them, is called the Brown Crystal."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You need to collect 30 BLACK Crystals."/>
+        </imgdir>
+        <imgdir name="5">
+            <string name="q" value="Once you have collected 30 Black Crystals for the 2nd job adv., you&apos;ll be awarded the &quot;Proof of a Hero.&quot;"/>
+            <int name="a" value="1"/>
+            <string name="d" value="Once you have collected 30 Black Crystals for the 2nd job adv., you&apos;ll be awarded the &quot;Proof of a Hero.&quot;"/>
+        </imgdir>
+        <imgdir name="6">
+            <string name="q" value="For the 2nd job adv., a Warrior can choose between becoming a Fighter, Page, or an Axeman."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You can choose between Fighter, Page, or Spearman as your 2nd job adv. as a Warrior. "/>
+        </imgdir>
+        <imgdir name="7">
+            <string name="q" value="For the 2nd job adv., a Bowman can choose between becoming a Hunter or a Sniper."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Hunter for the Bowman, Sniper for the crossBowman."/>
+        </imgdir>
+        <imgdir name="8">
+            <string name="q" value="For the 2nd job adv., a Thief can choose between becoming an Assassin or a Bandit."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Assassin for the Thief with throwing stars, Bandit for the Thief with daggers."/>
+        </imgdir>
+        <imgdir name="9">
+            <string name="q" value="For the 2nd job adv., a Magician can choose between becoming a Wizard or a Priest."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll be choosing either Wizard or Cleric."/>
+        </imgdir>
+        <imgdir name="10">
+            <string name="q" value="When the beginner is at level 10, he/she can choose to become a Warrior, Magician, Thief, or a Bowman."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You can become a Magician at LV. 8"/>
+        </imgdir>
+        <imgdir name="11">
+            <string name="q" value="For a beginner to become a Thief, one needs to have at least LUK of 25 or over."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You need DEX of 25 or over."/>
+        </imgdir>
+        <imgdir name="12">
+            <string name="q" value="To make the 3rd job adv., the user needs be at least at LV. 70 or above."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The 3rd job adv. will be available to users at LV 70 or over."/>
+        </imgdir>
+        <imgdir name="13">
+            <string name="q" value="When a beginner makes the first job adv., 1 skill point is awarded."/>
+            <int name="a" value="1"/>
+            <string name="d" value="When a beginner makes the job adv., 1 skill point will be awarded."/>
+        </imgdir>
+        <imgdir name="14">
+            <string name="q" value="During the 2nd job adv., you can choose a totally different job for it (ex. Warrior → Bowman)"/>
+            <int name="a" value="0"/>
+            <string name="d" value="Can&apos;t change your job into something totally different."/>
+        </imgdir>
+        <imgdir name="15">
+            <string name="q" value="To make the 4th job advancement, you&apos;ll need to be at least at LV. 120, with a 3rd job adv. under your belt."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The 4th job adv. will be available to the ones over LV. 120."/>
+        </imgdir>
+        <imgdir name="16">
+            <string name="q" value="A 1st-level Magician skill, &quot;Improving MP Recovery,&quot; goes up to level 15."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The skill goes up to level 16."/>
+        </imgdir>
+        <imgdir name="100">
+            <string name="q" value="When the Spearman&apos;s skill, &quot;Hyper Body,&quot; is fully mastered, your MaxHP and MaxMP increases by 60%."/>
+            <int name="a" value="1"/>
+            <string name="d" value="If you have mastered the skill, your MaxHP &amp; MaxMP increases 60%."/>
+        </imgdir>
+        <imgdir name="101">
+            <string name="q" value="When the Sniper&apos;s skill, &quot;Iron Arrow,&quot; is fully mastered, the damage will increase by 180%."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Once you have mastered the Iron Arrow, the damage will increase by 180%."/>
+        </imgdir>
+        <imgdir name="102">
+            <string name="q" value="The Thief has a skill called &quot;Lucky Seven,&quot; which enables you to throw stars in mid-air."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Thieves can use skills while in mid-air."/>
+        </imgdir>
+        <imgdir name="103">
+            <string name="q" value="All 2nd-level skills, regardless of the occupation, has a total of 6 sets of skills."/>
+            <int name="a" value="0"/>
+            <string name="d" value="There are 8 different sets of skills for Warriors."/>
+        </imgdir>
+        <imgdir name="104">
+            <string name="q" value="In order to become a Bowman, beginners need to head over to Bowman Training School."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The beginners can become thieves at the Thieves&apos; Hideout."/>
+        </imgdir>
+        <imgdir name="105">
+            <string name="q" value="Magicians have 3 different types of jobs available for the 4th job adv."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Only Warriors have the jobs split 3 ways for the 4th job adv."/>
+        </imgdir>
+        <imgdir name="106">
+            <string name="q" value="The order of occupation for the Bowman using the regular bow is that of [Archer → Hunter → Ranger → Bow God]"/>
+            <int name="a" value="0"/>
+            <string name="d" value="The job order goes like this. [Hunter→Ranger→Bowmaster]. "/>
+        </imgdir>
+        <imgdir name="107">
+            <string name="q" value="The order of occupation for the Thief with dagger is that of [Rogue → Bandit → Chief Bandit → Night Lord]"/>
+            <int name="a" value="0"/>
+            <string name="d" value="The job order goes like this. [Rogue→Bandit→Chief Bandit→Shadower]."/>
+        </imgdir>
+        <imgdir name="108">
+            <string name="q" value="The order of occupation for the Cleric is that of [Mage → Cleric → Priest → Bishop]"/>
+            <int name="a" value="1"/>
+            <string name="d" value="The job order goes like this. [Magician→Cleric→Priest→Bishop]."/>
+        </imgdir>
+        <imgdir name="109">
+            <string name="q" value="Add up all the occupations for the 4th job adv., and it adds up to 9."/>
+            <int name="a" value="1"/>
+            <string name="d" value="3 for Warriors + 2 for Magicians + 2 for bowmen + 2 for thieves = 9"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="7">
+        <imgdir name="1">
+            <string name="q" value="After making your new character, the first place you head over to is the [Maple Island]."/>
+            <int name="a" value="1"/>
+            <string name="d" value="[Maple Island] is the very first place you end up in MapleStory."/>
+        </imgdir>
+        <imgdir name="2">
+            <string name="q" value="When creating a character, you&apos;ll be rolling a dice for the character stats. When you add up the stats for STR, DEX, INT, LUK, it&apos;ll add up to 24."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It&apos;s a total of 25 points."/>
+        </imgdir>
+        <imgdir name="3">
+            <string name="q" value="The first NPC you run into in MapleStory is &quot;Rina.&quot;"/>
+            <int name="a" value="0"/>
+            <string name="d" value="The first NPC you run into in MapleStory is &quot;Heena.&quot;"/>
+        </imgdir>
+        <imgdir name="4">
+            <string name="q" value="Beginners need to pay only 100 mesos, a major discount, to use the cabs that are placed on every town on the island."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Beginners only need to pay 50 mesos to use the cab."/>
+        </imgdir>
+        <imgdir name="5">
+            <string name="q" value="To purchase potions and scrolls at Kerning City, head over to &quot;Famous Pharmacy.&quot;"/>
+            <int name="a" value="1"/>
+            <string name="d" value="To purchase potions at Kerning City, head over to &quot;Famous Pharmacy.&quot;"/>
+        </imgdir>
+        <imgdir name="6">
+            <string name="q" value="In a safe town, you won&apos;t die even if your HP runs out by dropping from a high place."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Even in a safe town, if the HP runs out, the character will die."/>
+        </imgdir>
+        <imgdir name="7">
+            <string name="q" value="To enter the Hidden Street, your character needs to be at least at LV. 10, with the job adv. under its belt."/>
+            <int name="a" value="0"/>
+            <string name="d" value="Anyone can enter the Hidden Street."/>
+        </imgdir>
+        <imgdir name="8">
+            <string name="q" value="The VIP Sauna at the Sleepywood Hotel costs 999 mesos to enter."/>
+            <int name="a" value="1"/>
+            <string name="d" value="The VIP Sauna costs 999 mesos to enter."/>
+        </imgdir>
+        <imgdir name="9">
+            <string name="q" value="To contact the MapleStory Hotline, dial 1588-7703"/>
+            <int name="a" value="1"/>
+            <string name="d" value="To contact the MapleStory Hotline, dial 1588-7703"/>
+        </imgdir>
+        <imgdir name="10">
+            <string name="q" value="The EXP points needed to level up differ from different jobs."/>
+            <int name="a" value="0"/>
+            <string name="d" value="All EXP points needed for the level-up is equal to that of other jobs."/>
+        </imgdir>
+        <imgdir name="11">
+            <string name="q" value="The EXP points awarded from the same monster differ from each time out."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The EXP points awarded will be the same, if it&apos;s from the same monster."/>
+        </imgdir>
+        <imgdir name="12">
+            <string name="q" value="The NPC that sells potions at Florina Beach is named &quot;Valen.&quot;"/>
+            <int name="a" value="1"/>
+            <string name="d" value="The NPC that sells potions there is &quot;Valen.&quot;"/>
+        </imgdir>
+        <imgdir name="13">
+            <string name="q" value="You&apos;ll need EXP 15 to go from LV. 1 to LV. 2."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You&apos;ll need 15 points of EXP to go from LV 1 to LV 2."/>
+        </imgdir>
+        <imgdir name="14">
+            <string name="q" value="You&apos;ll need EXP 34 to go from LV. 2 to LV. 3."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You&apos;ll need 34 points of EXP for that."/>
+        </imgdir>
+        <imgdir name="15">
+            <string name="q" value="You&apos;ll need EXP 67 to go from LV. 3 to LV. 4."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll need 57 points of EXP for that."/>
+        </imgdir>
+        <imgdir name="16">
+            <string name="q" value="Any act of dealing/trading cash points will result in heavy punishment."/>
+            <int name="a" value="1"/>
+            <string name="d" value="It&apos;s against the Terms of Agreement."/>
+        </imgdir>
+        <imgdir name="100">
+            <string name="q" value="You&apos;ll need EXP 92 to go from LV. 4 to LV. 5."/>
+            <int name="a" value="1"/>
+            <string name="d" value="You&apos;ll need 92 points of EXP for that."/>
+        </imgdir>
+        <imgdir name="101">
+            <string name="q" value="You&apos;ll need EXP 250 to go from LV. 5 to LV. 6."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll need 135 points of EXP for that."/>
+        </imgdir>
+        <imgdir name="102">
+            <string name="q" value="You can only recharge your NexonCash through the MapleStory website or through the Cash Shop in the game."/>
+            <int name="a" value="0"/>
+            <string name="d" value="It&apos;s impossible to recharge cash points at the website."/>
+        </imgdir>
+        <imgdir name="103">
+            <string name="q" value="If you delete a cash item, you&apos;ll receive 35% of it back through MaplePoints."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You only receive 30% of it back."/>
+        </imgdir>
+        <imgdir name="104">
+            <string name="q" value="All presents received through Cash Item cannot be deleted."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The only item that&apos;s undeletable is that of a &quot;use&quot; cash item."/>
+        </imgdir>
+        <imgdir name="105">
+            <string name="q" value="You can put upto 8 items of your liking at the wish list of the Cash Shop."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You can put upto 10 items on wish list."/>
+        </imgdir>
+        <imgdir name="106">
+            <string name="q" value="If you make the 2nd job adv. either at LV. 31 or beyond, you won&apos;t be able to receive the bonus SP + 1 that comes with the job adv."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You&apos;ll receive a bonus SP after every job adv. "/>
+        </imgdir>
+        <imgdir name="107">
+            <string name="q" value="You can buy presents for your friends using MaplePoints."/>
+            <int name="a" value="0"/>
+            <string name="d" value="You can&apos;t buy presents for others with the MaplePoints."/>
+        </imgdir>
+        <imgdir name="108">
+            <string name="q" value="The Regular Sauna at Sleepywood Hotel costs 490 mesos."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The Regular Sauna costs 499 mesos to enter."/>
+        </imgdir>
+        <imgdir name="109">
+            <string name="q" value="You&apos;ll be able to choose either a sword, a bat, or an axe as your weapon when you first make the character. Out of those weapons, the axe is considered the strongest, and the slowest of the three."/>
+            <int name="a" value="0"/>
+            <string name="d" value="The basic set of weapons you choose from when first creating the character may all look different, but they all consist of the same characteristics."/>
+        </imgdir>
+        <imgdir name="110">
+            <string name="q" value="MapleStory is a 2D side-scrolling online adventure game from Nexon."/>
+            <int name="a" value="0"/>
+            <string name="d" value="MapleStory is a 2D side-scrolling online adventure game from Wizet."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="8">
+        <imgdir name="1">
+            <string name="q" value="월드컵 제1회 대회는 이탈리아에서 열렸다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="제1회 대회는 우르과이이고 이탈리아는 2회 대회이다."/>
+        </imgdir>
+        <imgdir name="2">
+            <string name="q" value="스위스 월드컵에서 우리는 세계 최강 헝가리와 비겼다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="헝가리,터기에게 모두 졌음."/>
+        </imgdir>
+        <imgdir name="3">
+            <string name="q" value="월드컵은 2년마다 한번씩 개최된다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="4년마다 한 번씩 개최된다."/>
+        </imgdir>
+        <imgdir name="4">
+            <string name="q" value="1986년도 멕시코월드컵에서 우리나라는 3패로 예선 탈락했다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="아르헨티나,이탈리아에게는 지고 불가리아와는 비겼다."/>
+        </imgdir>
+        <imgdir name="5">
+            <string name="q" value="처음으로 월드컵에서 골을 넣은 선수는 박창선 선수이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="1986년 대회에서 박창선 선수가 첫골을 기록했다."/>
+        </imgdir>
+        <imgdir name="6">
+            <string name="q" value="2002년 월드컵은 제 17회 월드컵이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="한,일 월드컵은 제17회 대회이다."/>
+        </imgdir>
+        <imgdir name="7">
+            <string name="q" value="홍명보선수는 1990년도 월드컵에 참가했다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="이탈리아 월드컵에서 홍명보 선수는 활약하였다."/>
+        </imgdir>
+        <imgdir name="8">
+            <string name="q" value="브라질은 월드컵에서 총 4회 우승했고 올림픽에서는 2번 금메달을 획득했다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="브라질은 2000년 시드니 올림픽때까지 단 한차례도 금메달을 따지 못했다."/>
+        </imgdir>
+        <imgdir name="9">
+            <string name="q" value="2006년 월드컵은 독일에서 개최된다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="제18회 월드컵은 독일에서 개최된다."/>
+        </imgdir>
+        <imgdir name="10">
+            <string name="q" value="축구는 11명이 하는 경기이고 농구는 6명이 하는 경기이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="농구는 5명이 플레이하는 경기이다."/>
+        </imgdir>
+        <imgdir name="11">
+            <string name="q" value="올림픽의 오륜기중 아시아를 나타내는 색깔은 황색이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="오륜기에서 황색은 아시아를 상징한다."/>
+        </imgdir>
+        <imgdir name="12">
+            <string name="q" value="메이저리그에서 활약하고 있는 최희섭 선수는 강력한 강속구 투수이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="최희섭은 강타자이다."/>
+        </imgdir>
+        <imgdir name="100">
+            <string name="q" value="배구가 올림픽에서 정식종목으로 채택된 것은 1964년 일본 도쿄 올림픽에서이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="1964년 일본 도쿄 올림픽에서 처음 정식종목으로 채택되었다."/>
+        </imgdir>
+        <imgdir name="101">
+            <string name="q" value="씨름은 힘이 넘치는 한국의 스포츠이다. 03년까지 천하장사를 가장 많이 해본 선수는 이만기 선수이다"/>
+            <int name="a" value="1"/>
+            <string name="d" value="03년까지 천하장사 석권회수는 1위 이만기(10회) 2위 강호동(5회)이다."/>
+        </imgdir>
+        <imgdir name="102">
+            <string name="q" value="테니스에서 그랜드슬램이라함은 US오픈,프랑스오픈,호주오픈,윔블던을 모두 석권하였을 때를 의미한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="4대 메이저 대회를 석권하는 것을 그랜드 슬램이라 한다."/>
+        </imgdir>
+        <imgdir name="103">
+            <string name="q" value="골프에서 타구수보다 1개 적게 들어가면 버디, 2개 적게들어가면 이글, 3개 적게 들어가면 트리플이라 한다. "/>
+            <int name="a" value="0"/>
+            <string name="d" value="3개 적게 들어가는 경우 알바트로스라고 한다."/>
+        </imgdir>
+        <imgdir name="104">
+            <string name="q" value="2000년도 프로야구 한국시리즈 우승팀은 두산베어스이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="2000년도 코리안 시리즈 우승팀은 현대유니콘스이다."/>
+        </imgdir>
+        <imgdir name="105">
+            <string name="q" value="한국에서 열린 2003년 피스컵에 참가했던 축구팀은 모두 8개 팀이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="2003년 피스컵에는 총8팀이 출전했다."/>
+        </imgdir>
+        <imgdir name="106">
+            <string name="q" value="사커는 11명, 럭비풋볼은 15명, 아메리칸 풋볼은 11명이 한 팀이 되어 게임을 한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="사커는 우리가 일반적으로 하는 축구를 의미한다."/>
+        </imgdir>
+        <imgdir name="107">
+            <string name="q" value="우리나라 고유 무술인 택견은 중요 무형 문화제 76호로 지정되어 있다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="택견은 중요 무형 문화제 76호이다."/>
+        </imgdir>
+        <imgdir name="108">
+            <string name="q" value="장대높이뛰기에서 사용하는 장대의 길이는 국제규격인 4m인 것 한가지만 인정된다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="장대는 3.98m - 4.02m 중에서 사용가능하다."/>
+        </imgdir>
+        <imgdir name="109">
+            <string name="q" value="제1회 올림픽은 그리스 아테네에서 열렸고 제2회 올림픽은 프랑스 파리에서 열렸다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="1회 대회에서 그리스는 2위, 2회 대회에서 프랑스는 1위를 하였다."/>
+        </imgdir>
+        <imgdir name="110">
+            <string name="q" value="한경기에 3골 넣은 선수를 축구에서는 해트트릭이라 하고 아이스하키에서는 트리플이라고 한다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="아이스하키에서도 헤트트릭이라고 한다."/>
+        </imgdir>
+        <imgdir name="111">
+            <string name="q" value="한국 최초의 금메달 리스트 양정모 선수는 유도 선수이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="양정모 선수는 레슬링 금메달을 획득한 레슬링 선수이다."/>
+        </imgdir>
+        <imgdir name="112">
+            <string name="q" value="빠른 투구 소프트볼 경기에서 지정타자를 채용할 경우 경기에 임하는 총 인원은 10명이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="정규 인원 9명 + 지정타자1명의 총 10명이다."/>
+        </imgdir>
+        <imgdir name="113">
+            <string name="q" value="허들경기는 남,여 구분없이 모두 110m이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="여자는 100m 남자는 110m이다."/>
+        </imgdir>
+        <imgdir name="114">
+            <string name="q" value="축구에서 프리킥을 할 때 상대편 선수는 공을 차는 선수에게서 최소한 9.15m 떨어져 있어야 한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="9.15m안에 들어올 경우 경고를 받는다."/>
+        </imgdir>
+        <imgdir name="115">
+            <string name="q" value="수영이 정식종목으로 채택된 올림픽은 1896년 제1회 올림픽대회이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="1900년 제2회 파리올림픽때부터 정식종목으로 채택되었다."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="9">
+        <imgdir name="1">
+            <string name="q" value="23+△=32. △ 에 들어갈 숫자는 9이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="23+9=32 이다."/>
+        </imgdir>
+        <imgdir name="2">
+            <string name="q" value="설탕의 알갱이가 작을수록 물에 잘 녹는다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="물의 온도가 높고, 양이 많고 설탕 알갱이의 크기가 작을 수록 잘 녹는다."/>
+        </imgdir>
+        <imgdir name="3">
+            <string name="q" value="화로는 추운 겨울날 방 안을 따뜻하게 하기 위해 불을 담아 사용했다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="화로에 고구마를 구워먹거나 음식을 데우기도 하였다."/>
+        </imgdir>
+        <imgdir name="4">
+            <string name="q" value="식물의 줄기는 뿌리에서 흡수한 물을 이동시키는 통로가 된다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="식물의 뿌리에서 흡수된 물은 줄기를 따라 이동한다."/>
+        </imgdir>
+        <imgdir name="5">
+            <string name="q" value="빛을 내는 물체를 &apos;광원&apos;이라고 한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="불, 햇빛, 형광등, 햇빛 등이 광원에 속한다."/>
+        </imgdir>
+        <imgdir name="6">
+            <string name="q" value="부부와 결혼하지 않은 자녀만으로 이루어진 가족을 핵가족이라고 한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="예를 들어 부모와 자식만 사는 가족을 핵가족이라고 한다."/>
+        </imgdir>
+        <imgdir name="7">
+            <string name="q" value="물을 가열하면 물의 부피가 늘어나고, 물을 식히면 물의 부피가 줄어든다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="수은, 알코올이 들어있는 온도계는 열에 의한 액체의 부피 변화를 이용해 만든 것"/>
+        </imgdir>
+        <imgdir name="8">
+            <string name="q" value="화산이 분출할 때 내뿜는 액체는 &apos;용암&apos;이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="기체로는 화산가스, 고체는 화산탄, 화산재, 돌덩어리등을 분출한다."/>
+        </imgdir>
+        <imgdir name="9">
+            <string name="q" value="한국의 4계절 중 여름은 해가 가장 일찍 뜨고, 가장 늦게 진다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="겨울은 해가 가장 늦게 뜨고 가장 빨리 진다."/>
+        </imgdir>
+        <imgdir name="10">
+            <string name="q" value="물체에 빛이 비칠 때 나타나는 밝고 어두운 단계를 &apos;명암&apos;이라 한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="명암을 잘 표현하면 대상의 입체감, 양감이 느껴져 실재감이난다."/>
+        </imgdir>
+        <imgdir name="11">
+            <string name="q" value="여름은 1년을 4계절로 나누었을 때 셋째 계절이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="여름은 두번째 계절이다."/>
+        </imgdir>
+        <imgdir name="12">
+            <string name="q" value="한 집안에 3대 이상 모여 사는 가족을 핵가족이라고 한다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="대가족이라고 한다."/>
+        </imgdir>
+        <imgdir name="13">
+            <string name="q" value="여름철 냉방이 원인이 되는 병을 냉방병이라한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="실내외의 온도차는 5°C 가 적당하다."/>
+        </imgdir>
+        <imgdir name="14">
+            <string name="q" value="[이 것이 날자 배 떨어진다]는 속담이 있다. 여기서 &apos;이 것&apos;이란 까마귀를 뜻한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="연관도 없는 두가지 일이 동시에 일어날때 쓰인다."/>
+        </imgdir>
+        <imgdir name="15">
+            <string name="q" value="장마철에는 과일맛이 떨어진다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="장마철에는 비가 많이 오기에 물을 많이 먹어 단맛이 덜하다."/>
+        </imgdir>
+        <imgdir name="16">
+            <string name="q" value="땀은 체내의 노폐물을 밖으로 내보내고 체온을 조절하고 피부를 보호하는 작용을 한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="땀은 적절하게 흘려주는게 좋다."/>
+        </imgdir>
+        <imgdir name="17">
+            <string name="q" value="여름철 집안과 집밖 기온차는 5도 정도가 적당하다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="기온차가 5도 이상일 경우 냉방병에 걸리기 쉽다."/>
+        </imgdir>
+        <imgdir name="18">
+            <string name="q" value="여름철에 찬 음식을 많이 먹으면 소화력을 떨어뜨리는 원인이 된다. "/>
+            <int name="a" value="1"/>
+            <string name="d" value="찬음식을 먹으면 신체 내부의 열기가 부족해지기 쉽다."/>
+        </imgdir>
+        <imgdir name="19">
+            <string name="q" value="긴장하면 손에 땀이나는 이유는 혈압이 상승하여 체온이 높아지기 때문이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="신체는 열이 날 때는 땀을 흘려 열을 내리려고 한다."/>
+        </imgdir>
+        <imgdir name="20">
+            <string name="q" value="전철표나 전화카드를 자석으로 문지르면 기록된 정보가 지워진다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="자석의 성질을 이용한 물품에 자석을 가까이하면 정보가 지워질 수 있다."/>
+        </imgdir>
+        <imgdir name="21">
+            <string name="q" value="수박은 수분이 많은 과일이라는 뜻이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="수박에는 수분이 90%이상 함유되어 있다."/>
+        </imgdir>
+        <imgdir name="22">
+            <string name="q" value="여름을 나타내는 한자는 &apos;春&apos; 이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="&apos;春&apos;은 봄을 나타내는 한자이다."/>
+        </imgdir>
+        <imgdir name="23">
+            <string name="q" value="여름은 겨울보다 밤의 길이가 길다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="여름은 겨울보다 밤의 길이가 짧다."/>
+        </imgdir>
+        <imgdir name="24">
+            <string name="q" value="여름철에 찬 음식을 많이 먹으면 소화력에 많은 도움을 준다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="찬음식을 먹으면 신체 내부의 열기가 부족해 지기 쉽다."/>
+        </imgdir>
+        <imgdir name="25">
+            <string name="q" value="일본 뇌염 백신은 꼭 여름철에 맞아야 한다"/>
+            <int name="a" value="0"/>
+            <string name="d" value="일본 뇌염 백신은 여름철에만 맞는 것이 아니다."/>
+        </imgdir>
+        <imgdir name="26">
+            <string name="q" value="태풍의 이름은 여성의 이름으로만 정한다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="1978년까지는 여성이었다가 이후부터는 남자와 여자 이름을 번갈아 사용하였다."/>
+        </imgdir>
+        <imgdir name="27">
+            <string name="q" value="거북선을 만들어 왜적을 물리친 이순신 장군의 호는 &apos;충무공&apos;이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="이순신 장군의 호는 충무공이다."/>
+        </imgdir>
+        <imgdir name="28">
+            <string name="q" value="의식주란 사람들이 살아가는데 꼭 필요한 옷, 음식, 놀이를 일컫는 말이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="의식주란 옷, 음식, 집을 뜻한다."/>
+        </imgdir>
+        <imgdir name="29">
+            <string name="q" value="일정한 양의 물에 소금을 계속 넣어도 모두 다 녹는다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="소금이 계속 물에 녹게 하려면 계속해서 물도 더 넣어주어야 한다."/>
+        </imgdir>
+        <imgdir name="30">
+            <string name="q" value="설탕을 물에 녹일 때 물의 온도가 낮을 수록 잘 녹는다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="물의 온도가 높을 수록 설탕이 잘 녹는다."/>
+        </imgdir>
+        <imgdir name="31">
+            <string name="q" value="나비는 알→애벌레→성충의 과정을 거치는 곤충이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="알→애벌레→[번데기]→성충의 과정을 거쳐 나비가 된다."/>
+        </imgdir>
+        <imgdir name="32">
+            <string name="q" value="공기를 가열하면 공기의 부피가 줄어든다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="공기를 가열하면 공기의 부피가 늘어난다. 공기의 부피는 온도에 따라 달라진다."/>
+        </imgdir>
+        <imgdir name="33">
+            <string name="q" value="색의 3요소 중 &apos;명도&apos;란 색이 맑고 탁한 정도를 말한다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="색의 밝고 어두운 정도를 명도라하고 맑고 탁한 정도는 채도라 한다."/>
+        </imgdir>
+        <imgdir name="34">
+            <string name="q" value="피를 빨아먹는 모기는 숫놈이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="피를 빨아먹는 모기는 암놈이고, 수놈은 식물의 진(수액)을 먹는 것이 보통이다."/>
+        </imgdir>
+        <imgdir name="35">
+            <string name="q" value="아메바 1마리가 2마리로 분열하는데 3분이 걸린다. 그렇다면 2마리가 4마리로 분열하는데는 12분이 걸린다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="똑같이 3분이 걸린다."/>
+        </imgdir>
+        <imgdir name="36">
+            <string name="q" value="우리나라 애국가 2절에서 남산위에 철갑을 두른듯 서 있는 나무는 무궁화이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="가사 : 남산위에 저 소나무 철갑을 두른듯…."/>
+        </imgdir>
+        <imgdir name="37">
+            <string name="q" value="국가의 3원소는 국민, 주권, 국방이다"/>
+            <int name="a" value="0"/>
+            <string name="d" value="국방이 아니라 영토이다."/>
+        </imgdir>
+        <imgdir name="38">
+            <string name="q" value="소방관이 불을 꺼준 경우 다음달에 불을 낸 사람에게 인건비가 청구된다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="소방업무는 무료이다. 대신 불을 낸 사람은 과실에 따라 책임을 묻게 된다."/>
+        </imgdir>
+        <imgdir name="39">
+            <string name="q" value="스타크래프트에서 나오는 종족은 휴먼,오크,언데드,나이트엘프이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="스타크래프트에 나오는 종족은 테란, 저그, 프로토스이다."/>
+        </imgdir>
+        <imgdir name="40">
+            <string name="q" value="텔레토비에 등장하는 4명의 꼬꼬마는 [보라돌이, 뚜비, 나나, 뽀]이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="텔레토비는 KBS에서 방송된 어린이 프로이다."/>
+        </imgdir>
+        <imgdir name="41">
+            <string name="q" value="거리의 신호등은 대체로 빨강,주황,녹색으로 되어 있다. 이때 주황은 &apos;잠시 대기&apos;라는 신호이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="신호등의 주황색등은 잠시 대기 등을 나타내는 주의 신호이다."/>
+        </imgdir>
+        <imgdir name="42">
+            <string name="q" value="더운 여름철에 펄펄 끓는 탕을 먹는 것은 이열치열(以熱治熱)의 원리를 따른 것이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="이열치열은 열은 열로써 다스린다는 뜻이다."/>
+        </imgdir>
+        <imgdir name="43">
+            <string name="q" value="동요 옹달샘에서 토끼가 옹달샘에 간 목적은 &apos;물을 마시러&apos;이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="가사: ...세수하러 왔다가 물만먹고 가지요.. 옹달샘에 온 목적은 세수이다."/>
+        </imgdir>
+        <imgdir name="44">
+            <string name="q" value="애니매이션 &apos;검정고무신&apos;의 주인공 캐릭터는 &apos;이기영&apos;,&apos;이기철&apos; 형제이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="검정 고무신은 동생 이기영과 형 이기철이 주인공인 만화이다."/>
+        </imgdir>
+        <imgdir name="100">
+            <string name="q" value="우리나라 최초의 우체국은 &apos;우정국&apos;이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="우정국은 1884년 3월에 처음 설치된 우리나라 최초의 우체국이다."/>
+        </imgdir>
+        <imgdir name="101">
+            <string name="q" value="청동기 시대는 빗살무늬토기, 신석기 시대는 민무늬토기이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="빗살무늬토기는 신석기, 민무늬토기는 청동기."/>
+        </imgdir>
+        <imgdir name="102">
+            <string name="q" value="세형동검, 잔무늬 거울, 군장, 최초의 국가형태가 나타난 것은 구석기 시대이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="청동기 시대에 읍락국가와 같은 최초의 국가형태가 나타났다."/>
+        </imgdir>
+        <imgdir name="103">
+            <string name="q" value="우리나라의 신석기 시대는 B.C 8000년경 시작되었다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="부족장이 부족을 대표했으며 농경과 목축이 시작되었다."/>
+        </imgdir>
+        <imgdir name="104">
+            <string name="q" value="청어엮기, 고사리꺽기, 남생이 놀이 등으로 이루어진 우리나라의 민속 놀이는 강강술래 이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="강강술래는 8월 한가위날 많이 한다."/>
+        </imgdir>
+        <imgdir name="105">
+            <string name="q" value="명탐정 홈즈와 그의 친구 와트슨의 이야기를 그려낸 작가는 아서 코난도일 이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="1891년 단편들을 시작으로 홈즈 시리즈를 발표하였다."/>
+        </imgdir>
+        <imgdir name="106">
+            <string name="q" value="티벳불교 혹은 라마교의 최고 종파인 켈루크파 최고 지도자의 호칭은 달라이라마이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="달라이라마는 티벳지방의 정치,종교의 실질적 지도자이기도 하다."/>
+        </imgdir>
+        <imgdir name="107">
+            <string name="q" value="[시나브로]란 순 우리말로 &apos;나도 모르게 조금씩&apos;이란 뜻을 가지고 있다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="시나브로는 나도 모르게 조금씩이란 뜻을 가지고 있다."/>
+        </imgdir>
+        <imgdir name="108">
+            <string name="q" value="인기 그룹 &apos;신화&apos;,&apos;GOD&apos;,&apos;서울시스터즈&apos;의 인원을 모두 합하면 14명 이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="신화6명, GOD5명, 서울시스터즈3명 이다."/>
+        </imgdir>
+        <imgdir name="109">
+            <string name="q" value="우리나라의 화폐단위는 &apos;원&apos;이고 일본의 화폐단위는 &apos;엔&apos;이다. 그리고 중국의 화폐단위는 &apos;위안&apos;이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="중국의 화폐단위는 &apos;위안&apos;이다."/>
+        </imgdir>
+        <imgdir name="110">
+            <string name="q" value="서울 지하철 4호선의 &apos;오이도&apos;는 섬이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="오이도는 옥귀도 혹은 오끼섬이라 불리우던 섬이다."/>
+        </imgdir>
+        <imgdir name="111">
+            <string name="q" value="노벨상은 물리학, 화학, 생리ㆍ의학, 문학, 평화, 경제학의 6개 부문에서 시상한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="노벨상은 1901년에 처음 시행되었고 7개 분야에서 수상하고 있다."/>
+        </imgdir>
+        <imgdir name="112">
+            <string name="q" value="우리나라 최초의 민간 신문을 발간한 사람은 서재필 박사이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="1896년 처음 독립신문이 창간되었다."/>
+        </imgdir>
+        <imgdir name="113">
+            <string name="q" value="바다에 사는 불가사리는 생긴것이 별모양을 닮았다 하여 영어로 &apos;Starfish&apos;라 부른다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Starfish는 불가사리를 의미한다."/>
+        </imgdir>
+        <imgdir name="114">
+            <string name="q" value="인삼에는 크게 백삼과 홍삼이 있는데 이는 서로 다른 종류의 인삼이 아니라 한 종류를 다르게 가공한 것이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="백삼과 홍삼은 같은 인삼을 다르게 가공하여 만든 것이다."/>
+        </imgdir>
+        <imgdir name="115">
+            <string name="q" value="현인 선생님의 &apos;신라의 달밤&apos;이란 노래에서 종소리가 나는 곳은 &apos;불국사&apos;이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="가사 : 아~신라의 밤이여 불국사의 종소리 들리어온다…."/>
+        </imgdir>
+        <imgdir name="116">
+            <string name="q" value="태양계에서 토성과 해왕성 중간에 있는 행성은 천왕성이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="태양-수성-금성-지구-화성-목성-토성-천왕성-해왕성-명왕성 "/>
+        </imgdir>
+        <imgdir name="117">
+            <string name="q" value="여름에 비가 오면 추워지는 이유는 고체→액체→기체(흡열반응) 때문이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="고체→액체→기체:흡열반응 때문이다."/>
+        </imgdir>
+        <imgdir name="118">
+            <string name="q" value="겨울에 자는 잠은 동면(冬眠) 여름에 자는 잠은 하면(夏眠)이라 한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="하면(夏眠) 동물로는 까나리, 해삼, 무당벌레 등이 있다."/>
+        </imgdir>
+        <imgdir name="119">
+            <string name="q" value="태풍 이름은 각 국가별로 10개씩 제출한 총 140개가 각 조 28개씩 5개조로 구성된다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="태풍의 이름은 각 국가별로 제출하여 명명한다."/>
+        </imgdir>
+        <imgdir name="120">
+            <string name="q" value="모기가 사람이나 동물의 피를 먹는 이유는 동물성 단백질을 얻기 위해서이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="산란기를 앞둔 암컷들이 동물성 단백질을 얻기 위해서입니다. "/>
+        </imgdir>
+        <imgdir name="121">
+            <string name="q" value="더위를 먹었을 때는 녹두즙을 마시면 좋다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="더위를 먹었을 땐 녹두즙을 먹으면 몸의 열을 식힐수 있다."/>
+        </imgdir>
+        <imgdir name="122">
+            <string name="q" value="인디언 썸머는 늦가을에 잠깐 찾아오는 짧은 여름날을 뜻한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="인디언 썸머는 우리나라에서는 흔히 볼수 없다"/>
+        </imgdir>
+        <imgdir name="123">
+            <string name="q" value="여름에 비가 오면 추워지는 이유는 기체→액체→고체(발열반응) 때문이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="고체→액체→기체(흡열반응) 때문이다."/>
+        </imgdir>
+        <imgdir name="124">
+            <string name="q" value="12m(미터) + 3km(킬로미터) = 3,012,000cm(센티미터)이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="계산하면 답은 301,200cm 이다."/>
+        </imgdir>
+        <imgdir name="125">
+            <string name="q" value="남,북한 전체에서 가장 높은 산은 설악산이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="남,북한 전체에서 가장 높은 산은 백두산이다."/>
+        </imgdir>
+        <imgdir name="126">
+            <string name="q" value="한국의 장외주식거래시장을 코스닥이라한다. 그리고 미국의 장외주식거래시장은 미스닥이라고 한다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="미국의 장외주식거래 시장은 나스닥이라 한다."/>
+        </imgdir>
+        <imgdir name="127">
+            <string name="q" value="셰익스피어의 4대 비극은 햄릿,멕베드,오델로,아더왕이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="셰익스피어의 4대 비극은 아더왕이 아니고 리어왕이다."/>
+        </imgdir>
+        <imgdir name="128">
+            <string name="q" value="9/11테러로 파괴된 미 국방성 팬타곤을  하늘에서 내려다 보면 정삼각형으로 보인다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="펜타곤은 5각형이라는 뜻이다. 따라서 5각형이다."/>
+        </imgdir>
+        <imgdir name="129">
+            <string name="q" value="산 위에서는 기압이 낮기 때문에  평지보다 훨씬 높은 온도에서 물이 끓게 된다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="산정상에서는 낮은 온도에서 물이 끓기 때문에 밥을 지으면 설익게 된다."/>
+        </imgdir>
+        <imgdir name="130">
+            <string name="q" value="[까투리]는 다 자란 숫닭을 의미한다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="까투리는 암컷꿩을 의미한다. 수컷꿩은 장끼라 부른다."/>
+        </imgdir>
+        <imgdir name="131">
+            <string name="q" value="경부고속도로는 우리나라에서 제일 처음 건설된 고속도로이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="우리나라에서 최초로 건설된 고속도로는 경인고속도로이다."/>
+        </imgdir>
+        <imgdir name="132">
+            <string name="q" value="추석은 중추절, 설날과 함께 우리나라 3대 명절중의 하나이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="추석의 다른 이름이 중추절이다. 3대 명절은 단오,설,추석이다."/>
+        </imgdir>
+        <imgdir name="133">
+            <string name="q" value="2002년 74회 아카데미 시상식에서 여우주연상을 탄 배우는 &apos;물랑루즈&apos;의 &apos;니콜키드만&apos;이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="74회 아카데미상 여우주연상은 몬스터볼의 할리베리가 수상하였다."/>
+        </imgdir>
+        <imgdir name="134">
+            <string name="q" value="1876년 황해도 해주에서 태어나 독립운동가로 생을 마감하신 김구 선생님의 호는 &apos;백의&apos;이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="김구선생님의 호는 &apos;백범&apos;이다."/>
+        </imgdir>
+        <imgdir name="135">
+            <string name="q" value="우리나라 동쪽 끝에 있는 섬은 독도이다. 독도의 행정구역은 강원도이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="독도의 행정소재지는 경상북도이다."/>
+        </imgdir>
+        <imgdir name="136">
+            <string name="q" value="한국의 대표적 애니매이션중의 하나인 &apos;아기공룡 둘리&apos;는 김수정&apos; 작가님의 작품이다"/>
+            <int name="a" value="1"/>
+            <string name="d" value="아기공룡 둘리의 작가는 김수정님이다."/>
+        </imgdir>
+        <imgdir name="137">
+            <string name="q" value="우리나라에서 최초의 노벨상 수상자는 김대중 전대통령이고 시상부분은 경제학상이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="김대중 전대통령은 노벨 평화상을 수상하였다."/>
+        </imgdir>
+        <imgdir name="138">
+            <string name="q" value="바다에 사는 새우는 다른 어패류와는 달리 뇌가 꼬리에 달려 있다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="새우의 뇌는 머리에 달려 있다."/>
+        </imgdir>
+        <imgdir name="139">
+            <string name="q" value="홍차의 종류중 &apos;실론티&apos;라는 것이 있다. 이때 실론은 홍차가 많이 나는 인도의 한 마을 이름이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="실론은 스리랑카의 지명이다"/>
+        </imgdir>
+        <imgdir name="140">
+            <string name="q" value="에베레스트산 최고령 등반가인 일본의 미우라 유이치로 씨는 혹독한 추위를 초밥을 먹으면서 극복했다고 한다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="김치찌개를 먹으며 추위를 극복했다고 전해진다."/>
+        </imgdir>
+        <imgdir name="141">
+            <string name="q" value="세계 최초의 핸드폰은 삼성에서 만든 애니콜이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="세계최초의 핸드폰은 모토로라에서 만든 다이나텍이다"/>
+        </imgdir>
+        <imgdir name="142">
+            <string name="q" value="조선시대에 있던 &apos;장빙고&apos;는 관리들이 사용할 얼음을 보관하기 위한 창고이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="장빙고는 관리들이 사용하는 얼음을 관리하는 기관이다"/>
+        </imgdir>
+        <imgdir name="143">
+            <string name="q" value="조선시대에 있던 &apos;서빙고&apos;는 관리들이 사용할 얼음을 관리하기 위한 기관이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="서빙고는 얼음을 보관하는 창고이다"/>
+        </imgdir>
+        <imgdir name="144">
+            <string name="q" value="태극기의 4괘 [건곤감리] 중 여름을 뜻하는 괘는 [건]이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="곤 괘는 땅(地), 여름(夏), 서(西), 의(義) 나타낸다."/>
+        </imgdir>
+        <imgdir name="145">
+            <string name="q" value="여름에 피는 대표적인 꽃에는 해바라기,목련,나팔꽃이 있다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="봄의화신 목련이라 불린다"/>
+        </imgdir>
+        <imgdir name="146">
+            <string name="q" value="하마와 코끼리의 땀은 붉은색이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="하마의 땀만 붉은색이다."/>
+        </imgdir>
+        <imgdir name="147">
+            <string name="q" value="하마의 땀은 붉은색이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="하마의 땀샘에서는 붉은색을 띠는 끈끈한 분비물을 내기 때문이다."/>
+        </imgdir>
+        <imgdir name="148">
+            <string name="q" value="땀이 눈물보다 더 짜다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="눈물이 더 짜다.땀은 99%가 물이고 눈물 성분은 98%가 물이다."/>
+        </imgdir>
+        <imgdir name="149">
+            <string name="q" value="모기에게 물렸을 때 가려움증을 느끼는 이유는 &amp;lt;칸디다균&gt; 때문이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="모기에게 물렸을 때 가려움증을 느끼는 이유는 &amp;lt;히스타민균&gt; 때문이다."/>
+        </imgdir>
+        <imgdir name="150">
+            <string name="q" value="흰돌과 검은돌로 승부를 겨루는 바둑은 바둑판에서 행하여 진다. 이때 바둑판의 교점의 수는 361개 이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="19 x 19 = 361 이다."/>
+        </imgdir>
+        <imgdir name="151">
+            <string name="q" value="대서는 소서(小署) 15일 후부터 입추(立秋) 전까지의 절기이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="양력으로는 7월 23일경 대서가 시작"/>
+        </imgdir>
+        <imgdir name="152">
+            <string name="q" value="입하는 태양의 황경이 45°에 있을 때이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="여름에 들어선다고 하여 입하라 함"/>
+        </imgdir>
+        <imgdir name="153">
+            <string name="q" value="한국 최초의 공인 수영장은 1936년 7월에 개설된 서울운동장(현 동대문운동장) 수영장 이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="여기에는 50 m 경영용 풀과 다이빙용 풀이 있다."/>
+        </imgdir>
+        <imgdir name="154">
+            <string name="q" value="고혈압은 여름보다 겨울에 많이 발생한다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="추운날씨로 혈관이 수축되어 압력이 높아지기 때문."/>
+        </imgdir>
+        <imgdir name="155">
+            <string name="q" value="미국의 대표적 주가지수는 &apos;다우존스지수&apos;이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="다우존스사에서 매일 발표하는 4종류의 주가 평균을 구해 공표한다"/>
+        </imgdir>
+        <imgdir name="156">
+            <string name="q" value="영국이 아편전쟁의 승리로 소유하게된 홍콩을 중국에 반환한 해는 1997년이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="1997년 7월 1일 155년의 식민통치를 끝내고 중국에 반환되었다."/>
+        </imgdir>
+        <imgdir name="157">
+            <string name="q" value="여름의 대표적 별자리는 남천의 은하수 속에 있는 전갈자리이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="여름철 남쪽 하늘의 별자리이다"/>
+        </imgdir>
+        <imgdir name="158">
+            <string name="q" value="아이스크림은 중국에서 처음 만들어졌다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="5세기 중국에서 황제의 디저트로 빙과가 처음으로 만들어졌다."/>
+        </imgdir>
+        <imgdir name="159">
+            <string name="q" value="우리나라 최초의 한문소설은 김시습의 금오신화이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="15세기에 쓰여진 우리나라 최초의 한문 소설이다."/>
+        </imgdir>
+        <imgdir name="160">
+            <string name="q" value="어린이날은 처음 제정될 당시 어린이날은 5월 1일이었다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="어린이날은 처음 만들어질 당시 5월 1일이었다."/>
+        </imgdir>
+        <imgdir name="161">
+            <string name="q" value="인쇄술이 발명된 이후 최초로 인쇄되어 나온 신문은 독일의 &apos;플루크블라트&apos;이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="독일신문 플루크블라트가 최초의 인쇄된 신문이다."/>
+        </imgdir>
+        <imgdir name="162">
+            <string name="q" value="우리나라 최초의 여성 신문 기자는 고 &apos;최은희&apos;여사이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="1922년 조선일보에 입사한 고 최은희 여사가 우리나라 최초의 여성기자이다."/>
+        </imgdir>
+        <imgdir name="163">
+            <string name="q" value="세계적인 거장으로 꼽히는 반 고흐, 폴 고갱등은 모두 후기 인상파 작가들이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="반 고흐, 폴 고갱은 모두 대표적인 후기인상파 작가들이다."/>
+        </imgdir>
+        <imgdir name="164">
+            <string name="q" value="코알라는 새끼가 잘못하면 새끼의 엉덩이를 때리는 습성이 있다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="코알라는 새끼가 잘못하였을 경우 엉덩이를 때린다."/>
+        </imgdir>
+        <imgdir name="165">
+            <string name="q" value="주기율표를 보면 여러가지 원소기호들이 나온다. 이때 안티몬의 원소기호는 &apos;Sb&apos;이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="Sb는 준금속으로 5주기 원소에 속한다. 맞추신 분은 정말 대단함. ^^;"/>
+        </imgdir>
+        <imgdir name="166">
+            <string name="q" value="독일의 베게너가 주장한 대륙이동설에서 하나의 큰 대륙을 나타내는 말은 &apos;판게아&apos;이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="판게아란 하나의 커다란 대륙을 의미한다."/>
+        </imgdir>
+        <imgdir name="167">
+            <string name="q" value="세계 최초의 컴퓨터는 미국 펜실베니아 대학에서 만든 애니악(Eniac)이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="애니악은 1946년에 최초로 만들어진 컴퓨터이다."/>
+        </imgdir>
+        <imgdir name="168">
+            <string name="q" value="도투락은 순 우리말로 그 뜻은 &apos;색동댕기&apos;이다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="도투락은 순 우리말로 색동댕기를 뜻한다."/>
+        </imgdir>
+        <imgdir name="169">
+            <string name="q" value="애니매이션이란 살아있다라는 의미의 아니마(Anima/라틴어)에 어원을 두고있다."/>
+            <int name="a" value="1"/>
+            <string name="d" value="각각의 그림들을 연속적으로 보여주어 움직이는 것처럼 느끼게 한다."/>
+        </imgdir>
+        <imgdir name="170">
+            <string name="q" value="우리나라 최초의 수영복시장을 연 브랜드는 돌고래표 수영복 이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="1961년에 (주)한국샤크라인의 전신인 백화사가 &amp;lt;상어표수영복&gt; 브랜드를 만들었다"/>
+        </imgdir>
+        <imgdir name="171">
+            <string name="q" value="해가 긴 봄과 여름에는 일찍 자고 늦게 일어나는 것이 건강에 좋다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="늦게자고 일찍 일어나는 것이 좋다"/>
+        </imgdir>
+        <imgdir name="172">
+            <string name="q" value="우리나라의 여름에 영향을 끼치는 기단은 &amp;lt;양쯔강 기단&gt;이다"/>
+            <int name="a" value="0"/>
+            <string name="d" value="여름에 영향을 끼치는 기단은 &amp;lt;북태평양 기단&gt; 이다"/>
+        </imgdir>
+        <imgdir name="173">
+            <string name="q" value="여름철에 자주 걸리는 냉방병을 일으키는 병균은 &amp;lt;디프테리아균&gt; 이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="냉방병의 원인이 되는 균은 &amp;lt;레지오넬라균&gt;이다"/>
+        </imgdir>
+        <imgdir name="174">
+            <string name="q" value="암컷매미는 특수한 발음기를 가지고 있어서 높은 소리를 낼 수 있다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="수컷이 특수한 발음기를 가지고 있어서 높은 소리를 내는 것으로 잘 알려져 있다."/>
+        </imgdir>
+        <imgdir name="175">
+            <string name="q" value="여름철 우리나라에 장마전선을 형성하는 기단은 오호츠크해 기단과 양쯔강 기단이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="장마전선을 형성하는 기단은 오호츠크해 기단과 북태평양 기단이다."/>
+        </imgdir>
+        <imgdir name="176">
+            <string name="q" value="여름에 해당하는 절기는 &apos;입하,소만,백로,하지,소서,대서&apos;이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="&apos;백로&apos;는 가을에 해당하는 절기이다."/>
+        </imgdir>
+        <imgdir name="177">
+            <string name="q" value="조선의 6대 왕은 &apos;태조(太租)&apos;이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="조선의 6대 왕은 &apos;단종(端宗)&apos;이다. 1452 ~ 1455"/>
+        </imgdir>
+        <imgdir name="178">
+            <string name="q" value="우리가 쓰는 한글(훈민정음)이 만들어진 시기는 1446년 이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="1446년은 반포된 해이고 만들어진 시기는 1443년 이다."/>
+        </imgdir>
+        <imgdir name="179">
+            <string name="q" value="조선말 우리나라와 가장 먼저 통상 조약을 맺은 나라는 미국이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="최초의 통상조약은 강화도조약으로 일본에 의해 강제로 맺어졌다."/>
+        </imgdir>
+        <imgdir name="180">
+            <string name="q" value="조선시대 풍속화의 대가인 단원 김홍도 선생의 유명한 작품들로는 &apos;오륜행실도&apos;, &apos;인왕재색도&apos;등이 있다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="인왕재색도는 정선의 작품이다."/>
+        </imgdir>
+        <imgdir name="181">
+            <string name="q" value="조선시대의 20번째 왕은 &apos;숙종&apos;이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="조선시대 20번째 왕은 경종이다."/>
+        </imgdir>
+        <imgdir name="182">
+            <string name="q" value="세계 제7대 불가사의 중의 하나인 쿠프왕의 피라미드는 옆면과 바닥이 모두 정삼각형으로 되어 있다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="옆면은 삼각형이고 바닥은 사각형이다."/>
+        </imgdir>
+        <imgdir name="183">
+            <string name="q" value="공룡의 이름들을 보면 사우루스(sauros)라는 말이 많이 붙는데 사우르스란 라틴어로 &apos;공포&apos;,&apos;무서움&apos;이란 의미이다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="사우르스란 라틴어로 큰 도마뱀을 뜻한다."/>
+        </imgdir>
+        <imgdir name="184">
+            <string name="q" value="거대한 흰고래와 이 고래에게 한쪽다리를 잃은 에이햅의 이야기를 그린 소설 백경은 프랑스 소설의 백미로 꼽히고 있다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="백경은 미국 소설가 H.멜빌이 지은 작품으로 미국소설의 백미로 꼽히고 있다."/>
+        </imgdir>
+        <imgdir name="185">
+            <string name="q" value="우리나라의 어버이날과 미국의 어버이날은 날짜가 같다."/>
+            <int name="a" value="0"/>
+            <string name="d" value="어머니날 5월 두번째 일요일, 아버지날 6월 세번째 일요일, 우리나라는 5월 8일이다."/>
+        </imgdir>
+    </imgdir>
+</imgdir>

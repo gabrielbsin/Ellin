@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="Cash.img">
+    <imgdir name="5010000">
+        <string name="name" value="Dia de Sol"/>
+        <string name="desc" value="Efeito especial no qual um sol sorridente e brilhante aparece flutuando sobre você. Na configuração de teclas, configure um botão à sua escolha para ligar/desligar este efeito."/>
+    </imgdir>
+    <imgdir name="5010001">
+        <string name="name" value="Lua e Estrelas"/>
+        <string name="desc" value="Efeito especial no qual uma lua sorridente aparece flutuando num mar de estrelas sobre você. Na configuração de teclas, configure um botão à sua escolha para ligar/desligar este efeito."/>
+    </imgdir>
+    <imgdir name="5010002">
+        <string name="name" value="Arco-Íris colorido"/>
+        <string name="desc" value="Efeito especial no qual você vê um arco-íris de sete cores, completo, flutuando sobre você. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010003">
+        <string name="name" value="Diabinho"/>
+        <string name="desc" value="Efeito especial no qual você vê Lilly, um diabinho fofinho, flutuando ao seu redor. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010004">
+        <string name="name" value="Submerso"/>
+        <string name="desc" value="Efeito especial que mostra um submarino embaixo d’água. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010005">
+        <string name="name" value="Procurando um Amor"/>
+        <string name="desc" value="Um efeito especial que mostra que você está a procura de alguéme especial."/>
+    </imgdir>
+    <imgdir name="5010006">
+        <string name="name" value="Anjinho Bebê"/>
+        <string name="desc" value="Um gracioso efeito que mostra um anjinho da guarda flutuando ao seu redor. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010007">
+        <string name="name" value="Fugitivo"/>
+        <string name="desc" value="Efeito especial que coloca um cartaz de procurado em frente ao seu rosto. É como se você estivesse sendo procurado no mundo todo. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010008">
+        <string name="name" value="Sr. Sorte Grande"/>
+        <string name="desc" value="Efeito especial usado para dobrar as chances de ganhar nos caça-níqueis. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010009">
+        <string name="name" value="Efeito Marcial"/>
+        <string name="desc" value="Efeito especial que faz aparecer uma bandeira chinesa. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010010">
+        <string name="name" value="Brinca comigo"/>
+        <string name="desc" value="Um efeito especial que mostra dois bebês flutuando em uma nuvem como sinal de amizade."/>
+    </imgdir>
+    <imgdir name="5010011">
+        <string name="name" value="Solitário"/>
+        <string name="desc" value="Um efeito especial que segue seu personagem e mostra aos outros que você gostaria de ficar sozinho."/>
+    </imgdir>
+    <imgdir name="5010012">
+        <string name="name" value="Equalizador"/>
+        <string name="desc" value="Efeito equalizador especial dado como prêmio da Loja dos Sócios Maple. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010013">
+        <string name="name" value="Fogos de Artifício"/>
+        <string name="desc" value="Efeito especial de fogos de artifício, dado como prêmio da Loja dos Sócios Maple. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010014">
+        <string name="name" value="Nuvem e Tempestade"/>
+        <string name="desc" value="Efeito especial que mostra uma nuvem escura com raios e chuva, pairando sobre a cabeça do dono. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010015">
+        <string name="name" value="Efeito 777"/>
+        <string name="desc" value="Efeito especial usado para dobrar o número de bolas obtidas com vitórias nos caça-níqueis. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010016">
+        <string name="name" value="Alarme"/>
+        <string name="desc" value="Efeito de sirene que pode ser usado em casos de emergência. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010017">
+        <string name="name" value="Estrela Cintilante"/>
+        <string name="desc" value="Efeito de estrela cintilante para ser usado num dia especial. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010018">
+        <string name="name" value="Sorriso"/>
+        <string name="desc" value="Efeito especial de sorriso, perfeito para ser usado quando você estiver de excelente humor. Escolha uma tecla de atalho para ligar/desligar este efeito."/>
+    </imgdir>
+    <imgdir name="5010019">
+        <string name="name" value="Coração"/>
+        <string name="desc" value="Efeito de coração para ser usado sempre que quiser mostrar aos outros o seu amor. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010020">
+        <string name="name" value="Viva! Coréia!"/>
+        <string name="desc" value="Efeito especial que acompanha seu personagem quando estiver torcendo pela Coréia. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010021">
+        <string name="name" value="Esqueleto do Terror"/>
+        <string name="desc" value="A caveira foi encontrada em algum lugar próximo aos restos mortais e ficará ao seu lado até você não querer mais. Clique duas vezes no próprio item ou na configuração de teclas e defina um botão à sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010022">
+        <string name="name" value="Estrelas Brilhantes"/>
+        <string name="desc" value="Um número de estrelas brilhantes circunda o personagem neste efeito especial."/>
+    </imgdir>
+    <imgdir name="5010023">
+        <string name="name" value="Coração Pulsante"/>
+        <string name="desc" value="Efeito especial capaz de capturar a necessidade de expressar seus sentimentos por alguém especial. Clique duas vezes no próprio item ou na configuração de teclas e defina um botão à sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010024">
+        <string name="name" value="Bando de Patos"/>
+        <string name="desc" value="Uma família de patos de brinquedo segue o personagem. Clique duas vezes no próprio item ou na configuração de teclas e defina um botão à sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010025">
+        <string name="name" value="Espectro Silencioso"/>
+        <string name="desc" value="Efeito especial no qual um fantasma horripilante vai aparecer atrás de você, assustando todos que estiverem por perto. Na configuração de teclas, defina um botão de sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010026">
+        <string name="name" value="Morcegos do Drácula"/>
+        <string name="desc" value="Efeito especial no qual uma horda dos mais estilosos morcegos do Drácula aparece, rodeando seu personagem e criando uma atmosfera sedutora e sombria. Na configuração de teclas, defina um botão de sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010027">
+        <string name="name" value="Cabeça Quente"/>
+        <string name="desc" value="Efeito especial que expressa perfeitamente o sentimento de raiva. Na configuração de teclas, defina um botão de sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010028">
+        <string name="name" value="Chamas Angelicais"/>
+        <string name="desc" value="Esse efeito faz com que você libere todo seu poder em ondas de energia que todos podem ver."/>
+    </imgdir>
+    <imgdir name="5010029">
+        <string name="name" value="Chamas Demoníacas"/>
+        <string name="desc" value="Esse efeito faz com que você libere todo seu poder em ondas de energia que todos podem ver."/>
+    </imgdir>
+    <imgdir name="5010030">
+        <string name="name" value="오로라이펙트"/>
+        <string name="desc" value="오로라이펙트"/>
+    </imgdir>
+    <imgdir name="5010031">
+        <string name="name" value="Meu Namorado"/>
+        <string name="desc" value="Mostre ao mundo o quanto você adora seu namorado usando este efeito incrível! Na configuração de teclas, defina um botão de sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010032">
+        <string name="name" value="Minha Namorada"/>
+        <string name="desc" value="Mostre ao mundo o quanto você adora sua namorada usando este efeito incrível! Na configuração de teclas, defina um botão de sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010033">
+        <string name="name" value="Descuidado"/>
+        <string name="desc" value="Efeito especial perfeito para situações nas quais você foi pego desprevenido. Na configuração de teclas, defina um botão de sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010034">
+        <string name="name" value="Árvore de Natal"/>
+        <string name="desc" value="Se você já sentiu vontade de parecer uma árvore de Natal, aqui está a sua chance! Na configuração de teclas, defina um botão de sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010035">
+        <string name="name" value="Boneco de Neve"/>
+        <string name="desc" value="Em um dia frio e coberto de neve, este efeito vai permitir que você se transforme num boneco de neve. Na configuração de teclas, defina um botão de sua escolha para ligar/desligar."/>
+    </imgdir>
+    <imgdir name="5010038">
+        <string name="name" value="Poder da Ducha"/>
+        <string name="desc" value="Efeito especial no qual quantidades colossais de água caem sobre a sua cabeça. Clique duas vezes no ícone ou determine uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010039">
+        <string name="name" value="Centro das Atenções"/>
+        <string name="desc" value="Efeito especial que projeta luz na cabeça do seu personagem. Clique duas vezes no ícone ou determine uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010041">
+        <string name="name" value="Super Sinfonia"/>
+        <string name="desc" value="Um efeito especial que fica em volta do personagem e expressa seus sentimentos de felicidade."/>
+    </imgdir>
+    <imgdir name="5010042">
+        <string name="name" value="Abelha Ocupada"/>
+        <string name="desc" value="Uma abelha muito ocupada mas que não pára de seguir você. Mantenha o foco na tarefa a ser realizada."/>
+    </imgdir>
+    <imgdir name="5010043">
+        <string name="name" value="Delineador"/>
+        <string name="desc" value="Um efeito especial que ressalta os olhos do personagem. Clique duas vezes no ícone ou determine uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010044">
+        <string name="name" value="Estilo Sombra"/>
+        <string name="desc" value="O rastro do personagem continua na tela enquanto ele se move, criando múltiplas imagens de seus movimentos. Clique duas vezes no ícone ou determine uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010045">
+        <string name="name" value="Atingido por um raio"/>
+        <string name="desc" value="Um efeito especial que mostra um raio caindo na cabeça do personagem. Clique duas vezes no ícone ou determine uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010046">
+        <string name="name" value="Campeão Maple"/>
+        <string name="desc" value="Um efeito que coloca um poster a sua frente, marcando-o como Campeão do Mundo de Maple."/>
+    </imgdir>
+    <imgdir name="5010048">
+        <string name="name" value="Campeão Maple"/>
+        <string name="desc" value="Efeito especial que coloca um cartaz em frente ao seu rosto tornando você um reconhecido campeão Maple em todo o mundo. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010049">
+        <string name="name" value="Campeão Maple"/>
+        <string name="desc" value="Efeito especial que coloca um cartaz em frente ao seu rosto tornando você um reconhecido campeão Maple em todo o mundo. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010051">
+        <string name="name" value="Árvore de MapleNatal"/>
+        <string name="desc" value="Comemore as festas com este efeito! Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010052">
+        <string name="name" value="Trenó do Papai Noel"/>
+        <string name="desc" value="Dê uma carona para o Papai Noel com este efeito hilário. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010053">
+        <string name="name" value="Visco"/>
+        <string name="desc" value="Crie a desculpa perfeita para ganhar um beijo no Natal. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010054">
+        <string name="name" value="Papai Noel Dançarino"/>
+        <string name="desc" value="Efeito especial que mostra Papai Noel e suas duas renas de confiança entrando no ritmo, pairando sobre a cabeça do dono. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010055">
+        <string name="name" value="OVNI"/>
+        <string name="desc" value="Efeito especial que apresenta um OVNI e vários alienígenas coloridos acompanhando o dono do item. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010056">
+        <string name="name" value="Rastro de Flores"/>
+        <string name="desc" value="Efeito especial que apresenta um rastro de flores e grama deixado pelo dono deste item. Escolha uma tecla de atalho para ligar/desligar o efeito."/>
+    </imgdir>
+    <imgdir name="5010057">
+        <string name="name" value="Flower Fairy"/>
+        <string name="desc" value="A special effect that shows a cute fairy sprinkling flowers. On the Key Config, configure this on a button of your choice to turn the effect on/off."/>
+    </imgdir>
+    <imgdir name="5010999">
+        <string name="name" value="Virando Monstro"/>
+        <string name="desc" value="Não é vendido na Loja de Itens. Efeito que aparece enquanto está se tornando um monstro."/>
+    </imgdir>
+    <imgdir name="5021000">
+        <string name="name" value="Balão de Água"/>
+        <string name="desc" value="Um divertido balão de água. Atire com uma #cshuriken# para conseguir o efeito do balão de água. Este item não pode ser removido."/>
+    </imgdir>
+    <imgdir name="5021001">
+        <string name="name" value="Avião de Papel"/>
+        <string name="desc" value="Uma dobradura de avião de papel muito bem feita. Atire com uma #cshuriken# para conseguir o efeito do avião de papel. Este item não pode ser removido."/>
+    </imgdir>
+    <imgdir name="5021002">
+        <string name="name" value="Bola de Energia"/>
+        <string name="desc" value="Bola de energia concentrada. Atire com uma #cshuriken# para conseguir o efeito da bola de energia. Este item não pode ser removido."/>
+    </imgdir>
+    <imgdir name="5021003">
+        <string name="name" value="Estrela-do-Mar"/>
+        <string name="desc" value="Uma estrela-do-mar vermelha pode ser vista na praia. Você pode equipar uma #cshuriken# para fazer o efeito de estrela-do-mar. \n\nEste item não pode ser destruído."/>
+    </imgdir>
+    <imgdir name="5021004">
+        <string name="name" value="Bola Alada"/>
+        <string name="desc" value="Uma bola de beisebol com pequenas asas coladas. Você pode equipar uma #cshuriken# para conseguir o efeito de bola alada. \n\nEste item não pode ser destruído."/>
+    </imgdir>
+    <imgdir name="5021005">
+        <string name="name" value="Bola de Futebol Americano"/>
+        <string name="desc" value="A bola de futebol americano oficial da Copa Maple. Quando fizer parte de seu inventário, as #cshurikens# vão aparecer como se fossem bolas arremessadas."/>
+    </imgdir>
+    <imgdir name="5021006">
+        <string name="name" value="Apagador de Quadro-Negro"/>
+        <string name="desc" value="Um apagador de quadro-negro normalmente encontrado nas salas de aula. Atire com uma #cshuriken# para conseguir o efeito do apagador. Este item não pode ser removido."/>
+    </imgdir>
+    <imgdir name="5021007">
+        <string name="name" value="Coração Voador"/>
+        <string name="desc" value="Um pequeno coração que explode ao menor contato. Utilize-o com #cshurikens# para ter o efeito de corações. \n\nO item não pode ser removido."/>
+    </imgdir>
+    <imgdir name="5021008">
+        <string name="name" value="Arremesso de Ursinhos"/>
+        <string name="desc" value="Um adorável ursinho pardo que explode ao esbarrar em alguém. Atire com uma #cshuriken# para conseguir o efeito do ursinho de pelúcia. \n\nEste item não pode ser removido"/>
+    </imgdir>
+    <imgdir name="5021009">
+        <string name="name" value="Arremessando Pepe"/>
+        <string name="desc" value="Nem em seus sonhos mais malucos, Pepe poderia imaginar que seria arremessado pelo ar no lugar de uma shuriken. Atire com uma shuriken para conseguir o efeito Pepe. Este item não pode ser removido."/>
+    </imgdir>
+    <imgdir name="5021010">
+        <string name="name" value="A Shuriken do Sr. Puff"/>
+        <string name="desc" value="Uma shuriken parecida com o Sr. Puff, com suas bochechas rechonchudas e rosadas que lembram um pãozinho recém-saído do forno. Atire com uma #cshuriken# para conseguir o efeito do Sr. Puff. \n\nEste item não pode ser removido."/>
+    </imgdir>
+    <imgdir name="5021011">
+        <string name="name" value="Atacante caveira"/>
+        <string name="desc" value="Uma caveira encantada vinda diretamente do cavaleiro sem cabeça. Atire com uma shuriken para conseguir o efeito ataque caveira. Este item não pode ser removido."/>
+    </imgdir>
+    <imgdir name="5021012">
+        <string name="name" value="Torta de Abóbora."/>
+        <string name="desc" value="Torta inofensiva? Pense novamente. Atire com uma shuriken para conseguir o efeito bomba de torta de abóbora."/>
+    </imgdir>
+    <imgdir name="5021013">
+        <string name="name" value="Bomba Pirata"/>
+        <string name="desc" value="Uma bomba explosiva usada por legendários piratas. Atire com uma #cshuriken# para conseguir o efeito da bomba explosiva. \n\nEste item não pode ser removido."/>
+    </imgdir>
+    <imgdir name="5021014">
+        <string name="name" value="Shuricocô"/>
+        <string name="desc" value="Essa estrela malcheirosa pode ser detectada de muito longe. Atire com uma #cshuriken# para conseguir o efeito da shurikagão. \n\nEste item não pode ser removido."/>
+    </imgdir>
+    <imgdir name="5021015">
+        <string name="name" value="Shuripintinho"/>
+        <string name="desc" value="Um ovo branco que pode ser atirado no lugar da shuriken e que se choca em um pintinho ao entrar em contato com qualquer coisa. Atire com uma #cshuriken# para conseguir o efeito shurovos. \n\nEste item não pode ser removido"/>
+    </imgdir>
+    <imgdir name="5021016">
+        <string name="name" value="Bola em Chamas"/>
+        <string name="desc" value="Uma bola misteriosa que ganhou consciência e agora vive para ser arremessada e causar grande dano. Tem um imenso poder! Equipa sobre #cShurikens#!"/>
+    </imgdir>
+    <imgdir name="5021017">
+        <string name="name" value="Dragon Disc"/>
+        <string name="desc" value="An explosive throwing star used by the Dragon. Thrown with a #cthrowing star# to have the explosive bomb effect.\n\nItem cannot be removed."/>
+    </imgdir>
+    <imgdir name="5021020">
+        <string name="name" value="Throwing Boomers"/>
+        <string name="desc" value="Explosive throwing stars from New Leaf City. They&apos;re the Bomb!  This item equips over #cThrowing Stars#!"/>
+    </imgdir>
+    <imgdir name="5021021">
+        <string name="name" value="Exploding Sheep"/>
+        <string name="desc" value="A cute and cuddly sheep. Don&apos;t let it fool you--it&apos;s lethal. This item equips over #cThrowing Stars#!"/>
+    </imgdir>
+    <imgdir name="5030000">
+        <string name="name" value="Casa de Cogumelo dos Elfos"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e este Elfo, como um funcionário, vai trabalhar para o dono, mesmo que ele não esteja jogando."/>
+    </imgdir>
+    <imgdir name="5030001">
+        <string name="name" value="Casa de Cogumelo dos Elfos"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e este Elfo, como um funcionário, vai trabalhar para o dono, mesmo que ele não esteja jogando."/>
+    </imgdir>
+    <imgdir name="5030002">
+        <string name="name" value="Caixa: Atendente Ursinho de Pelúcia"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e este ursinho, como um funcionário, vai trabalhar para o dono, mesmo que ele não esteja jogando."/>
+    </imgdir>
+    <imgdir name="5030003">
+        <string name="name" value="Caixa: Atendente Ursinho de Pelúcia"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e este ursinho, como um funcionário, vai trabalhar para o dono, mesmo que ele não esteja jogando."/>
+    </imgdir>
+    <imgdir name="5030004">
+        <string name="name" value="Estande do Robô"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e este robô, como um funcionário, vai trabalhar para o dono, mesmo que ele não esteja jogando."/>
+    </imgdir>
+    <imgdir name="5030005">
+        <string name="name" value="A Barraca do Robô"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e este robô, como um funcionário, vai trabalhar para o dono, mesmo que ele não esteja jogando."/>
+    </imgdir>
+    <imgdir name="5030006">
+        <string name="name" value="Casa de Cogumelo dos Elfos"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e este Elfo, como um funcionário, vai trabalhar para o dono, mesmo que ele não esteja jogando."/>
+    </imgdir>
+    <imgdir name="5030008">
+        <string name="name" value="Cafeteria Caseira"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e esta cafeteria, como uma funcionária, vai trabalhar para o dono, mesmo que ele não esteja jogando. #cSe um item for vendido, o dono será avisado pela janela de bate-papo.#"/>
+    </imgdir>
+    <imgdir name="5030009">
+        <string name="name" value="Cafeteria Caseira"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e esta cafeteria, como uma funcionária, vai trabalhar para o dono, mesmo que ele não esteja jogando. #cSe um item for vendido, o dono será avisado pela janela de bate-papo.#"/>
+    </imgdir>
+    <imgdir name="5030010">
+        <string name="name" value="Barraquinha de Comida da Vovó"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e esta vovó, como uma funcionária, vai trabalhar para o dono, mesmo quando ele não estiver conectado no jogo."/>
+    </imgdir>
+    <imgdir name="5030011">
+        <string name="name" value="Barraquinha de Comida da Vovó"/>
+        <string name="desc" value="Monte esta loja especial no Mercado, e esta vovó, como uma funcionária, vai trabalhar para o dono, mesmo quando ele não estiver conectado no jogo."/>
+    </imgdir>
+    <imgdir name="5030012">
+        <string name="name" value="Tiki Torch Store"/>
+        <string name="desc" value="Set up this special store on the Free Market, and this Granny, working as the Hired Merchant, will sell the items for the owner, even if the owner does not log on to the game."/>
+    </imgdir>
+    <imgdir name="5040000">
+        <string name="name" value="Pedra de Teletransporte"/>
+        <string name="desc" value="Mantém o registro de 5 mapas à sua escolha. Esta pedra permite que você se #cteletransporte para os mapas registrados#. Você poderá se #ctransportar até um mapa onde está determinado personagem#, caso a pessoa esteja no mesmo canal, no mesmo mundo. Este item não pode ser usado para teletransportes entre continentes."/>
+    </imgdir>
+    <imgdir name="5040001">
+        <string name="name" value="Transporte Refri"/>
+        <string name="desc" value="Ao beber um gostoso #cRefri# você consegue se #cteletransportar para alguns dos mapas registrados. Você pode até se #cteletransportar para um mapa onde se encontra um personagem específico#, dentro do mesmo canal. Permite o teletransporte pelos mapas até o limite desse tipo de transporte."/>
+    </imgdir>
+    <imgdir name="5041000">
+        <string name="name" value="Pedra de Teletransporte VIP"/>
+        <string name="desc" value="Esta rocha permite o #cteletransporte entre continentes#. Também permite ao usuário se teletransportar até um personagem específico no mesmo canal. Podem ser registrados até #c10# mapas, com exceção dos mapas que não podem ser acessados por teletransporte."/>
+    </imgdir>
+    <imgdir name="5050000">
+        <string name="name" value="Restaurador de PA"/>
+        <string name="desc" value="Este é um #cpergaminho que permite restaurar 1 PA dos seus atributos#. Escolha um ponto de atributo entre HP, MP, FOR, DES, INT ou SOR e destine ao outro atributo desejado. O mínimo de PA que você pode ter nos atributos FOR, DES, INT e SOR é 4. Você só vai poder retirar pontos de HP ou MP se já tiver utilizado algum ponto nesses atributos."/>
+    </imgdir>
+    <imgdir name="5050001">
+        <string name="name" value="Restaurador de PH (1ª classe)"/>
+        <string name="desc" value="Este pergaminho permite que você #crestaure 1 PH da habilidade do 1º nível de classe#. O PH que foi restaurado NÃO pode ser aplicado às habilidades do 2º ou 3º nível de classe."/>
+    </imgdir>
+    <imgdir name="5050002">
+        <string name="name" value="Restaurador de PH (2ª classe)"/>
+        <string name="desc" value="Este pergaminho permite que você #crestaure 1 PH das habilidades do 2º nível de classe#. O PH de 1º nível ganho DEPOIS de alcançar o 2º nível de classe pode ser restaurado e aplicado no 2ª nível. O PH que foi restaurado NÃO pode ser aplicado à habilidades do 1º ou 3º nível de classe."/>
+    </imgdir>
+    <imgdir name="5050003">
+        <string name="name" value="Restaurador de PH (3ª classe)"/>
+        <string name="desc" value="Este pergaminho permite que você #crestaure 1 PH das habilidades do 3º nível de classe#. O PH de 1º e 2º níveis ganho DEPOIS de alcançar o 3º nível de classe pode ser restaurado e aplicado no 3º nível. O PH que foi restaurado NÃO pode ser aplicado às habilidades do 1º ou 2º nível de classe."/>
+    </imgdir>
+    <imgdir name="5050004">
+        <string name="name" value="Restaurador de PH (4ª classe)"/>
+        <string name="desc" value="Este pergaminho permite que você #crestaure 1 PH das habilidades do 4º nível de classe#. O PH de 1º, 2º e 3º níveis ganho DEPOIS de alcançar o 4º nível de classe pode ser restaurado e aplicado no 4ª nível. O PH que foi restaurado NÃO pode ser aplicado às habilidades do 1º, 2º ou 3º nível de classe."/>
+    </imgdir>
+    <imgdir name="5060000">
+        <string name="name" value="Etiqueta de Item"/>
+        <string name="desc" value="Permite que o dono de uma arma grave, uma única vez, tenha seu nome em um item de equipamento. Clique no item e arraste o item #cem cima do equipamento escolhido# para gravar o nome do personagem."/>
+    </imgdir>
+    <imgdir name="5060001">
+        <string name="name" value="Trava Impenetrável"/>
+        <string name="desc" value="Uma trava que barra qualquer item de equipamento ou shurikens, com exceção dos itens da missão. Ao barrar um item, ele não poderá ser #cvendido, trocado ou jogado fora#. Clique duas vezes na trava para liberar o item."/>
+    </imgdir>
+    <imgdir name="5060002">
+        <string name="name" value="Incubadora"/>
+        <string name="desc" value="Um equipamento necessário para chocar os #cOvos Pigmeus#. Os ovos chocam quando se clica duas vezes na incubadora."/>
+    </imgdir>
+    <imgdir name="5070000">
+        <string name="name" value="Megafone Barato"/>
+        <string name="desc" value="Com este megafone você pode avisar a todos no mapa que seu personagem está ativo."/>
+    </imgdir>
+    <imgdir name="5071000">
+        <string name="name" value="Megafone"/>
+        <string name="desc" value="Com este megafone você pode avisar a todos no mapa que seu personagem está ativo. Disponível apenas para personagens acima do nível 10."/>
+    </imgdir>
+    <imgdir name="5072000">
+        <string name="name" value="Supermegafone"/>
+        <string name="desc" value="Com este megafone, grite para todo o mundo contando que seu personagem está no ar. Disponível apenas para personagens acima do nível 10."/>
+    </imgdir>
+    <imgdir name="5073000">
+        <string name="name" value="Megafone de Coração"/>
+        <string name="desc" value="Grite para todo o mundo com efeitos especiais. (Corações aparecem)"/>
+    </imgdir>
+    <imgdir name="5074000">
+        <string name="name" value="Megafone de Caveira"/>
+        <string name="desc" value="Grite para todo o mundo com efeitos especiais. (Caveiras aparecem)"/>
+    </imgdir>
+    <imgdir name="5075000">
+        <string name="name" value="Mensageiro da TV Maple"/>
+        <string name="desc" value="Apresente seu avatar na TV Maple com estas mensagens. \nNo caso de mensagens com dedicatória, o personagem escolhido também vai aparecer nas telas de todo o mundo. A mensagem dura aproximadamente 15 segundos."/>
+    </imgdir>
+    <imgdir name="5075001">
+        <string name="name" value="Mensageiro de Estrela da TV Maple"/>
+        <string name="desc" value="TV com design excepcional e efeito de estrelas. \nPermite que você digite mensagens mais longas e demoradas, 30 segundos. Apenas mensagens anunciadas estão disponíveis neste item. A mensagem dura aproximadamente 30 segundos."/>
+    </imgdir>
+    <imgdir name="5075002">
+        <string name="name" value="Mensageiro de Corações da TV Maple"/>
+        <string name="desc" value="TV com design excepcional e efeito de corações. \nFaça seu pedido de casamento pela TV, com estilo. Este item permite apenas mensagens com dedicatória, quando o usuário escolhido também aparece na TV. A mensagem dura aproximadamente 1 minuto."/>
+    </imgdir>
+    <imgdir name="5075003">
+        <string name="name" value="Megamensageiro"/>
+        <string name="desc" value="Mostre sua mensagem na janela de bate-papo e na TV Maple ao mesmo tempo."/>
+    </imgdir>
+    <imgdir name="5075004">
+        <string name="name" value="Megamenssageiro de Estrelas"/>
+        <string name="desc" value="Mostre sua mensagem na janela de bate-papo e na TV Maple ao mesmo tempo. Ela aparece na TV Maple com efeito de estrelas."/>
+    </imgdir>
+    <imgdir name="5075005">
+        <string name="name" value="Megamensageiro de Coração"/>
+        <string name="desc" value="Mostre sua mensagem na janela de bate-papo e na TV Maple ao mesmo tempo. Ela aparece na TV Maple com efeito de corações."/>
+    </imgdir>
+    <imgdir name="5076000">
+        <string name="name" value="Item Megafone"/>
+        <string name="desc" value="Use this megaphone to broadcast to everyone in the Server World about an item that may be for sale."/>
+    </imgdir>
+    <imgdir name="5080000">
+        <string name="name" value="Pipa Coreana"/>
+        <string name="desc" value="Uma pipa que você pode controlar pelos céus. Coloque sua própria mensagem."/>
+        <string name="msg" value="Desejando a você um feliz ano-novo."/>
+        <string name="msgIn" value="Digite o que você deseja para o ano novo"/>
+    </imgdir>
+    <imgdir name="5080001">
+        <string name="name" value="Balão Coração"/>
+        <string name="desc" value="Um balão repleto de amor que você pode carregar por aí. Coloque sua própria mensagem."/>
+        <string name="msg" value="Mensagem de Amor"/>
+        <string name="msgIn" value="Expresse seu amor. Pode escrever em todas as linhas."/>
+    </imgdir>
+    <imgdir name="5080002">
+        <string name="name" value="Faixa de Formatura"/>
+        <string name="desc" value="Uma faixa de formatura que você pode levar por aí. Coloque sua própria mensagem."/>
+        <string name="msg" value="Desejando uma feliz formatura."/>
+        <string name="msgIn" value="Escreva sua mensagem de parabéns. Você pode ocupar todas as linhas."/>
+    </imgdir>
+    <imgdir name="5080003">
+        <string name="name" value="Faixa de Admissão"/>
+        <string name="desc" value="Faixa para comemorar a admissão em uma escola. Coloque sua própria mensagem."/>
+        <string name="msg" value="Comemorando sua admissão na escola."/>
+        <string name="msgIn" value="Escreva sua mensagem de parabéns. Você pode ocupar todas as linhas."/>
+    </imgdir>
+    <imgdir name="5090000">
+        <string name="name" value="Mensagem"/>
+        <string name="desc" value="Clique duas vezes para mandar uma mensagem a um personagem que esteja off-line. O destinatário vai receber a mensagem da próxima vez que entrar."/>
+    </imgdir>
+    <imgdir name="5100000">
+        <string name="name" value="Música de Comemoração"/>
+        <string name="desc" value="Toque uma música de parabéns no mapa em que você se encontra."/>
+        <string name="title" value="Parabéns"/>
+        <string name="msg" value="Música de %s para você."/>
+    </imgdir>
+    <imgdir name="5110000">
+        <string name="name" value="Coração de Chocolate"/>
+        <string name="desc" value="Chocolates numa caixa em forma de coração. Quando a pessoa receber o presente, um coração vai aparecer acima de sua cabeça."/>
+    </imgdir>
+    <imgdir name="5120000">
+        <string name="name" value="Neve Nevada"/>
+        <string name="desc" value="Faça nevar por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Neve de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120001">
+        <string name="name" value="Chuva de Flores"/>
+        <string name="desc" value="Faça chover flores por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Flores de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120002">
+        <string name="name" value="Bolhas de Sabão"/>
+        <string name="desc" value="Faça chover bolhas de sabão por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Bolhas de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120003">
+        <string name="name" value="Flocos de Neve"/>
+        <string name="desc" value="Faça cair flocos de neve por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Flocos de Neve de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120004">
+        <string name="name" value="Chuva de Presentes"/>
+        <string name="desc" value="Faça chover presentes por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Presentes de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120005">
+        <string name="name" value="Chuva de Chocolates"/>
+        <string name="desc" value="Faça chover chocolates por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Chocolates de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120006">
+        <string name="name" value="Chuva de Pétalas"/>
+        <string name="desc" value="Faça chover pétalas de flores por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Pétalas de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120007">
+        <string name="name" value="Chuva de Doces"/>
+        <string name="desc" value="Faça chover doces por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Doces de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120008">
+        <string name="name" value="Chuva de Folhas Maple"/>
+        <string name="desc" value="Faça chover folhas maple por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Folhas Maple de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120009">
+        <string name="name" value="Fogos de Artifício"/>
+        <string name="desc" value="Faça uma apresentação de fogos de artifício por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Fogos de artifício de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120010">
+        <string name="name" value="Chuva de Refri"/>
+        <string name="desc" value="Faça chover refrigerante por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Refri de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120011">
+        <string name="name" value="Assombrações"/>
+        <string name="desc" value="Fantasmas cobrem o mapa em que você estiver por 30 segundos. Insira a mensagem que você quiser."/>
+        <string name="msg" value="Assombração de %s: %s"/>
+    </imgdir>
+    <imgdir name="5120012">
+        <string name="name" value="Meias de Natal"/>
+        <string name="desc" value="Distribua meias de Natal por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Meias de Natal de %s %s"/>
+    </imgdir>
+    <imgdir name="5120014">
+        <string name="name" value="Christmas Socks"/>
+        <string name="desc" value="Sprinkles Christmas Socks on the map where your character is for 30 seconds. Enter a message of your choice."/>
+        <string name="msg" value="%s"/>
+    </imgdir>
+    <imgdir name="5120015">
+        <string name="name" value="Fogos de Artifício Chineses"/>
+        <string name="desc" value="Faça uma apresentação de fogos de artifício chineses por 30 segundos no mapa onde está seu personagem. Insira uma mensagem de sua escolha."/>
+        <string name="msg" value="Fogos de artifício chineses de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121000">
+        <string name="name" value="Espírito de Luta"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Espírito de luta de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121001">
+        <string name="name" value="Hino da Seleção Coreana de Futebol"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Hino de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121002">
+        <string name="name" value="Febre de Futebol"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Febre de futebol de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121003">
+        <string name="name" value="Canja de Galinha"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Canja de galinha de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121004">
+        <string name="name" value="Song Pyun"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Song Pyun de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121005">
+        <string name="name" value="Han Gwa"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Han Gwa de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121006">
+        <string name="name" value="Bando de Bruxas"/>
+        <string name="desc" value="Efeito especial que mostra um bando de bruxas voando no local, com suas vassouras megarrápidas."/>
+        <string name="msg" value="Bando de bruxas de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121007">
+        <string name="name" value="Ornamento de Árvore"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Ornamento de árvore de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121008">
+        <string name="name" value="Feliz Aniversário"/>
+        <string name="desc" value="Ataque com armas +20 e com magia +30, para todos os personagens do mapa quando o tem for usado. Escreva a mensagem que quiser."/>
+        <string name="msg" value="Congratulações de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121009">
+        <string name="name" value="Pequena Rosa"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Rosas de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121010">
+        <string name="name" value="Flores Espalhadas"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Flores de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121014">
+        <string name="name" value="Snowing Fishbread"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Mensagem de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121015">
+        <string name="name" value="A Flurry of Snow"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Mensagem de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121016">
+        <string name="name" value="Caixa Coração de Chocolate"/>
+        <string name="desc" value="Escreva a mensagem que quiser."/>
+        <string name="msg" value="Congratulações de %s: %s"/>
+    </imgdir>
+    <imgdir name="5121017">
+        <string name="name" value="Water Splash"/>
+        <string name="desc" value="You can enter the message of your choice. "/>
+        <string name="msg" value="%s &apos;s Water Splash : %s"/>
+    </imgdir>
+    <imgdir name="5122000">
+        <string name="name" value="Hearty Party Bear"/>
+        <string name="desc" value="You can enter the message of your choice. "/>
+        <string name="msg" value="%s&apos;s Hearty Party Bear : %s"/>
+    </imgdir>
+    <imgdir name="5130000">
+        <string name="name" value="Amuleto de Proteção"/>
+        <string name="desc" value="Não permite que o usuário perca pontos de experiência depois da morte, desde que esteja com ele."/>
+    </imgdir>
+    <imgdir name="5140000">
+        <string name="name" value="Concessão de Loja Comum"/>
+        <string name="desc" value="Abra uma loja comum em qualquer lugar à sua escolha, dentro do Mercado. Pode vender até 16 itens de cada vez."/>
+    </imgdir>
+    <imgdir name="5140001">
+        <string name="name" value="Concessão de Loja de Verão"/>
+        <string name="desc" value="Um cupom para abrir uma loja-árvore com céu azul em qualquer lugar de sua escolha, dentro do Mercado, podendo comercializar até 24 itens de cada vez. Disponível apenas por um curto período de tempo."/>
+    </imgdir>
+    <imgdir name="5140002">
+        <string name="name" value="Concessão para loja cor-de-rosa VIP"/>
+        <string name="desc" value="Abra uma loja-árvore cor-de-rosa em qualquer lugar à sua escolha, dentro do Mercado. Pode vender até 24 itens de cada vez."/>
+    </imgdir>
+    <imgdir name="5140003">
+        <string name="name" value="Concessão de Loja de Outono"/>
+        <string name="desc" value="Uma edição especial de cupom para abrir uma loja-árvore cor de laranja em qualquer lugar de sua escolha, dentro do Mercado, podendo comercializar até 24 itens de cada vez. Disponível apenas por um curto período de tempo."/>
+    </imgdir>
+    <imgdir name="5140004">
+        <string name="name" value="Concessão de Loja de Primavera"/>
+        <string name="desc" value="Uma edição especial de cupom para abrir uma loja-árvore verde em qualquer lugar de sua escolha, dentro do Mercado, podendo comercializar até 24 itens de cada vez. Disponível apenas por um curto período de tempo."/>
+    </imgdir>
+    <imgdir name="5140006">
+        <string name="name" value="Concessão de Loja de Natal"/>
+        <string name="desc" value="Uma edição especial de cupom para abrir uma loja de Natal em qualquer lugar de sua escolha, dentro do Mercado, podendo comercializar até 24 itens de cada vez. Disponível apenas por um curto período de tempo."/>
+    </imgdir>
+    <imgdir name="5150000">
+        <string name="name" value="Cupom de Corte de Cabelo em Henesys"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Henesys# para mudar seu corte de cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150001">
+        <string name="name" value="Cupom de Corte de Cabelo VIP em Henesys"/>
+        <string name="desc" value="Use-o no #cSalão de Cabeleireiro de Henesys# para mudar seu corte de cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150002">
+        <string name="name" value="Cupom de Corte de Cabelo da Cidade de Kerning"/>
+        <string name="desc" value="Use-o no #cSalão de Cabeleireiro da Cidade de Kerning# para mudar seu corte de cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150003">
+        <string name="name" value="Cupom de Corte de Cabelo VIP da Cidade de Kerning"/>
+        <string name="desc" value="Use-o no #cSalão de Cabeleireiro da Cidade de Kerning# para mudar seu corte de cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150004">
+        <string name="name" value="Cupom de Corte de Cabelo em Orbis"/>
+        <string name="desc" value="Use-o no #cSalão de Cabeleireiro de Orbis# para mudar seu corte de cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150005">
+        <string name="name" value="Cupom de Corte de Cabelo VIP em Orbis"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Orbis# para mudar seu corte de cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150006">
+        <string name="name" value="Cupom de Corte de Cabelo em Ludibrium"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Ludibrium# para mudar seu corte de cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150007">
+        <string name="name" value="Cupom de Corte de Cabelo VIP em Ludibrium"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Ludibrium# para mudar seu corte de cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150008">
+        <string name="name" value="Cupom de Corte de Cabelo em Showa"/>
+        <string name="desc" value="Use-o no #cSalão de Cabeleireiro de Showa# para mudar seu corte de cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150009">
+        <string name="name" value="Cupom de Corte de Cabelo VIP em Showa"/>
+        <string name="desc" value="Use-o no #cSalão de Cabeleireiro de Showa# para mudar seu corte de cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150010">
+        <string name="name" value="Cupom de Corte de Cabelo Experimental em Henesys"/>
+        <string name="desc" value="Use-o no #cSalão de Cabeleireiro de Henesys# para mudar seu corte de cabelo #cao acaso# com a chance de conseguir um estilo experimental totalmente novo. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150011">
+        <string name="name" value="Cupom de Corte de Cabelo Experimental da Cidade de Kerning"/>
+        <string name="desc" value="Use-o no #cSalão de Cabeleireiro da Cidade de Kerning# para mudar seu corte de cabelo #cao acaso# com a chance de conseguir um estilo experimental totalmente novo. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150012">
+        <string name="name" value="Cupom de Corte de Cabelo Experimental em Ludibrium"/>
+        <string name="desc" value="Use-o no #cSalão de Cabeleireiro Ludibrium# para mudar seu corte de cabelo #cao acaso# com a chance de obter um estilo experimental totalmente novo. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150013">
+        <string name="name" value="Cupom de Corte de Cabelo Experimental em Orbis"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Orbis# para mudar seu corte de cabelo #cao acaso# com a chance de conseguir um estilo experimental totalmente novo. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150019">
+        <string name="name" value="Cupom de Corte de Cabelo de Amoria"/>
+        <string name="desc" value="Use-o no #cCabelereiro de Amoria# para trocar #caleatóriamente# seu corte de cabelo com chance de conseguir cabelos exclusivos. (Item de uso único)"/>
+    </imgdir>
+    <imgdir name="5150020">
+        <string name="name" value="Cupom VIP de Corte de Cabelo de Amoria"/>
+        <string name="desc" value="Use-o no #cCabelereiro de Amoria# para mudar o corte do seu cabelo #ca sua escolha#. (Item de uso único)"/>
+    </imgdir>
+    <imgdir name="5150021">
+        <string name="name" value="Cupom de Corte de Cabelo Experimental no Mercado Noturno"/>
+        <string name="desc" value="Use-o no #cCabeleireiro do Mercado Noturno# para mudar seu corte de cabelo #cao acaso# com a chance de conseguir um estilo experimental totalmente novo. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150022">
+        <string name="name" value="Cupom de Corte de Cabelo VIP no Mercado Noturno"/>
+        <string name="desc" value="Use-o no #cCabeleireiro do Mercado Noturno# para mudar seu corte de cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150024">
+        <string name="name" value="Cupom de Corte de Cabelo Experimental em Mu Lung"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Mu Lung# para mudar seu corte de cabelo #cao acaso# com a chance de conseguir um estilo experimental totalmente novo. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150025">
+        <string name="name" value="Cupom de Corte de Cabelo VIP em Mu Lung"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Mu Lung# para mudar seu corte de cabelo #cà sua escolha. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5150026">
+        <string name="name" value="Cupom de Corte de Cabelo de Ariant"/>
+        <string name="desc" value="Use-o no #cSalão de Cabelereiro de Ariant# para mudar seu corte de cabelo #cde maneira aleatória#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5150027">
+        <string name="name" value="Cupom de Corte de Cabelo VIP de Ariant"/>
+        <string name="desc" value="Use-o no #cSalão de Cabelereiro de Ariant# para mudar seu corte de cabelo #ca sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5150030">
+        <string name="name" value="Cupom de Corte de Cabelo da CFN"/>
+        <string name="desc" value="Use-o no #cSalão de Cabelereiro da CFN# para mudar seu corte de cabelo #cao acaso#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5150031">
+        <string name="name" value="Cupom de Corte de Cabelo VIP da CFN"/>
+        <string name="desc" value="Use-o no #cSalão de Cabelereiro da CFN# para mudar seu corte de cabelo #ca sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5150038">
+        <string name="name" value="Matinee Idol Hair Coupon"/>
+        <string name="desc" value="Use this coupon to change the hairstyle to a #cMatinee Idol# hairstyle. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5151000">
+        <string name="name" value="Cupom de Tingimento de Cabelo em Henesys"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Henesys# para mudar a cor do seu cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151001">
+        <string name="name" value="Cupom de Tingimento de Cabelo VIP em Henesys"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Henesys# para mudar a cor do seu cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151002">
+        <string name="name" value="Cupom de Tingimento na Cidade de Kerning"/>
+        <string name="desc" value="Use-o no #cCabeleireiro da Cidade de Kerning# para mudar a cor do seu cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151003">
+        <string name="name" value="Cupom VIP de Tingimento de Cabelo em Kerning"/>
+        <string name="desc" value="Use-o no #cCabeleireiro da Cidade de Kerning# para mudar a cor do seu cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151004">
+        <string name="name" value="Cupom de Tingimento de Cabelo em Orbis"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Orbis# para mudar a cor do seu cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151005">
+        <string name="name" value="Cupom de Tingimento de Cabelo VIP em Orbis"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Orbis# para mudar a cor do seu cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151006">
+        <string name="name" value="Cupom de Tingimento de Cabelo em Ludibrium"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Ludibrium# para mudar a cor do seu cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151007">
+        <string name="name" value="Cupom de Tingimento de Cabelo VIP em Ludibrium"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Ludibrium# para mudar a cor do seu cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151008">
+        <string name="name" value="Cupom de Tingimento de Cabelo em Showa"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Showa# para mudar a cor do seu cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151009">
+        <string name="name" value="Cupom de Tingimento de Cabelo VIP em Showa"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Showa# para mudar a cor do seu cabelo #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151014">
+        <string name="name" value="Cupom de Tingimento de Cabelo no Mercado Noturno"/>
+        <string name="desc" value="Use-o no #cCabeleireiro do Mercado Noturno# para mudar a cor do seu cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151015">
+        <string name="name" value="Cupom de Tingimento de Cabelo VIP no Mercado Noturno"/>
+        <string name="desc" value="Use-o no #cCabeleireiro do Mercado Noturno# para mudar a cor do seu cabelo #cà sua escolha# . Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151016">
+        <string name="name" value="Cupom de Tingimento de Cabelo de Amoria"/>
+        <string name="desc" value="Use-o no #cCabelereiro de Amoria# para mudar a cor do seu cabelo #caleatoriamente#. (Item de uso único)"/>
+    </imgdir>
+    <imgdir name="5151017">
+        <string name="name" value="Cupom VIP de Tingimento de Cabelo de Amoria"/>
+        <string name="desc" value="Use-o no #cCabelereiro de Amoria# para mudar a cor do seu cabelo  #ca sua escolha#. (Item de uso único)"/>
+    </imgdir>
+    <imgdir name="5151019">
+        <string name="name" value="Cupom de Tingimento de Cabelo em Mu Lung"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Mu Lung# para mudar a cor do seu cabelo #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151020">
+        <string name="name" value="Cupom de Tingimento de Cabelo VIP em Mu Lung"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Mu Lung# para mudar a cor de seu cabelo #cà sua escolha# Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5151021">
+        <string name="name" value="Cupom de Tingimento de Ariant "/>
+        <string name="desc" value="Use-o no #cSalão de Cabelereiro de Ariant# para mudar a cor do seu cabelo #cao acaso#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5151022">
+        <string name="name" value="Cupom de Tingimento VIP de Ariant"/>
+        <string name="desc" value="Use-o no #cSalão de Cabelereiro de Ariant# para mudar a cor do seu cabelo #cà sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5151025">
+        <string name="name" value="Cupom de Tingimento de Cabelo da CFN"/>
+        <string name="desc" value="Use-o no #cSalão de Cabelereiro da CFN# para mudar a cor do seu cabelo #cao acaso#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5151026">
+        <string name="name" value="Cupom VIP de Tingimento de Cabelo da CFN"/>
+        <string name="desc" value="Use no #cSalão de Cabelereiro da CFN# para mudar a cor do seu cabelo #cà sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5152000">
+        <string name="name" value="Cupom de Cirurgia Plástica em Henesys"/>
+        <string name="desc" value="Use-o na #cClínica de Henesys# para mudar seu rosto #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152001">
+        <string name="name" value="Cupom de Cirurgia Plástica VIP em Henesys"/>
+        <string name="desc" value="Use-o na #cClínica de Henesys# para mudar seu rosto #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152002">
+        <string name="name" value="Cupom de Cirurgia Plástica na Cidade de Kerning"/>
+        <string name="desc" value="Use-o na #cClínica da Cidade de Kerning# para mudar seu rosto #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152003">
+        <string name="name" value="Cupom de Cirurgia Plástica VIP da Cidade de Kerning"/>
+        <string name="desc" value="Use-o na #cClínica da Cidade de Kerning# para mudar seu rosto #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152004">
+        <string name="name" value="Cupom de Cirurgia Plástica em Orbis"/>
+        <string name="desc" value="Use-o na #cClínica de Orbis# para mudar seu rosto #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152005">
+        <string name="name" value="Cupom de Cirurgia Plástica VIP em Orbis"/>
+        <string name="desc" value="Use-o na #cClínica de Orbis# para mudar seu rosto #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152006">
+        <string name="name" value="Cupom de Cirurgia Plástica em Ludibrium"/>
+        <string name="desc" value="Use-o na #cClínica de Ludibrium# para mudar seu rosto #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152007">
+        <string name="name" value="Cupom de Cirurgia Plástica VIP em Ludibrium"/>
+        <string name="desc" value="Use-o na #cClínica de Ludibrium# para mudar seu rosto #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152008">
+        <string name="name" value="Cupom de Cirurgia Plástica em Showa"/>
+        <string name="desc" value="Use-o na #cClínica de Showa# para mudar seu rosto #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152009">
+        <string name="name" value="Cupom de Cirurgia Plástica VIP em Showa"/>
+        <string name="desc" value="Use-o na #cClínica de Showa# para mudar seu rosto #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152010">
+        <string name="name" value="Cupom de Lentes de Contato em Henesys"/>
+        <string name="desc" value="Use-o na #cClínica de Henesys# para mudar a cor dos seus olhos #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152011">
+        <string name="name" value="Cupom de Lentes de Contato em Orbis"/>
+        <string name="desc" value="Use-o na #cClínica de Orbis# para mudar a cor dos seus olhos #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152012">
+        <string name="name" value="Cupom de Lentes de Contato em Ludibrium"/>
+        <string name="desc" value="Use-o na #cClínica de Ludibrium# para mudar a cor dos seus olhos #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152013">
+        <string name="name" value="Cupom de Lentes de Contato VIP em Henesys"/>
+        <string name="desc" value="Use-o na #cClínica de Henesys# para mudar a cor dos seus olhos #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152014">
+        <string name="name" value="Cupom VIP de Lentes de Contato em Orbis"/>
+        <string name="desc" value="Use-o na #cClínica de Orbis# para mudar a cor dos seus olhos #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152015">
+        <string name="name" value="Cupom de Lentes de Contato VIP em Ludibrium"/>
+        <string name="desc" value="Use-o na #cClínica de Ludibrium# para mudar a cor dos seus olhos #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152021">
+        <string name="name" value="Cupom de Cirurgia Plástica de Amoria"/>
+        <string name="desc" value="Use-o no #cClínica Estética de Amoria# para mudar sua face #caleatoriamente#. (Item de uso único)"/>
+    </imgdir>
+    <imgdir name="5152022">
+        <string name="name" value="Cupom de Cirurgia Plástica VIP em Amoria"/>
+        <string name="desc" value="Use-o na #cClínica de Amoria# para mudar seu rosto #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152023">
+        <string name="name" value="Cupom de Cirurgia Plástica no Mercado Noturno"/>
+        <string name="desc" value="Use-o na #cClínica do Mercado Noturno# para mudar seu rosto #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152024">
+        <string name="name" value="Cupom de Cirurgia Plástica VIP no Mercado Noturno"/>
+        <string name="desc" value="Use-o na #cClínica do Mercado Noturno# para mudar seu rosto #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152025">
+        <string name="name" value="Cupom de Lentes de Contato de Amoria"/>
+        <string name="desc" value="Use-o na #cClínica Estética de Amoria# para mudar a cor dos seus olhos #caleatoriamente#. (Item de uso único)"/>
+    </imgdir>
+    <imgdir name="5152026">
+        <string name="name" value="Cupom de Lentes de Contato VIP em Amoria"/>
+        <string name="desc" value="Use-o na #cClínica de Amoria# para mudar a cor dos seus olhos #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152027">
+        <string name="name" value="Cupom de Cirurgia Plástica em Mu Lung"/>
+        <string name="desc" value="Use-o na #cClínica de Mu Lung# para mudar seu rosto #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152028">
+        <string name="name" value="Cupom de Cirurgia Plástica VIP em Mu Lung"/>
+        <string name="desc" value="Use-o na #cClínica de Mu Lung# para mudar seu rosto #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152029">
+        <string name="name" value="Cupom de Cirurgia Plástica de Ariant"/>
+        <string name="desc" value="Use-o na #cClínica de Ariant# para mudar seu rosto #cao acaso#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5152030">
+        <string name="name" value="Cupom de Cirurgia Plástica VIP de Ariant"/>
+        <string name="desc" value="Use-o na #cClínica de Ariant# para mudar seu rosto #cà sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5152033">
+        <string name="name" value="Cupom de Cirúrgia Plástica da CFN"/>
+        <string name="desc" value="Use-o na #cClínica da CFN# para mudar seu rosto #cao acaso#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5152034">
+        <string name="name" value="Cupom de Cirúrgia Plástica VIP da CFN"/>
+        <string name="desc" value="Use-o na #cClínica da CFN# para mudar seu rosto #cà sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5152035">
+        <string name="name" value="Cupom de Lentes de Contato da CFN"/>
+        <string name="desc" value="Use-o na #cClínica da CFN# para mudar a cor do seu olho #cao acaso#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5152036">
+        <string name="name" value="Cupom de Lentes de Contato VIP da CFN"/>
+        <string name="desc" value="Use-o na #cClínica da CFN# para mudar a cor do seu olho #à sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5152041">
+        <string name="name" value="Cupom de Lentes de Contato VIP em Mu Lung"/>
+        <string name="desc" value="Use-o na #cClínica de Mu Lung# para mudar a cor dos seus olhos #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152042">
+        <string name="name" value="Cupom de Lentes de Contato em Mu Lung"/>
+        <string name="desc" value="Use-o na #cClínica de Mu Lung# para mudar a cor de seus olhos #cao acaso#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5152045">
+        <string name="name" value="Showa Cosmetic Lens Coupon (VIP)"/>
+        <string name="desc" value="Use it at #cShowa Plastic Surgery# to change your eye to a color of #cyour choice#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5152046">
+        <string name="name" value="Showa Cosmetic Lens Coupon (REG)"/>
+        <string name="desc" value="Use it at #cShowa Plastic Surgery# to change your eye color #crandomly#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5152047">
+        <string name="name" value="Ariant Cosmetic Lens Coupon (VIP)"/>
+        <string name="desc" value="Use it at #cAriant Plastic Surgery# to change your eye to a color of #cyour choice#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5152048">
+        <string name="name" value="Ariant Cosmetic Lens Coupon (REG)"/>
+        <string name="desc" value="Use it at #cAriant Plastic Surgery# to change your eye color #crandomly#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5152100">
+        <string name="name" value="Lentes de Contato Descartáveis (Preto)"/>
+        <string name="desc" value="Pode ser usado apenas uma vez para mudar a cor dos seus olhos para #cPreto#."/>
+    </imgdir>
+    <imgdir name="5152101">
+        <string name="name" value="Lentes de Contato Descartáveis (Azul)"/>
+        <string name="desc" value="Pode ser usado apenas uma vez para mudar a cor dos seus olhos para #cAzul#. "/>
+    </imgdir>
+    <imgdir name="5152102">
+        <string name="name" value="Lentes de Contato Descartáveis (Vermelho)"/>
+        <string name="desc" value="Pode ser usado apenas uma vez para mudar a cor dos seus olhos para #cVermelho#."/>
+    </imgdir>
+    <imgdir name="5152103">
+        <string name="name" value="Lentes de Contato Descartáveis (Verde)"/>
+        <string name="desc" value="Pode ser usado apenas uma vez para mudar a cor dos seus olhos para #cVerde#. "/>
+    </imgdir>
+    <imgdir name="5152104">
+        <string name="name" value="Lentes de Contato Descartáveis (Castanho)"/>
+        <string name="desc" value="Pode ser usado apenas uma vez para mudar a cor dos seus olhos para #cCastanho#. "/>
+    </imgdir>
+    <imgdir name="5152105">
+        <string name="name" value="Lentes de Contato Descartáveis (Esmeralda)"/>
+        <string name="desc" value="Pode ser usado apenas uma vez para mudar a cor dos seus olhos para #cEsmeralda#."/>
+    </imgdir>
+    <imgdir name="5152106">
+        <string name="name" value="Lentes de Contato Descartáveis (Roxo)"/>
+        <string name="desc" value="Pode ser usado apenas uma vez para mudar a cor dos seus olhos para #cRoxo#. "/>
+    </imgdir>
+    <imgdir name="5152107">
+        <string name="name" value="Lentes de Contato Descartáveis (Ametista)"/>
+        <string name="desc" value="Pode ser usado apenas uma vez para mudar a cor dos seus olhos para #cAmetista#. "/>
+    </imgdir>
+    <imgdir name="5153000">
+        <string name="name" value="Cupom de Tratamento de Pele em Henesys"/>
+        <string name="desc" value="Use-o na #cClínica de Henesys# para mudar a cor de sua pele #cà sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5153001">
+        <string name="name" value="Cupom de Tratamento de Pele em Orbis"/>
+        <string name="desc" value="Use-o na #cClínica de Orbis# para mudar a cor de sua pele #cà sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5153002">
+        <string name="name" value="Cupom de Tratamento de Pele em Ludibrium"/>
+        <string name="desc" value="Use-o na #cClínica de Ludibrium# para mudar a cor de sua pele #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5153005">
+        <string name="name" value="Cupom de Tratamento de Pele no Mercado Noturno"/>
+        <string name="desc" value="Use-o na #cClínica do Mercado Noturno# para mudar a cor de sua pele #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5153006">
+        <string name="name" value="Cupom de Tratamento de Pele em Mu Lung"/>
+        <string name="desc" value="Use-o na #cClínica de Mu Lung# para mudar a cor de sua pele #cà sua escolha#. Só pode ser usado uma vez"/>
+    </imgdir>
+    <imgdir name="5153007">
+        <string name="name" value="Cupom de Tratamento de Pele de Ariant"/>
+        <string name="desc" value="Use-o na #Clínica de Ariant# para mudar a cor da sua pele #cà sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5153009">
+        <string name="name" value="Cupom de Tratamento de Pele da CFN"/>
+        <string name="desc" value="Use-o na #cClínica da CFN# para mudar a cor da sua pela #cà sua escolha#. Só pode ser usado uma vez."/>
+    </imgdir>
+    <imgdir name="5154000">
+        <string name="name" value="Cupom de Cabelos Rebeldes em Orbis"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Orbis# para cabelos desgrenhados."/>
+    </imgdir>
+    <imgdir name="5160000">
+        <string name="name" value="Enjoado"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem passar bem mal."/>
+    </imgdir>
+    <imgdir name="5160001">
+        <string name="name" value="Desapontado"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem com cara de pânico."/>
+    </imgdir>
+    <imgdir name="5160002">
+        <string name="name" value="Doçura"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem muito feliz."/>
+    </imgdir>
+    <imgdir name="5160003">
+        <string name="name" value="Beijocas"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem mostrar uma cara cheia de beijos."/>
+    </imgdir>
+    <imgdir name="5160004">
+        <string name="name" value="Piscar"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem piscando com charme."/>
+    </imgdir>
+    <imgdir name="5160005">
+        <string name="name" value="Ai"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja o personagem mostrando dor e sofrimento."/>
+    </imgdir>
+    <imgdir name="5160006">
+        <string name="name" value="Olhos Brilhantes"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e faça seu personagem ficar com olhos brilhando."/>
+    </imgdir>
+    <imgdir name="5160007">
+        <string name="name" value="Incendiar"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem com olhar de raiva."/>
+    </imgdir>
+    <imgdir name="5160008">
+        <string name="name" value="Fascinado"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem emitir luz pelos olhos."/>
+    </imgdir>
+    <imgdir name="5160009">
+        <string name="name" value="Apaixonado"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem com olhar de &quot;fantástico&quot;!!!."/>
+    </imgdir>
+    <imgdir name="5160010">
+        <string name="name" value="Assustado"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem com cara de perturbado."/>
+    </imgdir>
+    <imgdir name="5160011">
+        <string name="name" value="Suspiros"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem com olhar perdido."/>
+    </imgdir>
+    <imgdir name="5160012">
+        <string name="name" value="Zzzz Zzzz"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem caindo de sono."/>
+    </imgdir>
+    <imgdir name="5160013">
+        <string name="name" value="Hálito de Dragão"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem agir de um modo muito estranho."/>
+    </imgdir>
+    <imgdir name="5160014">
+        <string name="name" value="Bleah"/>
+        <string name="desc" value="Na configuração de teclas, escolha o botão que quiser para esta expressão. Pressione o botão e veja seu personagem agir de um modo muito estranho."/>
+    </imgdir>
+    <imgdir name="5170000">
+        <string name="name" value="Coleira de Bicho de Estimação"/>
+        <string name="desc" value="Use este item para dar nome ao seu bichinho. Antes de dar uma ordem, chame o bichinho pelo nome que ele vai atender melhor aos seus comandos. O nome do bichinho pode conter 12 caracteres \nEx) Lilica, senta!"/>
+    </imgdir>
+    <imgdir name="5180000">
+        <string name="name" value="Água da Vida"/>
+        <string name="desc" value="Uma água misteriosa recolhida nos vales mais profundos de Ellinia. Leve isto até a fada Mar e ela trará de volta à vida o bichinho transformado em boneco."/>
+    </imgdir>
+    <imgdir name="5190000">
+        <string name="name" value="Pegar Item"/>
+        <string name="desc" value="Dá aos bichos de estimação a habilidade de pegar itens. \n#cSó para bichos que podem recolher Mesos.#"/>
+    </imgdir>
+    <imgdir name="5190001">
+        <string name="name" value="Recarregar HP"/>
+        <string name="desc" value="Os bichinhos se alimentam sozinhos. \n#cDisponível a todos os bichos que ainda não tenham esta opção.#"/>
+    </imgdir>
+    <imgdir name="5190002">
+        <string name="name" value="Alcance Expandido"/>
+        <string name="desc" value="Use este pergaminho para triplicar o alcance dos movimentos dos bichos. \n#cDisponível apenas para bichos que têm habilidades de pegar item automaticamente, não pode ser usada com outros itens de função semelhante.#"/>
+    </imgdir>
+    <imgdir name="5190003">
+        <string name="name" value="Pegar Automaticamente"/>
+        <string name="desc" value="Os bichos recolhem itens e mesos dentro da área, independente do personagem movê-los. \n#cDisponível para bichos com habilidade de pegar mesos e pegar itens.#"/>
+    </imgdir>
+    <imgdir name="5190004">
+        <string name="name" value="(+) Pegar Sobras"/>
+        <string name="desc" value="Os bichos recolhem mesos e itens largados há mais de 30 segundos, ou seja, as sobras. \n#cDisponível para bichos que já tenham a habilidade de pegar mesos e itens.#"/>
+    </imgdir>
+    <imgdir name="5190005">
+        <string name="name" value="Não Pegar Itens"/>
+        <string name="desc" value="Os bichos não pegam um item selecionado. \n#s Apenas bichos com função de pegar mesos ou itens podem usar esta habilidade.#"/>
+    </imgdir>
+    <imgdir name="5190006">
+        <string name="name" value="Recarregar MP"/>
+        <string name="desc" value="Os bichos recarregam automaticamente a MP, desde que essa opção já tenha sido definida.\n#cEsta habilidade se aplica a todos os bichos que ainda não tenham essa característica.#"/>
+    </imgdir>
+    <imgdir name="5191000">
+        <string name="name" value="(-) Não Pegar Item"/>
+        <string name="desc" value="Use este pergaminho para desabilitar a característica do bicho de pegar coisas."/>
+    </imgdir>
+    <imgdir name="5191001">
+        <string name="name" value="(-) Não Recarregar HP"/>
+        <string name="desc" value="Use este pergaminho para seu bicho não alimentar o personagem quando o HP atingir níveis críticos."/>
+    </imgdir>
+    <imgdir name="5191002">
+        <string name="name" value="(-) Não Usar Alcance Expandido"/>
+        <string name="desc" value="Use este pergaminho para o bicho voltar a ter o alcance normal de movimentos."/>
+    </imgdir>
+    <imgdir name="5191003">
+        <string name="name" value="(-) Não Pegar Automaticamente"/>
+        <string name="desc" value="Use este pergaminho para o bicho não recolher itens e mesos."/>
+    </imgdir>
+    <imgdir name="5191004">
+        <string name="name" value="(-) Não Pegar Sobras"/>
+        <string name="desc" value="Use este pergaminho para que o bicho pare de pegar as sobras de itens e mesos, ou seja, o que foi largado há mais de 30 segundos."/>
+    </imgdir>
+    <imgdir name="5200000">
+        <string name="name" value="Saco de Bronze de Mesos"/>
+        <string name="desc" value="Contém um tanto de mesos."/>
+    </imgdir>
+    <imgdir name="5200001">
+        <string name="name" value="Saco de Prata de Mesos"/>
+        <string name="desc" value="Contém bastante mesos"/>
+    </imgdir>
+    <imgdir name="5200002">
+        <string name="name" value="Saco de Ouro de Mesos"/>
+        <string name="desc" value="Contém um montão mesos."/>
+    </imgdir>
+    <imgdir name="5201000">
+        <string name="name" value="Caixa de Bolas de Metal"/>
+        <string name="desc" value="Contém 200 bolas de metal."/>
+    </imgdir>
+    <imgdir name="5201001">
+        <string name="name" value="Caixa de Bolas de Metal"/>
+        <string name="desc" value="Contém 500 bolas de metal."/>
+    </imgdir>
+    <imgdir name="5210000">
+        <string name="name" value="Bilhete Pró-adulto"/>
+        <string name="desc" value="Quando estiver com este bilhete, a EXP obtida será temporariamente dobrada."/>
+    </imgdir>
+    <imgdir name="5210001">
+        <string name="name" value="Bilhete Pró-adulto"/>
+        <string name="desc" value="Quando estiver com este bilhete, a EXP obtida será temporariamente dobrada."/>
+    </imgdir>
+    <imgdir name="5210002">
+        <string name="name" value="Bilhete Pró-adulto"/>
+        <string name="desc" value="Quando estiver com este bilhete, a EXP obtida será temporariamente dobrada."/>
+    </imgdir>
+    <imgdir name="5210003">
+        <string name="name" value="Bilhete Pró-adulto"/>
+        <string name="desc" value="Quando estiver com este bilhete, a EXP obtida será temporariamente dobrada."/>
+    </imgdir>
+    <imgdir name="5210004">
+        <string name="name" value="Bilhete Pró-adulto"/>
+        <string name="desc" value="Quando estiver com este bilhete, a EXP obtida será temporariamente dobrada."/>
+    </imgdir>
+    <imgdir name="5210005">
+        <string name="name" value="Bilhete Pró-adulto"/>
+        <string name="desc" value="Quando estiver com este bilhete, a EXP obtida será temporariamente dobrada."/>
+    </imgdir>
+    <imgdir name="5211000">
+        <string name="name" value="Cartão de EXP x2"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe 2 vezes mais experiência. O cupom será ativado imediatamente após a compra, e o efeito da experiência em dobro ficará disponível por 24  horas (1 dia). Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211001">
+        <string name="name" value="Da NEXON"/>
+        <string name="desc" value="Por favor, evite desconectar o cliente da MapleStory."/>
+    </imgdir>
+    <imgdir name="5211002">
+        <string name="name" value="Special Coupon - 5 days"/>
+        <string name="desc" value="Hold on to this coupon to #cearn 2x EXP from all monsters#. This coupon is valid for 5 days after the initial possession, and please be aware that if the character has multiple coupons of the same kind, they will all kick in at once."/>
+    </imgdir>
+    <imgdir name="5211003">
+        <string name="name" value="Cupom de EXP x2 (Uso Único)"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência# por alguns minutos após ativar seu cupom. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211004">
+        <string name="name" value="Cupom Tipo 01 de EXP x2 - Dias de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 7h às 11h (Horário de Brasília) nos #cdias de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211005">
+        <string name="name" value="Cupom Tipo 02 de EXP x2 - Dias de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 10h às 14h (Horário de Brasília) nos #cdias de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211006">
+        <string name="name" value="Cupom Tipo 03 de EXP x2 - Dias de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 13h às 17h (Horário de Brasília) nos #cdias de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211007">
+        <string name="name" value="Cupom Tipo 04 de EXP x2 - Dias de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 16h às 20h (Horário de Brasília) nos #cdias de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211008">
+        <string name="name" value="Cupom Tipo 05 de EXP x2 - Dias de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 19h às 23h (Horário de Brasília) nos #cdias de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211009">
+        <string name="name" value="Cupom Tipo 01 de EXP x2 - Fim de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 7h às 11h (Horário de Brasília) nos #cfins de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211010">
+        <string name="name" value="Cupom Tipo 02 de EXP x2 - Fim de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 10h às 14h (Horário de Brasília) nos #cfins de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211011">
+        <string name="name" value="Cupom Tipo 03 de EXP x2 - Fim de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 13h às 17h (Horário de Brasília) nos #cfins de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações. "/>
+    </imgdir>
+    <imgdir name="5211012">
+        <string name="name" value="Cupom Tipo 04 de EXP x2 - Fim de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 16h às 20h (Horário de Brasília) nos #cfins de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211013">
+        <string name="name" value="Cupom Tipo 05 de EXP x2 - Fim de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 19h às 23h (Horário de Brasília) nos #cfins de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211014">
+        <string name="name" value="Cupom Tipo 01 de EXP x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 7h às 11h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211015">
+        <string name="name" value="Cupom Tipo 02 de EXP x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 10h às 14h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211016">
+        <string name="name" value="Cupom Tipo 03 de EXP x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 13h às 17h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211017">
+        <string name="name" value="Cupom Tipo 04 de EXP x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 16h às 20h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211018">
+        <string name="name" value="Cupom Tipo 05 de EXP x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 19h às 23h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211037">
+        <string name="name" value="Cupom Tipo 06 de EXP x2 - Dias de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível da 22h às 2h (Horário de Brasília) nos #cdias de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211038">
+        <string name="name" value="Cupom Tipo 06 de EXP x2 - Fim de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível da 22h às 2h (Horário de Brasília) nos #cfins de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211039">
+        <string name="name" value="Cupom Tipo 06 de EXP x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível da 22h às 2h (Horário de Brasília) em #ctodos os dias#.Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211040">
+        <string name="name" value="Cupom Tipo 07 de EXP x2 - Dias de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 1h às 5h (Horário de Brasília) nos #cdias de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211041">
+        <string name="name" value="Cupom Tipo 07 de EXP x2 - Fim de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 1h às 5h (Horário de Brasília) nos #cfins de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211042">
+        <string name="name" value="Cupom Tipo 07 de EXP x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 1h às 5h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211043">
+        <string name="name" value="Cupom Tipo 08 de EXP x2 - Dias de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 4h às 8h (Horário de Brasília) nos #cdias de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211044">
+        <string name="name" value="Cupom Tipo 08 de EXP x2 - Fim de semana"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 4h às 8h (Horário de Brasília) nos #cfins de semana#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211045">
+        <string name="name" value="Cupom Tipo 08 de EXP x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito de duplicar a experiência ficará disponível das 4h às 8h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211046">
+        <string name="name" value="Cupom Especial de 1 Dia - EXP x2"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 24 horas após a compra. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211047">
+        <string name="name" value="Cupom Especial de 3 Horas - EXP x2"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 3 horas após a compra. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5211048">
+        <string name="name" value="Cupom Especial de 2x EXP de 4 horas"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 4 horas após a compra. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5220000">
+        <string name="name" value="Bilhete Gachapon"/>
+        <string name="desc" value="Este bilhete permite usar Gachapon e obter vários itens."/>
+    </imgdir>
+    <imgdir name="5220001">
+        <string name="name" value="Bilhete de Eventos"/>
+        <string name="desc" value="Um bilhete para poder entrar no mapa de eventos."/>
+    </imgdir>
+    <imgdir name="5220010">
+        <string name="name" value="Gachapon para Caça-níqueis"/>
+    </imgdir>
+    <imgdir name="5220020">
+        <string name="name" value="Gachapon para o Lan House"/>
+    </imgdir>
+    <imgdir name="5221000">
+        <string name="name" value="Bilhete de Desconto"/>
+        <string name="desc" value="Este bilhete permite que você compre algumas coisas na loja de itens independente de quanto custar."/>
+    </imgdir>
+    <imgdir name="5230000">
+        <string name="name" value="A Coruja de Minerva"/>
+        <string name="desc" value="#cA Coruja de Minerva#, que representa sabedoria, pode ser usada para procurar itens vendidos no Mercado. #cEla desaparece assim que mostrar os resultados#."/>
+    </imgdir>
+    <imgdir name="5240000">
+        <string name="name" value="Banana do Macaco"/>
+        <string name="desc" value="Uma banana que parece deliciosa. Só pode ser usada com Macacos. \nRestaura toda a energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240001">
+        <string name="name" value="Baterias"/>
+        <string name="desc" value="Um conjunto novo de baterias. Só pode ser usado com #cRobô#. Restaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240002">
+        <string name="name" value="Osso de Cachorro"/>
+        <string name="desc" value="Um osso de cachorro muito bem embrulhado. Só pode ser usado com #cCachorrinhos e Huskys#. \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240003">
+        <string name="name" value="Bambu"/>
+        <string name="desc" value="Bambu cultivado nas florestas de Ellinia. Só pode ser usado com #cPandas#. \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240004">
+        <string name="name" value="Peixinho"/>
+        <string name="desc" value="Pescado apenas em Porto Lith. Só pode ser usado com #cGatinhos, Porquinhos Negros e Pingüins#. \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240005">
+        <string name="name" value="Trevo"/>
+        <string name="desc" value="Um trevo recém-colhido. Só pode ser usado com #cCoelhinhos#. \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240006">
+        <string name="name" value="Carne Vermelha"/>
+        <string name="desc" value="Carne fresca comprada no mercado. Só pode ser usado com #cDinos, Mini Kargos, Porquinhos Negros e Tigres Brancos# . \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240007">
+        <string name="name" value="Frutas Congeladas"/>
+        <string name="desc" value="Apenas o #cMini Yeti e o Porquinho Negro# podem comer as frutas congeladas. \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240008">
+        <string name="name" value="Comida de Peru"/>
+        <string name="desc" value="Comida de peru muito bem empacotada. Apenas o #cPeru# pode comê-la.  \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240009">
+        <string name="name" value="Pudim de Carne Púrpura"/>
+        <string name="desc" value="Um grande pedaço de um pudim de carne púrpura que apenas os #cBalrogs Jrs.# apreciam. Recupera o &quot;cansaço&quot; completamente e #caumenta a amizade em 100#."/>
+    </imgdir>
+    <imgdir name="5240010">
+        <string name="name" value="Moeda Dourada de Chocolate"/>
+        <string name="desc" value="Delicioso chocolate com cobertura dourada. Só pode ser usado com #cPorquinhos Dourados#. \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240011">
+        <string name="name" value="Algodão Doce"/>
+        <string name="desc" value="Uma comida feita para a mascote Sun Wu Kong. Recupera o &quot;cansaço&quot; completamente e #caumenta a amizade em 100#."/>
+    </imgdir>
+    <imgdir name="5240012">
+        <string name="name" value="Doce Marmorizado de Dragão"/>
+        <string name="desc" value="Uma ração específica para #cDragões#. \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240013">
+        <string name="name" value="Besouro Caramelado"/>
+        <string name="desc" value="Um grande e gordo Besouro Caramelado! Consumido apenas pelo #cCeifador Jr#.  \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240015">
+        <string name="name" value="Alho Salgado Frito"/>
+        <string name="desc" value="Pedacinhos fritos e salgados de alho em uma embalagem especial. Apenas Porcos-Espinhos o comem.. \nRecupera completamente o Cansaço. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240016">
+        <string name="name" value="Caramel Beetle"/>
+        <string name="desc" value="A caramel beetle plucked right from a myserious tree. Only the #cJr. Reaper# appreciates such delicacy. Restores Fullness and #cincreases 100 Closeness#."/>
+    </imgdir>
+    <imgdir name="5240017">
+        <string name="name" value="Flocos de Neve"/>
+        <string name="desc" value="Apenas o #cRudolph Cristal# pode comer este gelinho delicioso.  \nRestaura totalmente sua energia. \nAumenta a amizade em 100."/>
+    </imgdir>
+    <imgdir name="5240018">
+        <string name="name" value="Sprout"/>
+        <string name="desc" value="A nutritious food only available for #cKino#. Restores Fullness and #cincreases 100 Closeness#.."/>
+    </imgdir>
+    <imgdir name="5240019">
+        <string name="name" value="Hedgehog Food											Is this supposed to be for the Porcupine?"/>
+        <string name="desc" value="A nutritious blend of formulas only for #cHedgehogs#. Restores Fullness and #cincreases 100 Closeness#.."/>
+    </imgdir>
+    <imgdir name="5240020">
+        <string name="name" value="Caviar"/>
+        <string name="desc" value="Only eligible for the pet Skunk. \nIncrease 100 Closeness."/>
+    </imgdir>
+    <imgdir name="5251000">
+        <string name="name" value="Licença de Casamento na Catedral"/>
+        <string name="desc" value="Um cupom que permite o casamento na Catedral com convites."/>
+    </imgdir>
+    <imgdir name="5251001">
+        <string name="name" value="Licença de Casamento na Capela"/>
+        <string name="desc" value="Um cupom que permite o casamento na Capela com convites."/>
+    </imgdir>
+    <imgdir name="5251002">
+        <string name="name" value="Licença Premium de Casamento na Capela"/>
+        <string name="desc" value="Um cupom que permite o casamento na Capela com convites e um evento especial pós casamento."/>
+    </imgdir>
+    <imgdir name="5251003">
+        <string name="name" value="Licença Premium de Casamento na Catedral"/>
+        <string name="desc" value="Um cupom que permite o casamento na Catedral com convites e um evento especial pós casamento."/>
+    </imgdir>
+    <imgdir name="5251004">
+        <string name="name" value="Simple Wedding Ticket"/>
+        <string name="desc" value="A ticket that allows for a simple wedding. #cThe bride and groom may each invite 5 well-wishers and receive a 1 Carat Wedding Ring.#"/>
+    </imgdir>
+    <imgdir name="5251005">
+        <string name="name" value="Sweet Wedding Ticket"/>
+        <string name="desc" value="A ticket that allows for a sweet wedding. #cThe bride and groom may each invite 15 well-wishers, take a Wedding Photo, and receive a 2 Carat Wedding Ring.#"/>
+    </imgdir>
+    <imgdir name="5251006">
+        <string name="name" value="Premium Wedding Ticket"/>
+        <string name="desc" value="A ticket that allows for a lavish, premier wedding. #cThe bride and groom may each invite 30 well-wishers, take a Wedding Photo, and receive a 3 Carat Wedding Ring.#"/>
+    </imgdir>
+    <imgdir name="5251100">
+        <string name="name" value="Wedding Invitation Ticket"/>
+        <string name="desc" value="Ticket that lets you make additional invitation cards.(one-time use)"/>
+    </imgdir>
+    <imgdir name="5281000">
+        <string name="name" value="Passed Gas"/>
+        <string name="desc" value="A special effect that shows Passed Gas. Double-click to use this effect?one time only!"/>
+    </imgdir>
+    <imgdir name="5281001">
+        <string name="name" value="Floral Scent"/>
+        <string name="desc" value="A special effect that shows Floral Scent. On the Key Config, configure this on a button of your choice to turn the effect on/off."/>
+    </imgdir>
+    <imgdir name="5290000">
+        <string name="name" value="Emoticon para Fórum dos Clãs - Bravo"/>
+        <string name="desc" value="Um emoticon que pode ser inserido no Fórum dos Clãs."/>
+    </imgdir>
+    <imgdir name="5290001">
+        <string name="name" value="Emoticon para Fórum dos Clãs - Sorriso"/>
+        <string name="desc" value="Um emoticon que pode ser inserido no Fórum dos Clãs."/>
+    </imgdir>
+    <imgdir name="5290002">
+        <string name="name" value="Emoticon para Fórum dos Clãs - Silêncio"/>
+        <string name="desc" value="Um emoticon que pode ser inserido no Fórum dos Clãs."/>
+    </imgdir>
+    <imgdir name="5290003">
+        <string name="name" value="Emoticon para Fórum dos Clãs - LOL"/>
+        <string name="desc" value="Um emoticon que pode ser inserido no Fórum dos Clãs."/>
+    </imgdir>
+    <imgdir name="5290004">
+        <string name="name" value="Emoticon para Fórum dos Clãs - Surpresa"/>
+        <string name="desc" value="Um emoticon que pode ser inserido no Fórum dos Clãs."/>
+    </imgdir>
+    <imgdir name="5290005">
+        <string name="name" value="Emoticon para Fórum dos Clãs - Choro"/>
+        <string name="desc" value="Um emoticon que pode ser inserido no Fórum dos Clãs."/>
+    </imgdir>
+    <imgdir name="5290006">
+        <string name="name" value="Emoticon para Fórum dos Clãs - Furioso"/>
+        <string name="desc" value="Um emoticon que pode ser inserido no Fórum dos Clãs."/>
+    </imgdir>
+    <imgdir name="5290007">
+        <string name="name" value="Emoticon para Fórum dos Clãs -0_0"/>
+        <string name="desc" value="Um emoticon que pode ser inserido no Fórum dos Clãs."/>
+    </imgdir>
+    <imgdir name="5300000">
+        <string name="name" value="Pergaminho dos Fungos"/>
+        <string name="desc" value="Finalmente, seu desejo de se transformar em um cogumelo será realizado. Fique disfarçado por 10 minutos e surpreenda seus amigos!"/>
+    </imgdir>
+    <imgdir name="5300001">
+        <string name="name" value="Surpresa Oinc"/>
+        <string name="desc" value="Aproveite esta fantástica fantasia de porquinho. Nunca foi tão divertido viver 10 minutos de gulodice!"/>
+    </imgdir>
+    <imgdir name="5300002">
+        <string name="name" value="Pesadelo Zeta"/>
+        <string name="desc" value="Com esta fantasia, você vai parecer um apavorante monstro do espaço. Por 10 minutos, deixe seus amigos fora de órbita!"/>
+    </imgdir>
+    <imgdir name="5330000">
+        <string name="name" value="Quick Delivery Ticket"/>
+        <string name="desc" value="This ticket enables one to send a package, along with an entered message, #cRIGHT THEN AND THERE#. #cDouble-click# it or visit the #cPackage NPC# to use this."/>
+    </imgdir>
+    <imgdir name="5360000">
+        <string name="name" value="Cartão de DROP x2"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 24 horas. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360001">
+        <string name="name" value="Cupom Tipo 01 de Drop x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível das 7h às 11h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360002">
+        <string name="name" value="Cupom Tipo 02 de Drop x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível das 10h às 14h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360003">
+        <string name="name" value="Cupom Tipo 03 de Drop x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível das 13h às 17h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360004">
+        <string name="name" value="Cupom Tipo 04 de Drop x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível das 16h às 20h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360005">
+        <string name="name" value="Cupom Tipo 05 de Drop x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível das 19h às 23h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360006">
+        <string name="name" value="Cupom Tipo 06 de Drop x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível da 22h às 2h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360007">
+        <string name="name" value="Cupom Tipo 07 de Drop x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível das 1h às 5h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360008">
+        <string name="name" value="Cupom Tipo 08 de Drop x2 - Todos os dias"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível das 4h às 8h (Horário de Brasília) em #ctodos os dias#. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360009">
+        <string name="name" value="Cupom Tipo 01 de Drop x2"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 24 horas após a compra. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360010">
+        <string name="name" value="Cupom Tipo 01 de Drop x2"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 24 horas após a compra. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360011">
+        <string name="name" value="Cupom Tipo 01 de Drop x2"/>
+        <string name="desc" value="Este cupom permite que o usuário ganhe #c2 vezes mais experiência#. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 24 horas após a compra. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360012">
+        <string name="name" value="Cupom Tipo 01 de Drop x2"/>
+        <string name="desc" value="Com esse cupom os monstros soltam #cduas vezes mais# coisas. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 24 horas após a compra. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360013">
+        <string name="name" value="Cupom Tipo 01 de Drop x2"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 24 horas após a compra. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360014">
+        <string name="name" value="Cupom Especial de Drop x2 - 3 Horas"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 3 horas. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5360042">
+        <string name="name" value="Cupom Especial de Drop x2 - 4 horas"/>
+        <string name="desc" value="Este cupom #cduplica a quantidade de mesos e itens# deixados pelos monstros. O cupom será ativado imediatamente após a compra, e o efeito duplicador ficará disponível por 4 horas após a compra. Atenção! Este item não terá efeito durante manutenções programadas ou extraordinárias. Acesse o site para mais informações."/>
+    </imgdir>
+    <imgdir name="5370000">
+        <string name="name" value="Quadro-negro: 7 Dias"/>
+        <string name="desc" value="Qualquer informação inserida irá aparecer no quadro-negro. Este item pode seu usado em qualquer lugar incluindo a #cEntrada do Mercado#, exceto no #cMercado#."/>
+    </imgdir>
+    <imgdir name="5370001">
+        <string name="name" value="Quadro-negro: 1 Dia"/>
+        <string name="desc" value="Qualquer informação inserida irá aparecer no quadro-negro. Este item pode seu usado em qualquer lugar incluindo a #cEntrada do Mercado#, exceto no #cMercado#."/>
+    </imgdir>
+    <imgdir name="5380000">
+        <string name="name" value="Rocha da Evolução"/>
+        <string name="desc" value="Uma rocha misteriosa que transforma bichinhos de estimação bebês em bichos adultos."/>
+    </imgdir>
+    <imgdir name="5390000">
+        <string name="name" value="Mensageiro do Diablo"/>
+        <string name="desc" value="Com este megafone, grite para todo o mundo contando que seu personagem está no ar. Agora, é possível colocar seu avatar na tela de todo mundo! Vem com um cenário em chamas para o seu avatar."/>
+    </imgdir>
+    <imgdir name="5390001">
+        <string name="name" value="Mensageiro Nuvem"/>
+        <string name="desc" value="Com este megafone, grite para todo o mundo contando que seu personagem está no ar. Agora, é possível colocar seu avatar na tela de todo mundo! Vem com um cenário brilhante para o seu avatar."/>
+    </imgdir>
+    <imgdir name="5390002">
+        <string name="name" value="Mensageiro Amorvidrado"/>
+        <string name="desc" value="Com este megafone, grite para todo o mundo contando que seu personagem está no ar. Agora, é possível colocar seu avatar na tela de todo mundo! Vem com um cenário de coração para o seu avatar."/>
+    </imgdir>
+    <imgdir name="5400000">
+        <string name="name" value="Trocador de Nome"/>
+        <string name="desc" value="Este pergaminho vai permitir que você troque o nome do seu personagem para outro totalmente diferente! Lembre-se que seu personagem precisa atingir pelo menos o nível 10 para poder trocar de nome e que o nome deve ser aceito pela verificação de nomes. A mudança do nome vai ocorrer na próxima vez que entrar no servidor e você não poderá fazer outra mudança por um mês."/>
+    </imgdir>
+    <imgdir name="5401000">
+        <string name="name" value="Transferência de Personagem"/>
+        <string name="desc" value="Este item é usado para transferir seu personagem de um servidor para o outro. Seu personagem precisa ter atingido pelo menos o nível 20 e apenas 1.000.000 de mesos poderão ser transferidos com seu personagem."/>
+    </imgdir>
+    <imgdir name="5420000">
+        <string name="name" value="Cupom de Sócio do Salão de Amoria"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Amoria# para mudar seu corte de cabelo #cà sua escolha#."/>
+    </imgdir>
+    <imgdir name="5420001">
+        <string name="name" value="Cupom de Sócio do Salão da CFN"/>
+        <string name="desc" value="Use-o no #cCabeleireiro da CFN# para mudar seu corte de cabelo #cà sua escolha#."/>
+    </imgdir>
+    <imgdir name="5420002">
+        <string name="name" value="Cupom de Sócio do Salão de Henesys"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Henesys# para mudar seu corte de cabelo #cà sua escolha#."/>
+    </imgdir>
+    <imgdir name="5420003">
+        <string name="name" value="Cabeleireiro da Cidade de Kerning"/>
+        <string name="desc" value="Use-o no #cCabeleireiro da Cidade de Kerning# para mudar seu corte de cabelo #cà sua escolha#."/>
+    </imgdir>
+    <imgdir name="5420004">
+        <string name="name" value="Cupom de Sócio do Salão de Orbis"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Orbis# para mudar seu corte de cabelo #cà sua escolha#."/>
+    </imgdir>
+    <imgdir name="5420005">
+        <string name="name" value="Cupom de Sócio do Salão de Ludibrium"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Ludibrium# para mudar seu corte de cabelo #cà sua escolha#."/>
+    </imgdir>
+    <imgdir name="5420006">
+        <string name="name" value="Cupom de Sócio do Salão de Cabeleireiro de Mu Lung"/>
+        <string name="desc" value="Use-o no #cCabeleireiro de Mu Lung# para mudar seu corte de cabelo #cà sua escolha."/>
+    </imgdir>
+    <imgdir name="5430000">
+        <string name="name" value="Extra Character Slot Coupon"/>
+        <string name="desc" value="Increases the character creation slot by 1. Each account may hold a maximum of 6 character slots per server world."/>
+    </imgdir>
+    <imgdir name="5450000">
+        <string name="name" value="Myo Myo the Traveling Salesman"/>
+        <string name="desc" value="Use this to experience the same effect as enting a general store. Can purchase potions to recover HP &amp; MP, throwing stars, and recharge bullets. Some maps restrict the use of this item, though."/>
+    </imgdir>
+    <imgdir name="5460000">
+        <string name="name" value="Pet Snack"/>
+        <string name="desc" value="A Pet Snack is secret method of handling multiple pets at once."/>
+    </imgdir>
+    <imgdir name="5470000">
+        <string name="name" value="Hired Merchant - Controle Remoto"/>
+        <string name="desc" value="Can control the Hired Merchant anywhere, as long as the merchant is on the same channel."/>
+    </imgdir>
+    <imgdir name="5990000">
+        <string name="name" value="MTS sale"/>
+    </imgdir>
+    <imgdir name="5240021">
+        <string name="name" value="Robo Oil"/>
+        <string name="desc" value="Greasy oil for the Robo"/>
+    </imgdir>
+    <imgdir name="5150032">
+        <string name="name" value="CBD Hair Style Coupon (REG)"/>
+        <string name="desc" value="Use it at #cCBD Hair Salon# to change your hair style #crandomly#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5150033">
+        <string name="name" value="CBD Hair Style Coupon (VIP)"/>
+        <string name="desc" value="Use it at #cCBD Hair Salon# to change your hair style to a style of #cyour choice#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5152037">
+        <string name="name" value="CBD Face Coupon (REG)"/>
+        <string name="desc" value="Use it at #cCBD Plastic Surgery# to change your face #crandomly#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5152038">
+        <string name="name" value="CBD Face Coupon (VIP)"/>
+        <string name="desc" value="Use it at #cCBD Plastic Surgery# to change your face to a style of #cyour choice#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5152039">
+        <string name="name" value="CBD Cosmetic Lens Coupon (REG)"/>
+        <string name="desc" value="Use it at #cCBD Plastic Surgery# to change your eye color #crandomly#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5152040">
+        <string name="name" value="CBD Cosmetic Lens Coupon (VIP)"/>
+        <string name="desc" value="Use it at #cCBD Plastic Surgery# to change your eye to a color of #cyour choice#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5153010">
+        <string name="name" value="CBD Skin Coupon"/>
+        <string name="desc" value="Use it at #cCBD Skin-Care# to change your skin to a color of #cyour choice#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5151027">
+        <string name="name" value="CBD Hair Color Coupon (REG)"/>
+        <string name="desc" value="Use it at #cCBD Hair Salon# to change your hair color #crandomly#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5151028">
+        <string name="name" value="CBD Hair Color Coupon (VIP)"/>
+        <string name="desc" value="Use it on #cCBD Hair Salon# to change your hair to a color of #cyour choice#. (one-time use)"/>
+    </imgdir>
+    <imgdir name="5021023">
+        <string name="name" value="Stirge Throwing Star"/>
+        <string name="desc" value="Stirgeman&apos;s favorite throwing star! Guaranteed to get you out of a tight spot!"/>
+    </imgdir>
+    <imgdir name="5010059">
+        <string name="name" value="Trail of Darkness Effect"/>
+        <string name="desc" value="Blaze a trail of dark energy--no one can escape your wrath with this effect!"/>
+    </imgdir>
+    <imgdir name="5252000">
+        <string name="name" value="Event Ticket (Nexon Cash)"/>
+        <string name="desc" value="A ticket that&apos;s required to enter the Mini Dungeon during the event period. Without this, you won’t be able to fully participate in the event."/>
+    </imgdir>
+    <imgdir name="5490000">
+        <string name="name" value="Master Key"/>
+        <string name="desc" value="Take this Master Key to open the Gachapon Box and earn a rare item!"/>
+    </imgdir>
+    <imgdir name="5211049">
+        <string name="name" value="7-Eleven 2x EXP Card - 90 Minutes"/>
+        <string name="desc" value="This coupon allows users to earn #c2x Exp (double experience)#. The coupon will be activated immediately after receiving it, and the double experience effect will be available for 90 minutes."/>
+    </imgdir>
+    <imgdir name="5510000">
+        <string name="name" value="Roda do Destino"/>
+        <string name="desc" value="Esse item revive o personagem no mesmo mapa onde ele tiver sido derrotado. Não pode ser usado em Missões de Grupo, mapas de evento e Transportes (como o navio)."/>
+    </imgdir>
+</imgdir>

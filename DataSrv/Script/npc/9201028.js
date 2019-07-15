@@ -5,7 +5,7 @@ importPackage(Packages.client);
 importPackage(Packages.server);
 
 var status = -1;
-var nomeServer = "LeaderMS";
+var nomeServer = "Ellin";
 
 function start() {
     action(1, 0, 0);

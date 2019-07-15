@@ -1,7 +1,7 @@
 /*
  * LeaderMS Revision
- * @autor Gabriel A. <javascriptz@leaderms.com.br>
- * Deposito - 9270042
+ * @autor GabrielSin
+ * Storage - 9270042
 */
 var status;
  
@@ -18,7 +18,7 @@ function action(mode, type, selection) {
         return;
     }
     if (status == 0) {
-            cm.getPlayer().getStorage().sendStorage(cm.getClient(), 9270042);
-            cm.dispose();
+        cm.getPlayer().getStorage().sendStorage(cm.getClient(), 9270042);
+        cm.dispose();
     }
 }

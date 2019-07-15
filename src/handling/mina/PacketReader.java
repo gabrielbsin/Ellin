@@ -3,10 +3,6 @@ package handling.mina;
 import java.awt.Point;
 import tools.HexTool;
 
-/**
- *
- * @author Ellin 
- */
 public class PacketReader {
     
     private final byte[] message;

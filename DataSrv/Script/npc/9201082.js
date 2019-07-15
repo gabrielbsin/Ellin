@@ -51,7 +51,7 @@ function action(mode, type, selection) {
 		}
 		if (cm.getPlayer().getEventInstance() == null) {
 			if (status == 0) {
-				cm.sendNext("Recentemente, houve um ataque ao Setor #bOmega#k. Todos os chefes do mundo LeaderMS entraram nesta dimensão, tornaram-se muito mais fortes, tem mais HP e estão invadindo Setor #bOmega#k. Precisamos de uma equipe corajosa para detê-los.");
+				cm.sendNext("Recentemente, houve um ataque ao Setor #bOmega#k. Todos os chefes do mundo Ellin entraram nesta dimensão, tornaram-se muito mais fortes, tem mais HP e estão invadindo Setor #bOmega#k. Precisamos de uma equipe corajosa para detê-los.");
 			} else if (status == 1) {
 				cm.sendNextPrev("Esses monstros vêm com o poder da #bOmegaPQ#k, um lendário poder que vem com a armadura que vestem.");
 			}else if (status == 2) {

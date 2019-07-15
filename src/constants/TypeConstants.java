@@ -8,7 +8,7 @@ package constants;
 
 /*
  * GabrielSin (http://forum.ragezone.com/members/822844.html)
- * LeaderMS v.62
+ * Ellin v.62
  * TypeConstants
  */
 
