@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="MapleRoyals.img">
+    <imgdir name="Storage">
+        <canvas name="invempty" width="167" height="18">
+            <vector name="origin" x="0" y="0"/>
+        </canvas>
+        <canvas name="storeempty" width="148" height="18">
+            <vector name="origin" x="0" y="0"/>
+        </canvas>
+    </imgdir>
+</imgdir>
