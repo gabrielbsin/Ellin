@@ -70,7 +70,8 @@ public enum MonitoredLockType {
     MAP_BOUNDS(40),
     MINIDUNGEON(41),
     REACTOR(42),
-    CHR_SAVE(43);
+    CHR_SAVE(43),
+    WORLD_SRVMESSAGES(44);
     
     private final int i;
     

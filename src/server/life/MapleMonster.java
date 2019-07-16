@@ -368,7 +368,7 @@ public class MapleMonster extends AbstractLoadedMapleLife {
         int trueDamage = Math.min(hp.get(), damage); 
         this.hp.addAndGet(-trueDamage);
         
-        if (GameConstants.USE_DEBUG) from.dropMessage(5, "Atacou o MOB " + this.getId() + ", OID " + this.getObjectId());
+        if (GameConstants.USE_DEBUG) from.dropMessage(5, "Hit MOBID: " + this.getId() + ", OID: " + this.getObjectId());
         
         dispatchMonsterDamaged(from, trueDamage);
         
@@ -378,7 +378,8 @@ public class MapleMonster extends AbstractLoadedMapleLife {
             takenDamage.put(from.getId(), new AtomicInteger(trueDamage));
         }
         if (hasBossHPBar()) {
-            from.getMap().broadcastMessage(makeBossHPBarPacket(), getPosition());
+            from.setPlayerAggro(this.hashCode());
+            from.getMap().broadcastBossHpMessage(this, this.hashCode(), makeBossHPBarPacket(), getPosition());
         } else if (!isBoss()) {
             int remainingHP = (int) Math.max(1, hp.get() * 100f / getMaxHp());
             OutPacket packet = MonsterPackets.ShowMonsterHP(getObjectId(), remainingHP);

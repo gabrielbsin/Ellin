@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package handling.login;
 
 import constants.ServerProperties;
@@ -10,8 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author GabrielSin
+ * @author Eric (http://forum.ragezone.com/members/801110.html)
  */
 public class LoginBalloon {
     
@@ -29,9 +23,9 @@ public class LoginBalloon {
     public final static List<LoginBalloon> getBalloons() {
         if (loginBallon.isEmpty()) {
             if (ServerProperties.Login.ENABLE_BALLONS) {
-                loginBallon.add(new LoginBalloon("Free GM for non asian!", 236, 122));
-                loginBallon.add(new LoginBalloon("Join today, you scrub!", 0, 276));
-                loginBallon.add(new LoginBalloon("So join if you are a HENEHOE!", 196, 263));
+                loginBallon.add(new LoginBalloon("", 236, 122));
+                loginBallon.add(new LoginBalloon("", 0, 276));
+                loginBallon.add(new LoginBalloon("", 196, 263));
             }
         }
         return loginBallon;

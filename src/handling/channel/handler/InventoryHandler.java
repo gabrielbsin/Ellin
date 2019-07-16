@@ -316,11 +316,6 @@ public class InventoryHandler {
     }  
 
     public static void UseItem(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         ItemInformationProvider ii = ItemInformationProvider.getInstance();
         Player p = c.getPlayer();
         
@@ -371,11 +366,6 @@ public class InventoryHandler {
     }
 
     public static void UseUpgradeScroll(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         Player p = c.getPlayer();
         long time =  packet.readInt();
         if (p.getLastRequestTime() > time || p.getLastRequestTime() == time) { 
@@ -503,11 +493,6 @@ public class InventoryHandler {
     }
 	
     public static void UseSummonBag(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         packet.readInt(); 
         Player p = c.getPlayer();
         final byte slot = (byte) packet.readShort();
@@ -531,11 +516,6 @@ public class InventoryHandler {
     }
 
     public static void PickupPlayer(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         packet.readByte();	
         packet.readInt(); 
         packet.readInt(); 
@@ -690,11 +670,6 @@ public class InventoryHandler {
     }
 
     public static void PetMapItemPickUp(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         Player p = c.getPlayer();
         if (p.getInventory(InventoryType.EQUIPPED).findById(ItemConstants.MESO_MAGNET) == null && p.getInventory(InventoryType.EQUIPPED).findById(ItemConstants.ITEM_POUCH) == null) {
             p.announce(PacketCreator.EnableActions());

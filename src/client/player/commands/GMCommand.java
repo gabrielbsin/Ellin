@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package client.player.commands;
 
 import client.Client;
@@ -37,16 +31,16 @@ import server.itens.ItemInformationProvider;
 import server.life.MapleLifeFactory;
 import server.life.MapleMonster;
 import server.maps.Field;
-import server.maps.FieldManager;
 import server.maps.object.FieldObject;
 import server.maps.object.FieldObjectType;
 import server.maps.portal.Portal;
 import tools.StringUtil;
 
 /**
- * 
- * @author GabrielSin
+ * @author Emilyx3
+ * @author GabrielSin (http://forum.ragezone.com/members/822844.html)
  */
+
 public class GMCommand {
     
     public static CoomandRank getPlayerLevelRequired() {
@@ -225,12 +219,10 @@ public class GMCommand {
         @Override
         public boolean execute(Client c, String[] splitted) {
             Field map = c.getPlayer().getMap();
-            MapleMonster monster = MapleLifeFactory.getMonster(Integer.parseInt(splitted[1]));
             List<FieldObject> monsters = map.getMapObjectsInRange(c.getPlayer().getPosition(), Double.POSITIVE_INFINITY, Arrays.asList(FieldObjectType.MONSTER));
-
             int count = 0;
             for (FieldObject monstermo : monsters) {
-                monster = (MapleMonster) monstermo;
+                MapleMonster monster = (MapleMonster) monstermo;
                 if (!monster.getStats().isFriendly() && !(monster.getId() >= 8810010 && monster.getId() <= 8810018)) {
                     map.damageMonster(c.getPlayer(), monster, Integer.MAX_VALUE);
                     count++;

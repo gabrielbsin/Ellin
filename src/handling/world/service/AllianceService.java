@@ -29,8 +29,17 @@ public class AllianceService {
             alliances.put(g.getId(), g);
         });
     }
+    
+    public static MapleGuildAlliance getAlliance(int id) {
+        synchronized (alliances) {
+            if (alliances.get(id) != null) {
+                return alliances.get(id);
+            }
+            return null;
+        }
+    }
 
-    public static MapleGuildAlliance getAlliance(final int allianceid) {
+    public static MapleGuildAlliance getAlliance(final int allianceid, int channel) {
         MapleGuildAlliance ret = null;
         allianceLocks.readLock().lock();
         try {
@@ -41,7 +50,7 @@ public class AllianceService {
         if (ret == null) {
             allianceLocks.writeLock().lock();
             try {
-                ret = new MapleGuildAlliance(allianceid);
+                ret = new MapleGuildAlliance(allianceid, channel);
                 if (ret == null || ret.getId() <= 0) {
                     return null;
                 }
@@ -54,7 +63,7 @@ public class AllianceService {
     }
 
     public static int getAllianceLeader(final int allianceid) {
-        final MapleGuildAlliance mga = getAlliance(allianceid);
+        final MapleGuildAlliance mga = alliances.get(allianceid);
         if (mga != null) {
             return mga.getLeaderId();
         }
@@ -62,21 +71,21 @@ public class AllianceService {
     }
 
     public static void updateAllianceRanks(final int allianceid, final String[] ranks) {
-        final MapleGuildAlliance mga = getAlliance(allianceid);
+        final MapleGuildAlliance mga = alliances.get(allianceid);
         if (mga != null) {
             mga.setRank(ranks);
         }
     }
 
     public static void updateAllianceNotice(final int allianceid, final String notice) {
-        final MapleGuildAlliance mga = getAlliance(allianceid);
+        final MapleGuildAlliance mga = alliances.get(allianceid);
         if (mga != null) {
             mga.setNotice(notice);
         }
     }
 
     public static boolean canInvite(final int allianceid) {
-        final MapleGuildAlliance mga = getAlliance(allianceid);
+        final MapleGuildAlliance mga = alliances.get(allianceid);
         if (mga != null) {
             return mga.getCapacity() > mga.getNoGuilds();
         }
@@ -84,7 +93,7 @@ public class AllianceService {
     }
 
     public static boolean changeAllianceLeader(final int allianceid, final int cid) {
-        final MapleGuildAlliance mga = getAlliance(allianceid);
+        final MapleGuildAlliance mga = alliances.get(allianceid);
         if (mga != null) {
             return mga.setLeaderId(cid);
         }
@@ -92,7 +101,7 @@ public class AllianceService {
     }
 
     public static boolean changeAllianceRank(final int allianceid, final int cid, final int change) {
-        final MapleGuildAlliance mga = getAlliance(allianceid);
+        final MapleGuildAlliance mga = alliances.get(allianceid);
         if (mga != null) {
             return mga.changeAllianceRank(cid, change);
         }
@@ -100,7 +109,7 @@ public class AllianceService {
     }
 
     public static boolean changeAllianceCapacity(final int allianceid) {
-        final MapleGuildAlliance mga = getAlliance(allianceid);
+        final MapleGuildAlliance mga = alliances.get(allianceid);
         if (mga != null) {
             return mga.setCapacity();
         }
@@ -108,7 +117,7 @@ public class AllianceService {
     }
 
     public static boolean disbandAlliance(final int allianceid) {
-        final MapleGuildAlliance mga = getAlliance(allianceid);
+        final MapleGuildAlliance mga = alliances.get(allianceid);
         if (mga != null) {
             return mga.disband();
         }
@@ -116,7 +125,7 @@ public class AllianceService {
     }
 
     public static boolean addGuildToAlliance(final int allianceid, final int gid) {
-        final MapleGuildAlliance mga = getAlliance(allianceid);
+        final MapleGuildAlliance mga = alliances.get(allianceid);
         if (mga != null) {
             return mga.addGuild(gid);
         }
@@ -124,7 +133,7 @@ public class AllianceService {
     }
 
     public static boolean removeGuildFromAlliance(final int allianceid, final int gid, final boolean expelled) {
-        final MapleGuildAlliance mga = getAlliance(allianceid);
+        final MapleGuildAlliance mga = alliances.get(allianceid);
         if (mga != null) {
             return mga.removeGuild(gid, expelled);
         }
@@ -132,7 +141,7 @@ public class AllianceService {
     }
 
     public static void sendGuild(final int allianceid) {
-        final MapleGuildAlliance alliance = getAlliance(allianceid);
+        final MapleGuildAlliance alliance = alliances.get(allianceid);
         if (alliance != null) {
             sendGuild(GuildPackets.GetAllianceUpdate(alliance), -1, allianceid);
             sendGuild(GuildPackets.GetGuildAlliance(alliance), -1, allianceid);
@@ -140,7 +149,7 @@ public class AllianceService {
     }
 
     public static void sendGuild(final OutPacket packet, final int exceptionId, final int allianceid) {
-        final MapleGuildAlliance alliance = getAlliance(allianceid);
+        final MapleGuildAlliance alliance = alliances.get(allianceid);
         if (alliance != null) {
             for (int i = 0; i < alliance.getNoGuilds(); i++) {
                 int gid = alliance.getGuildId(i);
@@ -162,7 +171,7 @@ public class AllianceService {
         g.changeARank(true);
         g_.changeARank(false);
 
-        final MapleGuildAlliance alliance = getAlliance(allianceid);
+        final MapleGuildAlliance alliance = alliances.get(allianceid);
 
         sendGuild(GuildPackets.CreateGuildAlliance(alliance), -1, allianceid);
         sendGuild(GuildPackets.GetAllianceInfo(alliance), -1, allianceid);
@@ -174,7 +183,7 @@ public class AllianceService {
     public static void allianceChat(final int gid, final String name, final int cid, final String msg) {
         final MapleGuild g = GuildService.getGuild(gid);
         if (g != null) {
-            final MapleGuildAlliance ga = getAlliance(g.getAllianceId());
+            final MapleGuildAlliance ga = alliances.get(g.getAllianceId());
             if (ga != null) {
                 for (int i = 0; i < ga.getNoGuilds(); i++) {
                     final MapleGuild g_ = GuildService.getGuild(ga.getGuildId(i));
@@ -187,7 +196,7 @@ public class AllianceService {
     }
 
     public static void setNewAlliance(final int gid, final int allianceid) {
-        final MapleGuildAlliance alliance = getAlliance(allianceid);
+        final MapleGuildAlliance alliance = alliances.get(allianceid);
         final MapleGuild guild = GuildService.getGuild(gid);
         if (alliance != null && guild != null) {
             for (int i = 0; i < alliance.getNoGuilds(); i++) {
@@ -210,7 +219,7 @@ public class AllianceService {
     }
 
     public static void setOldAlliance(final int gid, final boolean expelled, final int allianceid) {
-        final MapleGuildAlliance alliance = getAlliance(allianceid);
+        final MapleGuildAlliance alliance = alliances.get(allianceid);
         final MapleGuild g_ = GuildService.getGuild(gid);
         if (alliance != null) {
             for (int i = 0; i < alliance.getNoGuilds(); i++) {
@@ -246,7 +255,7 @@ public class AllianceService {
 
     public static List<OutPacket> getAllianceInfo(final int allianceid, final boolean start) {
         List<OutPacket> ret = new ArrayList<>();
-        final MapleGuildAlliance alliance = getAlliance(allianceid);
+        final MapleGuildAlliance alliance = alliances.get(allianceid);
         if (alliance != null) {
             if (start) {
                 ret.add(GuildPackets.GetAllianceInfo(alliance));

@@ -52,10 +52,6 @@ import tools.FileLogger;
 public class InterServerHandler {
     
     public static void ChangeChannel(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-        }
-        
         Player p = c.getPlayer();
         int channel = packet.readByte() + 1;
         if (p.getEventInstance() != null || c.getChannel() == channel || FieldLimit.CHANGECHANNEL.check(p.getMap().getFieldLimit())) {
@@ -155,7 +151,7 @@ public class InterServerHandler {
             if (p.getGuildId() > 0) {
                 GuildService.setGuildMemberOnline(p.getMGC(), true, c.getChannel());
                 c.announce(GuildPackets.ShowGuildInfo(p));
-                final MapleGuild gs = GuildService.getGuild(p.getGuildId());
+                final MapleGuild gs = GuildService.getGuild(p.getGuildId(), p.getClient().getChannel());
                 if (gs != null) {
                     final List<OutPacket> packetList = AllianceService.getAllianceInfo(gs.getAllianceId(), true);
                     if (packetList != null) {

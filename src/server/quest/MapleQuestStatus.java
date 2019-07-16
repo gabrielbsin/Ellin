@@ -56,6 +56,7 @@ public class MapleQuestStatus {
     
     private int npc;
     private int forfeited = 0;
+    private int completed = 0;
     private long completionTime, expirationTime;
     private final short questID;
     private Status status;
@@ -153,6 +154,10 @@ public class MapleQuestStatus {
             setProgress(entry.getKey(), "000");
         }
     }
+    
+    public int getCompleted() {
+        return completed;
+    }
 
     public long getCompletionTime() {
         return completionTime;
@@ -187,6 +192,14 @@ public class MapleQuestStatus {
             this.forfeited = forfeited;
         } else {
             throw new IllegalArgumentException("Can't set forfeits to something lower than before.");
+        }
+    }
+    
+    public void setCompleted(int completed) {
+        if (completed >= this.completed) {
+            this.completed = completed;
+        } else {
+            throw new IllegalArgumentException("Can't set completes to something lower than before.");
         }
     }
 

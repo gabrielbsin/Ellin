@@ -49,13 +49,14 @@ public class MapleGuildAlliance implements Serializable {
     private final int[] guilds = new int[5];
     private int allianceid;
     private int leaderid;
+    private int channel;
     private int capacity; 
     private String name, notice;
     private String ranks[] = new String[5];
 
-    public MapleGuildAlliance(final int id) {
+    public MapleGuildAlliance(final int id, int channel) {
         super();
-
+        this.channel = channel;
         try {
             try (PreparedStatement ps = DatabaseConnection.getConnection().prepareStatement("SELECT * FROM alliances WHERE id = ?")) {
                 ps.setInt(1, id);
@@ -89,7 +90,7 @@ public class MapleGuildAlliance implements Serializable {
             try (PreparedStatement ps = DatabaseConnection.getConnection().prepareStatement("SELECT id FROM alliances"); 
                 ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
-                    g = new MapleGuildAlliance(rs.getInt("id"));
+                    g = new MapleGuildAlliance(rs.getInt("id"), 0);
                     if (g.getId() > 0) {
                         ret.add(g);
                     }
@@ -327,7 +328,7 @@ public class MapleGuildAlliance implements Serializable {
         int g = -1;
         String leaderName = null;
         for (int i = 0; i < getNoGuilds(); i++) {
-            MapleGuild guild = GuildService.getGuild(guilds[i]);
+            MapleGuild guild = GuildService.getGuild(guilds[i], channel);
             if (guild != null) {
                 MapleGuildCharacter newLead = guild.getMGC(c);
                 MapleGuildCharacter oldLead = guild.getMGC(leaderid);
@@ -367,7 +368,7 @@ public class MapleGuildAlliance implements Serializable {
             return false;
         }
         for (int i = 0; i < getNoGuilds(); i++) {
-            MapleGuild guild = GuildService.getGuild(guilds[i]);
+            MapleGuild guild = GuildService.getGuild(guilds[i], channel);
             if (guild != null) {
                 MapleGuildCharacter chr = guild.getMGC(cid);
                 if (chr != null && chr.getAllianceRank() > 2) {

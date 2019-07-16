@@ -23235,6 +23235,7 @@ CREATE TABLE `queststatus` (
   `status` int(11) NOT NULL DEFAULT '0',
   `time` int(11) NOT NULL DEFAULT '0',
   `forfeited` int(11) NOT NULL DEFAULT '0',
+  `completed` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`queststatusid`),
   KEY `characterid` (`characterid`),
   CONSTRAINT `queststatus_ibfk_1` FOREIGN KEY (`characterid`) REFERENCES `characters` (`id`) ON DELETE CASCADE
@@ -25518,3 +25519,11 @@ INSERT INTO `wz_speedquiz` VALUES ('944', '2', '4000461', 'Knight\'s Mask', '1')
 INSERT INTO `wz_speedquiz` VALUES ('945', '2', '4000443', 'Cracked Hourglass', '1');
 INSERT INTO `wz_speedquiz` VALUES ('946', '2', '4000452', 'Blue Helmet', '1');
 INSERT INTO `wz_speedquiz` VALUES ('947', '2', '4000448', 'Green Heart', '1');
+
+DROP TABLE IF EXISTS `levelhistory`;
+CREATE TABLE `levelhistory` (
+  `accountid` int(11) NOT NULL,
+  `characterid` int(11) NOT NULL,
+  `level` int(11) NOT NULL DEFAULT '1',
+  `date` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;

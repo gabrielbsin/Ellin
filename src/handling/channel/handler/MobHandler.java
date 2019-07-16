@@ -16,7 +16,6 @@ import java.util.Random;
 import packet.creators.MonsterPackets;
 import packet.creators.PacketCreator;
 import client.player.Player;
-import client.player.PlayerJob;
 import client.player.skills.PlayerSkillFactory;
 import constants.SkillConstants.Gunslinger;
 import server.life.MapleMonster;
@@ -35,10 +34,7 @@ public class MobHandler {
 
     public static void MoveMonster(PacketReader packet, Client c) {
         Player p = c.getPlayer();
-        if (p == null || p.getMap() == null) {
-            return;  
-        }
-        
+
         int objectid = packet.readInt();
         short moveid = packet.readShort();
         
@@ -130,7 +126,7 @@ public class MobHandler {
 
     public static void AutoAggro(PacketReader slea, Client c) {
         Player p = c.getPlayer();
-        if (p == null || p.getMap() == null || p.isHidden()) { 
+        if (p.isHidden()) { 
             return;
         }
         

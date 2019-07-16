@@ -65,6 +65,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
+import java.util.Set;
 import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
 import java.util.logging.Level;
@@ -96,6 +97,7 @@ public class Field {
     private final Collection<Player> characters = new LinkedHashSet<>();
     private Collection<SpawnPoint> monsterSpawn = Collections.synchronizedList(new LinkedList<SpawnPoint>());
     private Collection<SpawnPoint> allMonsterSpawn = Collections.synchronizedList(new LinkedList<SpawnPoint>());
+    private Map<Integer, Set<Integer>> mapParty = new LinkedHashMap<>();
     private final AtomicInteger spawnedMonstersOnMap = new AtomicInteger(0);
     private final Map<Integer, Portal> portals = new HashMap<>();
     private final List<Rectangle> areas = new ArrayList<>();
@@ -1979,6 +1981,33 @@ public class Field {
             chrRLock.unlock();
         }
     }
+
+    public void broadcastBossHpMessage(MapleMonster mm, int bossHash, OutPacket packet) {
+        broadcastBossHpMessage(mm, bossHash, null, packet, Double.POSITIVE_INFINITY, null);
+    }
+    
+    public void broadcastBossHpMessage(MapleMonster mm, int bossHash, final OutPacket packet, Point rangedFrom) {
+        broadcastBossHpMessage(mm, bossHash, null, packet, getRangedDistance(), rangedFrom);
+    }
+    
+    private void broadcastBossHpMessage(MapleMonster mm, int bossHash, Player source, final OutPacket packet, double rangeSq, Point rangedFrom) {
+        chrRLock.lock();
+        try {
+            for (Player p : characters) {
+                if (p != source) {
+                    if (rangeSq < Double.POSITIVE_INFINITY) {
+                        if (rangedFrom.distanceSq(p.getPosition()) <= rangeSq) {
+                            p.getClient().announceBossHpBar(mm, bossHash, packet);
+                        }
+                    } else {
+                        p.getClient().announceBossHpBar(mm, bossHash, packet);
+                    }
+                }
+            }
+        } finally {
+            chrRLock.unlock();
+        }
+    }
     
     private class TimerDestroyWorker implements Runnable {
         @Override
@@ -2134,6 +2163,76 @@ public class Field {
         if(mapEffect != null) {
             broadcastMessage(mapEffect.makeDestroyData());
             mapEffect = null;
+        }
+    }
+    
+    public Player getAnyCharacterFromParty(int partyid) {
+        for (Player p : this.getAllPlayers()) {
+            if (p.getPartyId() == partyid) {
+                return p;
+            }
+        }
+        
+        return null;
+    }
+    
+    private void addPartyMemberInternal(Player p) {
+        int partyid = p.getPartyId();
+        if (partyid == -1) {
+            return;
+        }
+        
+        Set<Integer> partyEntry = mapParty.get(partyid);
+        if(partyEntry == null) {
+            partyEntry = new LinkedHashSet<>();
+            partyEntry.add(p.getId());
+            
+            mapParty.put(partyid, partyEntry);
+        } else {
+            partyEntry.add(p.getId());
+        }
+    }
+    
+    private void removePartyMemberInternal(Player p) {
+        int partyid = p.getPartyId();
+        if (partyid == -1) {
+            return;
+        }
+        
+        Set<Integer> partyEntry = mapParty.get(partyid);
+        if(partyEntry != null) {
+            if (partyEntry.size() > 1) {
+                partyEntry.remove(p.getId());
+            } else {
+                mapParty.remove(partyid);
+            }
+        }
+    }
+    
+    public void addPartyMember(Player p) {
+        chrWLock.lock();
+        try {
+            addPartyMemberInternal(p);
+        } finally {
+            chrWLock.unlock();
+        }
+    }
+            
+    public void removePartyMember(Player p) {
+        chrWLock.lock();
+        try {
+            removePartyMemberInternal(p);
+        } finally {
+            chrWLock.unlock();
+        }
+    }
+    
+    public void removeParty(int partyid) {
+        chrWLock.lock();
+        try {
+            mapParty.remove(partyid);
+        } finally {
+            chrWLock.unlock();
         }
     }
          	

@@ -289,6 +289,8 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
     public long playtimeStart;
     public long playtime;
     // Others
+    private int targetHpBarHash = 0;
+    private long targetHpBarTime = 0;
     protected int[] rocks, regrocks;
     private String chalkBoardText;
     private boolean challenged = false, allowMapChange = true, canSmega = true, smegaEnabled = true;
@@ -555,7 +557,7 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
             ps.close();
             rse.close();
             
-            ps = con.prepareStatement("INSERT INTO queststatus (`queststatusid`, `characterid`, `quest`, `status`, `time`, `forfeited`) VALUES (DEFAULT, ?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
+            ps = con.prepareStatement("INSERT INTO queststatus (`queststatusid`, `characterid`, `quest`, `status`, `time`, `forfeited`, `completed`) VALUES (DEFAULT, ?, ?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
             try (PreparedStatement psee = con.prepareStatement("INSERT INTO questprogress VALUES (DEFAULT, ?, ?, ?)")) {
                 ps.setInt(1, id);
                 for (MapleQuestStatus q : quests.values()) {
@@ -563,6 +565,7 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
                     ps.setInt(3, q.getStatus().getId());
                     ps.setInt(4, (int) (q.getCompletionTime() / 1000));
                     ps.setInt(5, q.getForfeited());
+                    ps.setInt(6, q.getCompleted());
                     ps.executeUpdate();
                     try (ResultSet rs = ps.getGeneratedKeys()) {
                         rs.next();
@@ -691,7 +694,7 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
             }
 
             if (getChangedRegrockLocations()) {
-                PlayerSaveFactory.savingCharacterRegrockLocations(this, ps, con);
+                PlayerSaveFactory.savingCharacterRegRockLocations(this, ps, con);
             }
 
             con.commit();
@@ -750,6 +753,9 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
                 break;
             case COMPLETED:
                 announce(PacketCreator.CompleteQuest((short) quest.getQuest().getId(), quest.getCompletionTime()));
+                if (GameConstants.EARN_QUESTPOINT) {
+                    quest.setCompleted(quest.getCompleted() + GameConstants.QUESTPOINT_QTY);
+                }
                 break;
             case NOT_STARTED:
                 announce(PacketCreator.UpdateQuest(quest, false));
@@ -960,6 +966,39 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
         summons.put(id, summon);
     }
 
+    public int getTargetHpBarHash() {
+        return this.targetHpBarHash;
+    }
+    
+    public void setTargetHpBarHash(int mobHash) {
+        this.targetHpBarHash = mobHash;
+    }
+    
+    public long getTargetHpBarTime() {
+        return this.targetHpBarTime;
+    }
+    
+    public void setTargetHpBarTime(long timeNow) {
+        this.targetHpBarTime = timeNow;
+    }
+    
+    public void setPlayerAggro(int mobHash) {
+        setTargetHpBarHash(mobHash);
+        setTargetHpBarTime(System.currentTimeMillis());
+    }
+    
+    public void resetPlayerAggro() {
+        if (getChannelServer().unregisterDisabledServerMessage(id)) {
+            client.announceServerMessage();
+        }
+        setTargetHpBarHash(0);
+        setTargetHpBarTime(0);
+    }
+
+    public final ChannelServer getChannelServer() {
+        return ChannelServer.getInstance(this.getClient().getChannel());
+    }
+   
     private final class DragonBloodRunnable implements Runnable {
 
         private final MapleStatEffect effect;
@@ -2746,7 +2785,7 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
     public boolean isRingEquipped(int ringId) {
         for (Item item : getInventory(InventoryType.EQUIPPED)) {
             Equip equip = (Equip) item;
-            if (equip.getRing().getRingId() == ringId) {
+            if (equip.getRing().getRingDatabaseId() == ringId) {
                 return equip.getPosition() <= (byte) -1;
             }
         }
@@ -2759,13 +2798,13 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
             if (equip.getRing() != null) {
                 int itemId = equip.getItemId();
                 if (ItemConstants.isCrushRing(itemId) && type == ItemRingType.CRUSH_RING.getType()) {
-                    return equip.getRing().getRingId();
+                    return equip.getRing().getRingDatabaseId();
                 }
                 if (ItemConstants.isFriendshipRing(itemId) && type == ItemRingType.FRIENDSHIP_RING.getType()) {
-                    return equip.getRing().getRingId();
+                    return equip.getRing().getRingDatabaseId();
                 }
                 if (ItemConstants.isWeddingRing(itemId) && type == ItemRingType.WEDDING_RING.getType()) {
-                    return equip.getRing().getRingId();
+                    return equip.getRing().getRingDatabaseId();
                 }
             }
         }
@@ -2788,14 +2827,15 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
     }
 
     public void addRingToCache(int ringId) {
-        ItemRing ring = ItemRing.loadFromDb(ringId);
-        if (ring == null) return;
-        if (ItemConstants.isCrushRing(ring.getItemId())) {
-            crushRings.add(ring);
-        } else if (ItemConstants.isFriendshipRing(ring.getItemId())) {
-            friendshipRings.add(ring);
-        } else if (ItemConstants.isWeddingRing(ring.getItemId())) {
-            weddingRings.add(ring);
+        ItemRing ring = ItemRing.loadingRing(ringId);
+        if (ring != null) {
+            if (ItemConstants.isCrushRing(ring.getItemId())) {
+                crushRings.add(ring);
+            } else if (ItemConstants.isFriendshipRing(ring.getItemId())) {
+                friendshipRings.add(ring);
+            } else if (ItemConstants.isWeddingRing(ring.getItemId())) {
+                weddingRings.add(ring);
+            }
         }
     }
     
@@ -2899,8 +2939,30 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
             guildUpdate();
         }
         
+        setLevelUpHistory(this, level);
+        
         if (level == 200 && !isGameMaster()) {
             BroadcastService.broadcastMessage(PacketCreator.ServerNotice(6, String.format(GameConstants.REACHED_MAX_LEVEL, this.name, this.name)));
+        }
+    }
+    
+    public void setLevelUpHistory(Player p, int level) {
+        if (this.isGameMaster()) {
+            return;
+        }
+        try {
+            Connection con = DatabaseConnection.getConnection();
+            try (PreparedStatement ps = con.prepareStatement("INSERT INTO levelhistory (accountid, characterid, level, date) VALUES (?, ?, ?, ?)")) {
+                ps.setInt(1, this.accountid);
+                ps.setInt(2, this.id);
+                ps.setInt(3, level);
+                ps.setTimestamp(4, new Timestamp(System.currentTimeMillis()));
+                ps.executeUpdate();
+            } finally {
+                con.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
     
@@ -3125,7 +3187,7 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
     
     public void gainAriantPoints(int gain){
        this.ariantPoints += gain;
-       dropMessage(5, "Você " + (gain > 0 ? "ganhou" : "perdeu") + " (" + gain + ") pontos.");
+       dropMessage(5, "You " + (gain > 0 ? "gained" : "lost") + " (" + gain + ") point(s).");
     }
    
     public void gainVotePoints(int gain){
@@ -3484,10 +3546,7 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
                             }
                         }
                     }
-                } else {
-
-                    System.out.println("travado");
-                }
+                } 
                 break;
             }
         }
@@ -3639,12 +3698,8 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
     public void fakeRelog() {
         client.getSession().write(PacketCreator.GetCharInfo(this));
         final Field mapp = getMap();
-        //mapp.setCheckStates(false);
         mapp.removePlayer(this);
         mapp.addPlayer(this);
-      //  mapp.setCheckStates(true);
-
-       // client.getSession().write(CWvsContext.getFamiliarInfo(this));
     }
 	    
     public void disableDoor() {
@@ -4008,7 +4063,7 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
         announce(PacketCreator.AddQuestTimeLimit(quest.getId(), time * 60 * 1000));
         timers.add(sf);
     }
-
+    
     public void setMPC(MaplePartyCharacter mpc) {
         this.mpc = mpc;
     }
@@ -4171,22 +4226,40 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
         return ret;
     }
 
-    public void deleteFromRocks(int map) {
-        for (int i = 0; i < 10; i++) {
-            if (rocks[i] == map) {
-                rocks[i] = 999999999;
-                changedTrockLocations = true;
-                break;
+    public void deleteRocks(int map, boolean isVip) {
+        if (isVip) {
+            for (int i = 0; i < 10; i++) {
+                if (rocks[i] == map) {
+                    rocks[i] = 999999999;
+                    changedTrockLocations = true;
+                    break;
+                }
+            }
+        } else {
+            for (int i = 0; i < 5; i++) {
+                if (regrocks[i] == map) {
+                    regrocks[i] = 999999999;
+                    changedRegrockLocations = true;
+                    break;
+                }
             }
         }
     }
 
-    public void addRockMap() {
-        if (getRockSize() >= 10) {
-            return;
+    public void addRockMap(boolean isVip) {
+        if (isVip) {
+            if (getRockSize() >= 10) {
+                return;
+            }
+            rocks[getRockSize()] = getMapId();
+            changedTrockLocations = true;
+        } else {
+            if (getRegRockSize() >= 5) {
+                return;
+            }
+            regrocks[getRegRockSize()] = getMapId();
+            changedRegrockLocations = true;
         }
-        rocks[getRockSize()] = getMapId();
-        changedTrockLocations = true;
     }
 
     public boolean isRockMap(int id) {
@@ -4210,24 +4283,6 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
             }
         }
         return ret;
-    }
-
-    public void deleteFromRegRocks(int map) {
-        for (int i = 0; i < 5; i++) {
-            if (regrocks[i] == map) {
-                regrocks[i] = 999999999;
-                changedRegrockLocations = true;
-                break;
-            }
-        }
-    }
-
-    public void addRegRockMap() {
-        if (getRegRockSize() >= 5) {
-            return;
-        }
-        regrocks[getRegRockSize()] = getMapId();
-        changedRegrockLocations = true;
     }
 
     public boolean isRegRockMap(int id) {
@@ -4564,7 +4619,6 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
             }     
             chrLock.lock();
             try {
-                System.out.println("Disease duration: " + duration);
                 this.diseases.put(disease, new DiseaseValueHolder(disease, System.currentTimeMillis(), duration));
             } finally {
                 chrLock.unlock();
@@ -4858,7 +4912,7 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
                 ps.executeUpdate();
             }
         } catch (SQLException e) {
-                return;
+            return;
         }
         merchantMesos += add;
     }
@@ -5020,7 +5074,7 @@ public class Player extends AbstractAnimatedFieldObject implements Serializable 
     
     public void autoban(String reason) {
         this.ban(reason);
-        announce(PacketCreator.SendPolice(String.format("You have been blocked by the#b %s Police for HACK reason.#k", "Ellin")));
+        announce(PacketCreator.SendPolice(String.format("You have been blocked by the#b %s Police for HACK reason.#k", ServerProperties.Login.SERVER_NAME)));
         CharacterTimer.getInstance().schedule(() -> {
             client.disconnect(false, false);
         }, 9000);

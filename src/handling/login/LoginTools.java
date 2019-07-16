@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package handling.login;
 
 import java.io.File;
@@ -14,8 +9,7 @@ import provider.MapleDataProviderFactory;
 import provider.MapleDataTool;
 
 /**
- *
- * @author GabrielSin
+ * @author GabrielSin (http://forum.ragezone.com/members/822844.html)
  */
 public class LoginTools {
     

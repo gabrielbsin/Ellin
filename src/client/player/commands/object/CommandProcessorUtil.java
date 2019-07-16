@@ -2,7 +2,6 @@ package client.player.commands.object;
 
 import tools.StringUtil;
 
-
 public class CommandProcessorUtil {
 
     public static String joinAfterString(String splitted[], String str) {

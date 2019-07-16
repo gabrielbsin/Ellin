@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package cashshop;
 
 import client.Client;
@@ -18,10 +12,6 @@ import packet.creators.CashShopPackets;
 import server.itens.InventoryManipulator;
 import tools.Pair;
 
-/**
- * 
- * @author GabrielSin
- */
 public class CashCouponRequest {
     
     public static void CouponCode(PacketReader packet, Client c) {

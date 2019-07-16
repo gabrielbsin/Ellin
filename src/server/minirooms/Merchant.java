@@ -28,12 +28,16 @@ import packet.creators.PacketCreator;
 import packet.transfer.write.OutPacket;
 import server.itens.InventoryManipulator;
 import server.itens.ItemInformationProvider;
-import tools.TimerTools.CharacterTimer;
 import server.maps.Field;
 import server.maps.object.AbstractMapleFieldObject;
 import server.maps.object.FieldObjectType;
 import tools.Pair;
 
+/**
+ *
+ * @author XoticStory
+ * @author Ronan - concurrency protection
+ */
 
 public final class Merchant extends AbstractMapleFieldObject {
 
@@ -65,10 +69,6 @@ public final class Merchant extends AbstractMapleFieldObject {
         this.mapId = owner.getMapId();
         this.channel = owner.getClient().getChannel();
         this.footHold = owner.getFoothold().getId();
-        this.schedule = CharacterTimer.getInstance().schedule(() -> {
-            removeAllVisitors();
-            Merchant.this.closeShop(owner.getClient(), true);
-        }, 1000 * 60 * 60 * 24);
     }
 
     public void broadcastToVisitorsThreadsafe(final OutPacket packet) {
@@ -194,7 +194,6 @@ public final class Merchant extends AbstractMapleFieldObject {
     
     public void updateMerchantBallom() {
         if (isOpen()) {
-            System.out.println("updateMerchantBallom");
             getMap().broadcastMessage(MerchantPackets.UpdateHiredMerchantBalloon(this, 5));
         }
     }
@@ -221,11 +220,11 @@ public final class Merchant extends AbstractMapleFieldObject {
                         return;
                     }
                     
-                    InventoryManipulator.addFromDrop(p.getClient(), iitem, "Obtido através do takeItemBack", true);
+                    InventoryManipulator.addFromDrop(p.getClient(), iitem, "takeItemBack", true);
                 }
                 
                 removeFromSlot(slot);
-              //  p.announce(MerchantPackets.UpdateHiredMerchant(this, p));
+                p.announce(MerchantPackets.UpdateMerchant(this, p)); //Verify
             }
         }
     }

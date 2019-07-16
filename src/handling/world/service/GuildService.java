@@ -36,8 +36,21 @@ public class GuildService {
     public static int createGuild(int leaderId, String name) {
         return MapleGuild.createGuild(leaderId, name);
     }
-
+    
     public static MapleGuild getGuild(int id) {
+        synchronized (guilds) {
+            if (guilds.get(id) != null) {
+                return guilds.get(id);
+            }
+            return null;
+        }
+    }
+    
+    public static MapleGuild getGuild(Player mc) {
+        return getGuild(mc.getGuildId(), mc.getClient().getChannel());
+    }
+
+    public static MapleGuild getGuild(int id, int channel) {
         MapleGuild ret = null;
         guildLock.readLock().lock();
         try {
@@ -48,7 +61,7 @@ public class GuildService {
         if (ret == null) {
             guildLock.writeLock().lock();
             try {
-                ret = new MapleGuild(id);
+                ret = new MapleGuild(id, channel);
                 if (ret == null || ret.getId() <= 0 || !ret.isProper()) { 
                     return null;
                 }
@@ -84,10 +97,6 @@ public class GuildService {
 
     public static void removeGuildQueued(int guildId) {
         queuedGuilds.remove(guildId);
-    }
-
-    public static MapleGuild getGuild(Player mc) {
-        return getGuild(mc.getGuildId());
     }
 
     public static void setGuildMemberOnline(MapleGuildCharacter mc, boolean bOnline, int channel) {
@@ -188,8 +197,8 @@ public class GuildService {
         }
     }
 
-    public static void deleteGuildCharacter(int guildid, int charid) {
-        MapleGuild g = getGuild(guildid);
+    public static void deleteGuildCharacter(int gid, int charid) {
+        MapleGuild g = getGuild(gid);
         if (g != null) {
             MapleGuildCharacter mc = g.getMGC(charid);
             if (mc != null) {
@@ -268,37 +277,37 @@ public class GuildService {
         return null;
     }
 
-    public static int addBBSThread(final int guildid, final String title, final String text, final int icon, final boolean bNotice, final int posterID) {
-        final MapleGuild g = getGuild(guildid);
+    public static int addBBSThread(final int gid, final String title, final String text, final int icon, final boolean bNotice, final int posterID) {
+        final MapleGuild g = getGuild(gid);
         if (g != null) {
             return g.addBBSThread(title, text, icon, bNotice, posterID);
         }
         return -1;
     }
 
-    public static void editBBSThread(final int guildid, final int localthreadid, final String title, final String text, final int icon, final int posterID, final int guildRank) {
-        final MapleGuild g = getGuild(guildid);
+    public static void editBBSThread(final int gid, final int localthreadid, final String title, final String text, final int icon, final int posterID, final int guildRank) {
+        final MapleGuild g = getGuild(gid);
         if (g != null) {
             g.editBBSThread(localthreadid, title, text, icon, posterID, guildRank);
         }
     }
 
-    public static void deleteBBSThread(final int guildid, final int localthreadid, final int posterID, final int guildRank) {
-        final MapleGuild g = getGuild(guildid);
+    public static void deleteBBSThread(final int gid, final int localthreadid, final int posterID, final int guildRank) {
+        final MapleGuild g = getGuild(gid);
         if (g != null) {
             g.deleteBBSThread(localthreadid, posterID, guildRank);
         }
     }
 
-    public static void addBBSReply(final int guildid, final int localthreadid, final String text, final int posterID) {
-        final MapleGuild g = getGuild(guildid);
+    public static void addBBSReply(final int gid, final int localthreadid, final String text, final int posterID) {
+        final MapleGuild g = getGuild(gid);
         if (g != null) {
             g.addBBSReply(localthreadid, text, posterID);
         }
     }
 
-    public static void deleteBBSReply(final int guildid, final int localthreadid, final int replyid, final int posterID, final int guildRank) {
-        final MapleGuild g = getGuild(guildid);
+    public static void deleteBBSReply(final int gid, final int localthreadid, final int replyid, final int posterID, final int guildRank) {
+        final MapleGuild g = getGuild(gid);
         if (g != null) {
             g.deleteBBSReply(localthreadid, replyid, posterID, guildRank);
         }

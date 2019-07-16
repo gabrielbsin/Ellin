@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package cashshop;
 
 import client.player.inventory.Equip;
@@ -16,10 +10,7 @@ import constants.ItemConstants;
 import server.itens.InventoryManipulator;
 import server.itens.ItemInformationProvider;
 
-/**
- * 
- * @author GabrielSin
- */
+
 public class CashItem {
     
     private final int serialNumber;
@@ -104,7 +95,7 @@ public class CashItem {
             eq.setGiftFrom(gift);
             eq.setExpiration((long) (System.currentTimeMillis() + (long) (nPeriod * 24 * 60 * 60 * 1000)));
             if (ItemConstants.isEffectRing(cItem.getItemId()) && uniqueId > 0) {
-                ItemRing ring = ItemRing.loadFromDb(uniqueId);
+                ItemRing ring = ItemRing.loadingRing(uniqueId);
                 if (ring != null) {
                     eq.setRing(ring);
                 }

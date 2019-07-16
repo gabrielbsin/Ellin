@@ -211,7 +211,6 @@ public class ServerHandler extends org.apache.mina.core.service.IoHandlerAdapter
                 break;
            // END OF LOGIN SERVER
            case CLIENT_ERROR:
-             //   System.out.printf("Received error from client at ", reader.readMapleAsciiString());
                 break;
             case CHANGE_CHANNEL:
                 InterServerHandler.ChangeChannel(reader, c);
@@ -368,8 +367,6 @@ public class ServerHandler extends org.apache.mina.core.service.IoHandlerAdapter
                 BuddyListHandler.BuddyOperation(reader, c);
                 break;
             case ENTERED_SHIP_MAP:
-                //  System.out.println("ShipObjectRequest");
-                // InterfaceHandler.ShipObjectRequest(reader.readInt(), c);
                 break;
             case USE_ITEMEFFECT:
                 PlayerHandler.UseItemEffect(reader, c);

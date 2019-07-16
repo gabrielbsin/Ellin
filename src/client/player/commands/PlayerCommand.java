@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package client.player.commands;
 
 import client.Client;
@@ -23,9 +17,10 @@ import server.maps.SavedLocationType;
 import tools.StringUtil;
 
 /**
- * 
- * @author GabrielSin
+ * @author Emilyx3
+ * @author GabrielSin (http://forum.ragezone.com/members/822844.html)
  */
+
 public class PlayerCommand {
         
     public static CoomandRank getPlayerLevelRequired() {

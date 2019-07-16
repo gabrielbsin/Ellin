@@ -4,44 +4,55 @@ import cashshop.CashItem;
 import cashshop.CashItemFactory;
 import client.player.Player;
 import client.player.PlayerQuery;
+import client.player.inventory.types.InventoryType;
+import client.player.inventory.types.ItemRingType;
+import constants.ItemConstants;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import database.DatabaseConnection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 import packet.creators.CashShopPackets;
 import tools.FileLogger;
 
 /**
- *
- * @author GabrielSin
+ * @author Danny
+ * Special thanks GabrielSin (http://forum.ragezone.com/members/822844.html)
  */
+
 public class ItemRing implements Comparable<ItemRing> {
 
     private final int ringId;
-    private final int ringId2;
+    private final int partnerDatabaseId;
     private final int partnerId;
     private final int itemId;
     private final String partnerName;
+    
+    private List<ItemRing> crushRings = new LinkedList<>();
+    private List<ItemRing> friendshipRings = new LinkedList<>();
+    private List<ItemRing> weddingRings = new LinkedList<>();
 
     private ItemRing(int id, int id2, int partnerId, int itemid, String partnername) {
         this.ringId = id;
-        this.ringId2 = id2;
+        this.partnerDatabaseId = id2;
         this.partnerId = partnerId;
         this.itemId = itemid;
         this.partnerName = partnername;
     }
     
-    public int getRingId() {
+    public int getRingDatabaseId() {
         return ringId;
     }
 
-    public int getPartnerRingId() {
-        return ringId2;
+    public int getPartnerRingDatabaseId() {
+        return partnerDatabaseId;
     }
 
-    public int getPartnerChrId() {
+    public int getPartnerCharacterId() {
         return partnerId;
     }
 
@@ -53,7 +64,7 @@ public class ItemRing implements Comparable<ItemRing> {
         return partnerName;
     }
 
-   public static ItemRing loadFromDb(int ringId) {
+   public static ItemRing loadingRing(int ringId) {
         try {
             ItemRing ret;
             try (PreparedStatement ps = DatabaseConnection.getConnection().prepareStatement("SELECT * FROM rings WHERE id = ?")) {
@@ -61,14 +72,16 @@ public class ItemRing implements Comparable<ItemRing> {
                 try (ResultSet rs = ps.executeQuery()) {
                     ret = null;
                     if (rs.next()) {
-                        ret = new ItemRing(ringId, rs.getInt("partnerRingId"), rs.getInt("partnerChrId"), rs.getInt("itemid"), rs.getString("partnerName"));
+                        ret = new ItemRing(ringId, rs.getInt("partnerRingId"), 
+                        rs.getInt("partnerChrId"),
+                        rs.getInt("itemid"),
+                        rs.getString("partnerName"));
                     }
                 }
             }
             return ret;
         } catch (SQLException ex) {
-            System.out.println("[-] loadFromDb error");
-            FileLogger.printError("MapleRing_loadFromDb.txt", ex);
+            ex.printStackTrace();
             return null;
         }
     }
@@ -77,12 +90,12 @@ public class ItemRing implements Comparable<ItemRing> {
         if (verifyExistRing(sender.getId()) || verifyExistRing(receiverId)) {
             return false;
         } else {
-            addRingDB(itemid, sender, receiverId, message, serialNumber);
+            addRingDatabase(itemid, sender, receiverId, message, serialNumber);
             return true;
         }
     }
     
-    public static void addRingDB(int itemId, final Player sender, final int receiverId, String message, int serialNumber) {
+    public static void addRingDatabase(int itemId, final Player sender, final int receiverId, String message, int serialNumber) {
         Connection con = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -163,11 +176,68 @@ public class ItemRing implements Comparable<ItemRing> {
             return true;
         }
     }
+    
+    public List<ItemRing> getCrushRings() {
+        Collections.sort(crushRings);
+        return crushRings;
+    }
+
+    public List<ItemRing> getFriendshipRings() {
+        Collections.sort(friendshipRings);
+        return friendshipRings;
+    }
+
+    public List<ItemRing> getWeddingRings() {
+        Collections.sort(weddingRings);
+        return weddingRings;
+    }
+    
+    public void addRingToCache(int ringId) {
+        ItemRing ring = loadingRing(ringId);
+        if (ring != null) {
+            if (ItemConstants.isCrushRing(ring.getItemId())) {
+                crushRings.add(ring);
+            } else if (ItemConstants.isFriendshipRing(ring.getItemId())) {
+                friendshipRings.add(ring);
+            } else if (ItemConstants.isWeddingRing(ring.getItemId())) {
+                weddingRings.add(ring);
+            }
+        }
+    }
+    
+    public int getEquippedRing(Player p, int type) {
+        for (Item item : p.getInventory(InventoryType.EQUIPPED)) {
+            Equip equip = (Equip) item;
+            if (equip.getRing() != null) {
+                int itemId = equip.getItemId();
+                if (ItemConstants.isCrushRing(itemId) && type == ItemRingType.CRUSH_RING.getType()) {
+                    return equip.getRing().getRingDatabaseId();
+                }
+                if (ItemConstants.isFriendshipRing(itemId) && type == ItemRingType.FRIENDSHIP_RING.getType()) {
+                    return equip.getRing().getRingDatabaseId();
+                }
+                if (ItemConstants.isWeddingRing(itemId) && type == ItemRingType.WEDDING_RING.getType()) {
+                    return equip.getRing().getRingDatabaseId();
+                }
+            }
+        }
+        return 0;
+    }
+    
+    public boolean isRingEquipped(Player p, int ringId) {
+        for (Item item : p.getInventory(InventoryType.EQUIPPED)) {
+            Equip equip = (Equip) item;
+            if (equip.getRing().getRingDatabaseId() == ringId) {
+                return equip.getPosition() <= (byte) -1;
+            }
+        }
+        return false;
+    }
    
     @Override
     public boolean equals(Object o) {
         if (o instanceof ItemRing) {
-            return ((ItemRing) o).getRingId() == getRingId();
+            return ((ItemRing) o).getRingDatabaseId() == getRingDatabaseId();
         }
         return false;
     }
@@ -181,9 +251,9 @@ public class ItemRing implements Comparable<ItemRing> {
 
     @Override
     public int compareTo(ItemRing other) {
-        if (ringId < other.getRingId()) {
+        if (ringId < other.getRingDatabaseId()) {
             return -1;
-        } else if (ringId == other.getRingId()) {
+        } else if (ringId == other.getRingDatabaseId()) {
             return 0;
         }
         return 1;

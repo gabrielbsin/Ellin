@@ -24,7 +24,7 @@ import tools.TimerTools.WorldTimer;
 public class World {
     
     public static final int channelPerThread = 3;
-    
+
     public static void init() {
         FindService.findChannel(0);
         AllianceService.allianceLocks.toString();

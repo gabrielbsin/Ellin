@@ -263,6 +263,10 @@ public class ItemConstants {
         return id >= 2030000 && id < 2040000;
     }
     
+    public static boolean isFaceExpression(int itemId) {
+        return itemId / 10000 == 516;
+    }
+    
     public static boolean canEquip(PlayerSkill skill, Client c) {
         return SkillConstants.isBeginnerSkill(skill.getId()) || !SkillConstants.isCorrectJobForSkillRoot(c.getPlayer().getJob().getId(), skill.getId() / 10000) || !skill.isActiveSkill();
     }

@@ -140,7 +140,7 @@ public class GuildHandler {
                     return;
                 }
                 p.getClient().getSession().write(GuildPackets.ShowGuildInfo(p));
-                final MapleGuild gs = GuildService.getGuild(guildId);
+                final MapleGuild gs = GuildService.getGuild(guildId, p.getClient().getChannel());
                 AllianceService.getAllianceInfo(gs.getAllianceId(), true).stream().filter((pack) -> (pack != null)).forEachOrdered((pack) -> {
                     p.getClient().getSession().write(pack);
                 });

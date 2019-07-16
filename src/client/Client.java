@@ -52,6 +52,7 @@ import community.MaplePartyCharacter;
 import community.MaplePartyOperation;
 import community.MapleGuildCharacter;
 import handling.login.handler.CharLoginHeaders;
+import handling.mina.PacketReader;
 import handling.world.service.BuddyService;
 import handling.world.service.FindService;
 import handling.world.service.GuildService;
@@ -73,6 +74,7 @@ import packet.crypto.MapleCrypto;
 import scripting.AbstractPlayerInteraction;
 import scripting.event.EventInstanceManager;
 import scripting.event.EventManager;
+import server.life.MapleMonster;
 import tools.TimerTools.ClientTimer;
 import server.maps.Field;
 import server.partyquest.mcpq.MCField;
@@ -1343,13 +1345,35 @@ public class Client {
     public void removeClickedNPC(){
         lastNpcClick = 0;
     }
-
-    public boolean checkCondition() {
-        return checkCondition(true, true, true);
+    
+    public void announceServerMessage() {
+        announce(PacketCreator.ServerMessage(this.getChannelServer().getServerMessage()));
     }
     
-    public boolean checkCondition(boolean checkAlive, boolean checkMap, boolean checkInteractions) {
-       return player == null || !player.isAlive() && checkAlive || player.getMap() == null && checkMap || player.getInteractionsOpen() && checkInteractions;
+    public synchronized void announceBossHpBar(MapleMonster mm, final int mobHash, final OutPacket packet) {
+        long timeNow = System.currentTimeMillis();
+        int targetHash = player.getTargetHpBarHash();
+
+        if (mobHash != targetHash) {
+            if (timeNow - player.getTargetHpBarTime() >= 5 * 1000) {
+            announceDisableServerMessage();
+            announce(packet);
+
+            player.setTargetHpBarHash(mobHash);
+            player.setTargetHpBarTime(timeNow);
+            }
+        } else {
+            announceDisableServerMessage();
+            announce(packet);
+
+            player.setTargetHpBarTime(timeNow);
+        }
+    }
+    
+    private void announceDisableServerMessage() {
+        if (!this.getChannelServer().registerDisabledServerMessage(player.getId())) {
+            announce(PacketCreator.ServerMessage(""));
+        }
     }
 
     protected static final class CharNameAndId {

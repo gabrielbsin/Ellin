@@ -144,7 +144,7 @@ public class PlayerFactory {
                     continue;
                 }
                 if (mit.getLeft().getRing() != null) {
-                    ret.addRingToCache(mit.getLeft().getRing().getRingId());
+                    ret.addRingToCache(mit.getLeft().getRing().getRingDatabaseId());
                 }
             }
         } catch (Exception e) {
@@ -300,7 +300,7 @@ public class PlayerFactory {
     
     public static void loadingCharacterSkillsAndMacros(Player ret, PreparedStatement ps, ResultSet rs, Connection con) {
         try {
-            ps = con.prepareStatement("SELECT skillid,skilllevel,masterlevel FROM skills WHERE characterid = ?");
+            ps = con.prepareStatement("SELECT skillid, skilllevel, masterlevel FROM skills WHERE characterid = ?");
             ps.setInt(1, ret.getId());
             rs = ps.executeQuery();
                 while (rs.next()) {

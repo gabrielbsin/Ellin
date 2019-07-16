@@ -142,16 +142,25 @@ public class NPCHandler {
         }
     } 
     
+    /*
+     * Special thanks Darter (YungMoozi) for reporting unchecked player position
+    */
     private static boolean isNpcNearby(PacketReader packet, Player p, MapleQuest quest, int npcId) {
-        Point playerPosition = null;
+        Point playerPosition;
+        Point pos = p.getPosition();
         
         if (packet.available() >= 4) {
             playerPosition = new Point(packet.readShort(), packet.readShort());
+            if (playerPosition.distance(pos) > 1000) { 
+                playerPosition = pos;
+            }
+        } else {
+            playerPosition = pos;
         }
         
-        if (playerPosition != null && !quest.isAutoStart() && !quest.isAutoComplete()) {
+        if (!quest.isAutoStart() && !quest.isAutoComplete()) {
             MapleNPC npc = p.getMap().getNPCById(npcId);
-            if(npc == null) {
+            if (npc == null) {
                 return false;
             }
             
@@ -275,19 +284,16 @@ public class NPCHandler {
         }
     }
 
-    public static void Storage(PacketReader r, Client c) {
+    public static void Storage(PacketReader packet, Client c) {
         Player p = c.getPlayer();
-        if (p == null || p.getMap() == null) {
-           return;
-        }
         final StorageKeeper storage = p.getStorage();
         final MapleNPC npc = MapleLifeFactory.getNPC(MapConstants.isStorageKeeperMap(c.getPlayer().getMapId()));
         c.lockClient();
         try {
-            switch (r.readByte()) {
+            switch (packet.readByte()) {
                 case TAKE_OUT_STORAGE: {
-                    byte type = r.readByte();
-                    byte slot = storage.getSlot(InventoryType.getByType(type), r.readByte());
+                    byte type = packet.readByte();
+                    byte slot = storage.getSlot(InventoryType.getByType(type), packet.readByte());
                     final Item item = storage.takeOut(slot);
                     if (c.getPlayer().getMeso() < npc.getStats().getWithdrawCost()) {
                         p.announce(PacketCreator.GetStorageInsufficientFunds());
@@ -315,9 +321,9 @@ public class NPCHandler {
                     break;
                 }
                 case SEND_STORAGE: {
-                    final byte slot = (byte) r.readShort();
-                    final int itemId = r.readInt();
-                    short quantity = r.readShort();
+                    final byte slot = (byte) packet.readShort();
+                    final int itemId = packet.readInt();
+                    short quantity = packet.readShort();
                     final ItemInformationProvider ii = ItemInformationProvider.getInstance();
                     InventoryType slotType = ItemConstants.getInventoryType(itemId);
                     Inventory Inv = p.getInventory(slotType);
@@ -363,7 +369,7 @@ public class NPCHandler {
                     break;
                 }
                 case SET_MESO_STORAGE: {
-                    int meso = r.readInt();
+                    int meso = packet.readInt();
                     final int storageMesos = storage.getMeso();
                     final int playerMesos = c.getPlayer().getMeso();
 

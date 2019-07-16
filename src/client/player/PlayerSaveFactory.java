@@ -1,8 +1,3 @@
-/**
- * Ellin é um servidor privado de MapleStory
- * Baseado em um servidor GMS-Like na v.62
- */
-
 package client.player;
 
 import client.player.inventory.Inventory;
@@ -31,10 +26,9 @@ import server.quest.MapleQuestStatus;
 import tools.Pair;
 
 /**
- * @brief PlayerSaveFactory
- * @author GabrielSin <gabrielsin@playellin.net>
- * @date   30/03/2018
+ * @author GabrielSin (http://forum.ragezone.com/members/822844.html)
  */
+
 public class PlayerSaveFactory {
     
     public enum DeleteType {
@@ -62,7 +56,7 @@ public class PlayerSaveFactory {
             this.field = field;
         }
         
-        public void removeFromType(Connection con, int typeInt)throws SQLException {
+        public void removeFromType(Connection con, int typeInt) throws SQLException {
             try {
                 String sql = "DELETE FROM " + this.type + " WHERE " + this.field + " = ?";
                 try (PreparedStatement ps = con.prepareStatement(sql)) {
@@ -70,7 +64,6 @@ public class PlayerSaveFactory {
                     ps.executeUpdate();
                 }       
             } catch (SQLException e) {
-                System.out.println("Deadlock found deleting type <" + this.type + ">.");
                 e.printStackTrace();    
             } 
         }
@@ -348,7 +341,7 @@ public class PlayerSaveFactory {
         }
     }
     
-    public static void savingCharacterRegrockLocations(Player ret, PreparedStatement ps, Connection con) {
+    public static void savingCharacterRegRockLocations(Player ret, PreparedStatement ps, Connection con) {
         try {
             DeleteType.REG_LOCATIONS.removeFromType(con, ret.id);
             for (int i = 0; i < ret.regrocks.length; i++) {

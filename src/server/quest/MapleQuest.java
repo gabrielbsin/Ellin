@@ -29,7 +29,6 @@ import java.util.Map;
 import client.player.Player;
 import server.quest.MapleQuestStatus.Status;
 import java.util.EnumMap;
-import packet.creators.EffectPackets;
 import packet.creators.PacketCreator;
 import provider.MapleData;
 import provider.MapleDataProvider;
@@ -290,6 +289,7 @@ public class MapleQuest {
     public boolean forceStart(Player c, int npc) {
         MapleQuestStatus newStatus = new MapleQuestStatus(this, MapleQuestStatus.Status.STARTED, npc);
         newStatus.setForfeited(c.getQuest(this).getForfeited());
+        newStatus.setCompleted(c.getQuest(this).getCompleted());
 
         if (timeLimit > 0) {
             newStatus.setExpirationTime(System.currentTimeMillis() + (timeLimit * 1000));
@@ -309,6 +309,7 @@ public class MapleQuest {
         }
         MapleQuestStatus newStatus = new MapleQuestStatus(this, MapleQuestStatus.Status.COMPLETED, npc);
         newStatus.setForfeited(c.getQuest(this).getForfeited());
+        newStatus.setCompleted(c.getQuest(this).getCompleted());
         newStatus.setCompletionTime(System.currentTimeMillis());
         c.updateQuest(newStatus);
         return true;

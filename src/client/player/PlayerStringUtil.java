@@ -21,11 +21,6 @@
 
 package client.player;
 
-import constants.ServerProperties;
-import database.DatabaseConnection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.regex.Pattern;
 
 public class PlayerStringUtil {
@@ -36,7 +31,7 @@ public class PlayerStringUtil {
     public static String[] RESERVED = {"Rental", "Donor","MapleNews"};
        
     public static boolean canCreateChar(String name, int world) {
-        if (name.length() < 3 || name.length() > 12 || !namePattern.matcher(name).matches() || getIdByName(name) != -1) {
+        if (name.length() < 3 || name.length() > 12 || !namePattern.matcher(name).matches() || PlayerQuery.getIdByName(name) != -1) {
             return false;
         }
         for (String z : RESERVED) {
@@ -68,26 +63,7 @@ public class PlayerStringUtil {
         }
         return false;
     }
-
-    public static int getIdByName(String name) {
-        try {
-            int id;
-            try (PreparedStatement ps = DatabaseConnection.getConnection().prepareStatement("SELECT id FROM characters WHERE name = ?")) {
-                ps.setString(1, name);
-                try (ResultSet rs = ps.executeQuery()) {
-                    if (!rs.next()) {
-                        rs.close();
-                        ps.close();
-                        return -1;
-                    }   id = rs.getInt("id");
-                }
-            }
-            return id;
-        } catch (SQLException e) {
-        }
-        return -1;
-    }
-            
+  
     public static String makeMapleReadable(String in) {
         String i = in.replace('I', 'i');
         i = i.replace('l', 'L');

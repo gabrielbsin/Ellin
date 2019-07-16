@@ -7,6 +7,9 @@
 package constants;
 
 import client.player.PlayerJob;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class GameConstants {
     
@@ -20,7 +23,11 @@ public class GameConstants {
     public static final boolean GENDER_RESTRICT_RINGS = false;
     public static final int MAX_USER_COUNT_IN_MERCHANT = 4;
     public static final boolean USE_MULTIPLE_SAME_EQUIP_DROP = false;//Enables multiple drops by mobs of the same equipment, number of possible drops based on the quantities provided at the drop data.    
-  
+    public static boolean USE_DISPLAY_NUMBERS_WITH_COMMA = true;        //Enforce comma on displayed strings (use this when USE_UNITPRICE_WITH_COMMA is active and you still want to display comma-separated values).
+    public static boolean USE_UNITPRICE_WITH_COMMA = true;              //Set this accordingly with the layout of the unitPrices on Item.wz XML's, whether it's using commas or dots to represent fractions.
+   
+    private final static NumberFormat nfFormatter = new DecimalFormat("#,###,###,###");
+    private final static NumberFormat nfParser = NumberFormat.getInstance(USE_UNITPRICE_WITH_COMMA ? Locale.FRANCE : Locale.UK);
     //Event End Timestamp
     public static final long EVENT_END_TIMESTAMP = 1428897600000L;
     
@@ -86,6 +93,9 @@ public class GameConstants {
     
     //Beginner Skills Configuration
     public static final boolean USE_ULTRA_RECOVERY = true;      //Massive recovery amounts overtime.
+    
+    public static final boolean EARN_QUESTPOINT = true;      //Enable gain point for quest complete
+    public static final int QUESTPOINT_QTY = 1;      
 
     //Keymap configs
     public static final int[] DEFAULT_KEY = {18, 65, 2, 23, 3, 4, 5, 6, 16, 17, 19, 25, 26, 27, 31, 34, 35, 37, 38, 40, 43, 44, 45, 46, 50, 56, 59, 60, 61, 62, 63, 64, 57, 48, 29, 7, 24, 33, 41, 39};
@@ -184,6 +194,14 @@ public class GameConstants {
                 
             default:
                 return i + sufixes[i % 10];
+        }
+    }
+    
+    public synchronized static String numberWithCommas(int i) {
+        if(!USE_DISPLAY_NUMBERS_WITH_COMMA) {
+            return nfFormatter.format(i);   // will display number on whatever locale is currently assigned on NumberFormat
+        } else {
+            return NumberFormat.getNumberInstance(Locale.UK).format(i);
         }
     }
     

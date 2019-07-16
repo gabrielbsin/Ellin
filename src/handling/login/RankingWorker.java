@@ -8,6 +8,11 @@ import java.sql.SQLException;
 import client.player.PlayerJob;
 import database.DatabaseConnection;
 
+/**
+ * @author Matze
+ * @author Quit
+ * @author Ronan
+ */
 
 public class RankingWorker implements Runnable {
 

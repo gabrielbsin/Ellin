@@ -20,11 +20,11 @@ import tools.Pair;
 
 public class CashShop {
 
-    private final int accountId;
-    private final int characterId;
     private int paypalNX;
     private int mPoints;
     private int cardNX;
+    private final int accountId;
+    private final int characterId;
     private boolean opened;
     private final ItemFactory factory = ItemFactory.CASHSHOP;
     private final List<Item> inventory = new ArrayList<>();

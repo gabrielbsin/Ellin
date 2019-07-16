@@ -40,7 +40,7 @@ public class AllianceHandler {
             c.getSession().write(PacketCreator.EnableActions());
             return;
         }
-        final MapleGuild guild = GuildService.getGuild(c.getPlayer().getGuildId());
+        final MapleGuild guild = GuildService.getGuild(c.getPlayer().getGuildId(), c.getChannel());
         if (guild == null) {
             c.getSession().write(PacketCreator.EnableActions());
             return;

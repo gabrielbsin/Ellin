@@ -1,8 +1,3 @@
-/**
- * Ellin é um servidor privado de MapleStory
- * Baseado em um servidor GMS-Like na v.62
- */
-
 package client.player;
 
 import client.Client;
@@ -11,9 +6,7 @@ import server.itens.InventoryManipulator;
 import tools.Randomizer;
 
 /**
- * @brief RockPaperScissors
  * @author AuraSEA/kevintjuh93 
- * @date   03/08/2018
  */
 
 public class RockPaperScissors {

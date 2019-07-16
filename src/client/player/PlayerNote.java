@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package client.player;
 
 import database.DatabaseConnection;
@@ -14,9 +8,9 @@ import java.sql.SQLException;
 import packet.creators.PacketCreator;
 
 /**
- * 
- * @author GabrielSin
+ * @author GabrielSin (http://forum.ragezone.com/members/822844.html)
  */
+
 public class PlayerNote {
     
     public static void sendNote(Player p, String to, String msg, int fame) {

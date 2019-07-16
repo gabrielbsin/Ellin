@@ -585,28 +585,28 @@ public class PacketCreator {
     private static void AddRingLooks(WritingPacket wp, Player p) {
         wp.write(p.getEquippedRing(ItemRingType.CRUSH_RING.getType()) != 0 ? 1 : 0);
         for (ItemRing ring : p.getCrushRings()) {
-            if (ring.getRingId() == p.getEquippedRing(ItemRingType.CRUSH_RING.getType())) {
-                wp.writeInt(ring.getRingId());
+            if (ring.getRingDatabaseId() == p.getEquippedRing(ItemRingType.CRUSH_RING.getType())) {
+                wp.writeInt(ring.getRingDatabaseId());
                 wp.writeInt(0);
-                wp.writeInt(ring.getPartnerRingId());
+                wp.writeInt(ring.getPartnerRingDatabaseId());
                 wp.writeInt(0);
                 wp.writeInt(ring.getItemId());
             }
         }
         wp.write(p.getEquippedRing(ItemRingType.FRIENDSHIP_RING.getType()) != 0 ? 1 : 0);
         for (ItemRing ring : p.getFriendshipRings()) {
-            if (ring.getRingId() == p.getEquippedRing(ItemRingType.FRIENDSHIP_RING.getType())) {
-                wp.writeInt(ring.getRingId());
+            if (ring.getRingDatabaseId() == p.getEquippedRing(ItemRingType.FRIENDSHIP_RING.getType())) {
+                wp.writeInt(ring.getRingDatabaseId());
                 wp.writeInt(0);
-                wp.writeInt(ring.getPartnerRingId());
+                wp.writeInt(ring.getPartnerRingDatabaseId());
                 wp.writeInt(0);
                 wp.writeInt(ring.getItemId());
             }
         }
         wp.write(p.getEquippedRing(ItemRingType.WEDDING_RING.getType()) != 0 ? 1 : 0);
         for (ItemRing ring : p.getWeddingRings()) {
-            if (ring.getRingId() == p.getEquippedRing(ItemRingType.WEDDING_RING.getType())) {
-                wp.writeInt(ring.getPartnerChrId());
+            if (ring.getRingDatabaseId() == p.getEquippedRing(ItemRingType.WEDDING_RING.getType())) {
+                wp.writeInt(ring.getPartnerCharacterId());
                 wp.writeInt(p.getId());
                 wp.writeInt(ring.getItemId());
             }
@@ -2147,28 +2147,28 @@ public class PacketCreator {
         wp.writeShort(0);
         wp.writeShort(p.getCrushRings().size());
         for (ItemRing ring : p.getCrushRings()) {
-            wp.writeInt(ring.getPartnerChrId());
+            wp.writeInt(ring.getPartnerCharacterId());
             wp.writeAsciiString(StringUtil.getRightPaddedStr(ring.getPartnerName(), '\0', 13));
-            wp.writeInt(ring.getRingId());
+            wp.writeInt(ring.getRingDatabaseId());
             wp.writeInt(0);
-            wp.writeInt(ring.getPartnerRingId());
+            wp.writeInt(ring.getPartnerRingDatabaseId());
             wp.writeInt(0);
         }
         wp.writeShort(p.getFriendshipRings().size());
         for (ItemRing ring : p.getFriendshipRings()) {
-            wp.writeInt(ring.getPartnerChrId());
+            wp.writeInt(ring.getPartnerCharacterId());
             wp.writeAsciiString(StringUtil.getRightPaddedStr(ring.getPartnerName(), '\0', 13));
-            wp.writeInt(ring.getRingId());
+            wp.writeInt(ring.getRingDatabaseId());
             wp.writeInt(0);
-            wp.writeInt(ring.getPartnerRingId());
+            wp.writeInt(ring.getPartnerRingDatabaseId());
             wp.writeInt(0);
             wp.writeInt(ring.getItemId());
         }
         wp.writeShort(p.getWeddingRings().size());
         for (ItemRing ring : p.getWeddingRings()) {
             wp.writeInt(p.getPartnerId());
-            wp.writeInt(p.getGender() == 0 ? p.getId() : ring.getPartnerChrId());
-            wp.writeInt(p.getGender() == 0 ? ring.getPartnerChrId() : p.getId());
+            wp.writeInt(p.getGender() == 0 ? p.getId() : ring.getPartnerCharacterId());
+            wp.writeInt(p.getGender() == 0 ? ring.getPartnerCharacterId() : p.getId());
             wp.writeShort(3);
             wp.writeInt(ring.getItemId());
             wp.writeInt(ring.getItemId());

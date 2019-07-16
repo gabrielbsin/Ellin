@@ -21,6 +21,12 @@
 
 package community;
 
+import client.Client;
+import client.player.Player;
+import handling.channel.ChannelServer;
+import handling.coordinator.MapleMatchCheckerCoordinator;
+import handling.coordinator.matchchecker.MatchCheckerListenerFactory.MatchCheckerType;
+import handling.world.service.PartyService;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.LinkedList;
@@ -30,6 +36,10 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+import scripting.event.EventInstanceManager;
+import server.maps.Field;
+import server.partyquest.mcpq.MCField;
+import server.partyquest.mcpq.MonsterCarnival;
 
 public class MapleParty implements Serializable {
 
@@ -220,5 +230,53 @@ public class MapleParty implements Serializable {
             return false;
         }
         return true;
+    }
+    
+    public static void leaveParty(MapleParty party, Client c) {
+        ChannelServer cs = c.getChannelServer();
+        Player player = c.getPlayer();
+        MaplePartyCharacter partyplayer = player.getMPC();
+        
+        if (party != null && partyplayer != null) {
+            if (partyplayer.getId() == party.getLeaderId()) {
+                cs.removeMapPartyMembers(party.getId());
+                
+                MCField monsterCarnival = player.getMCPQField();
+                if (monsterCarnival != null) { 
+                    monsterCarnival.onPlayerDisconnected(player);
+                }
+
+                PartyService.updateParty(party.getId(), MaplePartyOperation.DISBAND, partyplayer);
+                
+                EventInstanceManager eim = player.getEventInstance();
+                if(eim != null) {
+                    eim.disbandParty();
+                }
+            } else {
+                Field map = player.getMap();
+                if (map != null) {
+                    map.removePartyMember(player);
+                }
+                
+                MCField monsterCarnival = player.getMCPQField();
+                if (monsterCarnival != null) { 
+                    monsterCarnival.onPlayerDisconnected(player);
+                } 
+
+                PartyService.updateParty(party.getId(), MaplePartyOperation.LEAVE, partyplayer);
+                
+                EventInstanceManager eim = player.getEventInstance();
+                if (eim != null) {
+                    eim.leftParty(player);
+                }
+            }
+            
+            player.setParty(null);
+            
+            MapleMatchCheckerCoordinator mmce = c.getChannelServer().getMatchCheckerCoordinator();
+            if (mmce.getMatchConfirmationLeaderid(player.getId()) == player.getId() && mmce.getMatchConfirmationType(player.getId()) == MatchCheckerType.GUILD_CREATION) {
+                mmce.dismissMatchConfirmation(player.getId());
+            }
+        }
     }
 }

@@ -47,7 +47,6 @@ import constants.SkillConstants.Paladin;
 import constants.SkillConstants.Priest;
 import constants.SkillConstants.Rogue;
 import constants.SkillConstants.WhiteKnight;
-import handling.channel.ChannelServer;
 import static handling.channel.handler.ChannelHeaders.PlayerHeaders.*;
 import static handling.channel.handler.DamageParse.*;
 import handling.mina.PacketReader;
@@ -82,11 +81,6 @@ import server.maps.portal.Portal;
 public class PlayerHandler {
 
     public static final void DropMeso(final PacketReader packet, final Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         Player p = c.getPlayer();
         long time = packet.readInt();
         if (p.getLastRequestTime() > time || p.getLastRequestTime() == time) { 
@@ -105,11 +99,6 @@ public class PlayerHandler {
     }
 
     public static void ChangeMap(PacketReader packet, Client c) {
-        if (c.checkCondition(false, true, true)) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         Player p = c.getPlayer();          
         if (packet.available() != 0) {
             if (p.getCashShop().isOpened()) {                 
@@ -153,11 +142,6 @@ public class PlayerHandler {
     }   
     
     public static void PassiveEnergy(PacketReader packet, Client c) {;
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         Player p = c.getPlayer();
         if (p.isActiveBuffedValue(Marauder.EnergyCharge) && PlayerJob.getJobPath(p.getJobId()) == PlayerJob.CLASS_PIRATE) {
             AttackInfo attack = parseDamage(packet, p, false, false);
@@ -167,11 +151,6 @@ public class PlayerHandler {
     }
     
     public static void MeleeAttack(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         Player p = c.getPlayer();
         if (p.getInventory(InventoryType.EQUIPPED).getItem((byte) ItemConstants.WEAPON) == null) {
             p.getCheatTracker().registerOffense(CheatingOffense.PACKET_EDIT, "Tried to attack without a weapon");
@@ -267,11 +246,6 @@ public class PlayerHandler {
     }
 
     public static void RangedAttack(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         Player p = c.getPlayer();
         if (p.getInventory(InventoryType.EQUIPPED).getItem((byte) ItemConstants.WEAPON) == null) {
             p.getCheatTracker().registerOffense(CheatingOffense.PACKET_EDIT, "Tried to attack without a weapon");
@@ -418,11 +392,6 @@ public class PlayerHandler {
     }
 
     public static void MagicDamage(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         Player p = c.getPlayer();
         if (p.getInventory(InventoryType.EQUIPPED).getItem((byte) ItemConstants.WEAPON) == null) {
             p.getCheatTracker().registerOffense(CheatingOffense.PACKET_EDIT, "Tried to attack without a weapon");
@@ -674,9 +643,9 @@ public class PlayerHandler {
     public static void ChangeEmotion(PacketReader packet, Client c) {
         int emote = packet.readInt();
         if (emote > 7) {
-            final int emoteID = 5159992 + emote;
-            final InventoryType type = ItemConstants.getInventoryType(emoteID);
-            if (c.getPlayer().getInventory(type).findById(emoteID) == null) {
+            final int emoteId = 5159992 + emote;
+            final InventoryType type = ItemConstants.getInventoryType(emoteId);
+            if (!ItemConstants.isFaceExpression(emoteId) || c.getPlayer().getInventory(type).findById(emoteId) == null) {
                 return;
             }
         }
@@ -686,14 +655,7 @@ public class PlayerHandler {
     }
 
     public static void ReplenishHpMp(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
         Player p = c.getPlayer();
-        if (p == null) {
-            return;
-        }
         packet.skip(4);
         int hp = packet.readShort();
         int mp = packet.readShort();
@@ -722,9 +684,6 @@ public class PlayerHandler {
 
     public static void OpenInfo(PacketReader packet, Client c) {
         Player p = c.getPlayer();
-        if (p == null || p.getMap() == null) {
-            return;
-        }
         packet.readInt();
         int cid = packet.readInt();
         final Player target = (Player) c.getPlayer().getMap().getMapObject(cid);
@@ -740,11 +699,6 @@ public class PlayerHandler {
     }
     
     public static void SpecialMove(PacketReader packet, Client c) {
-        if (c.checkCondition()) {
-            c.getSession().write(PacketCreator.EnableActions());
-            return;
-        }
-        
         Player p = c.getPlayer();
         long time = packet.readInt();
         if (p.getLastRequestTime() > time || p.getLastRequestTime() == time) { 
@@ -829,6 +783,7 @@ public class PlayerHandler {
             c.getPlayer().getCheatTracker().registerOffense(CheatingOffense.PACKET_EDIT, "Tried to enter the nonexistent portal.");
             return;
         }
+        
         boolean foundPortal = false;
         for (Portal portal : c.getPlayer().getMap().getPortals()){
             if (portal.getType() == 1 || portal.getType() == 2 || portal.getType() == 10 || portal.getType() == 20){
@@ -848,19 +803,11 @@ public class PlayerHandler {
               
         switch (operation) {
             case 0:
-                if (isVip) {
-                    p.deleteFromRocks(packet.readInt());
-                } else {
-                    p.deleteFromRegRocks(packet.readInt());
-                }
+                p.deleteRocks(packet.readInt(), isVip);
                 break;
             case 1:
                 if (!FieldLimit.CANNOTVIPROCK.check(p.getMap().getFieldLimit())) {
-                    if (isVip) {
-                        p.addRockMap();
-                    } else {
-                        p.addRegRockMap();
-                    }
+                    p.addRockMap(isVip);
                 }  else {
                     p.dropMessage(1, "You can not add this map.");
                 }
@@ -899,9 +846,6 @@ public class PlayerHandler {
 
     public static final void ChangeKeymap(final PacketReader r, final Client c) {
         Player p = c.getPlayer();
-        if (p == null || p.getMap() == null) {
-            return;
-        }
         int actionType = r.readInt();
         switch (actionType) {
             case BINDING_CHANGE_KEY_MAPPING:
@@ -989,9 +933,7 @@ public class PlayerHandler {
     public static final void UseChair(PacketReader packet, Client c) {
         int id = packet.readShort();
         Player p = c.getPlayer();
-        if (p == null) {
-            return;
-        }
+
         if (id == -1) {
             if (p.getChair() != 0) {
                 p.setChair(0);
@@ -1006,9 +948,6 @@ public class PlayerHandler {
 
     public static final void UseItemChair(PacketReader packet, Client c) {
         Player p = c.getPlayer();
-        if (p == null) {
-            return;
-        }
         final int itemId = packet.readInt();
         Item toUse = p.getInventory(InventoryType.SETUP).findById(itemId);
         if (toUse == null) {
@@ -1023,9 +962,10 @@ public class PlayerHandler {
 
     public static final void SkillEffect(PacketReader r, Client c) {
         Player p = c.getPlayer();
-        if (p == null || p.isHidden()) {
+        if (p.isHidden()) {
             return;
         }
+        
         final int skillID = r.readInt();
         final int level = r.readByte();
         final byte flags = r.readByte();

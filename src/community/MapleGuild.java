@@ -38,6 +38,7 @@ import java.util.Iterator;
 import java.util.concurrent.locks.Lock;
 import packet.transfer.write.OutPacket;
 import handling.channel.ChannelServer;
+import handling.channel.PlayerStorage;
 import handling.world.service.AllianceService;
 import handling.world.service.BroadcastService;
 import handling.world.service.GuildService;
@@ -54,7 +55,7 @@ import packet.creators.PacketCreator;
 import packet.transfer.write.WritingPacket;
 
 public final class MapleGuild implements java.io.Serializable {
-
+    
     private static enum BCOp {
         NONE,
         DISBAND,
@@ -66,7 +67,7 @@ public final class MapleGuild implements java.io.Serializable {
     private final List<MapleGuildCharacter> members = new CopyOnWriteArrayList<>();
     private final String rankTitles[] = new String[5];
     private String name, notice;
-    private int id, gp, emblemFg, emblemFgC, leader, capacity, emblemBg, emblemBgC, signature;
+    private int id, channel, gp, emblemFg, emblemFgC, leader, capacity, emblemBg, emblemBgC, signature;
     private boolean bDirty = true, proper = true;
     private int allianceid = 0, invitedid = 0;
     private final Map<Integer, MapleGuildBBS> bbs = new HashMap<>();
@@ -75,9 +76,9 @@ public final class MapleGuild implements java.io.Serializable {
     private boolean init = false;
 
 
-   public MapleGuild(final int guildid) {
+   public MapleGuild(final int guildid, int channel) {
         super();
-
+        this.channel = channel;
         try {
             PreparedStatement ps = DatabaseConnection.getConnection().prepareStatement("SELECT * FROM guilds WHERE guildid = ?");
             ps.setInt(1, guildid);
@@ -778,6 +779,30 @@ public final class MapleGuild implements java.io.Serializable {
         }
         mc.getClient().getSession().write(GuildPackets.GuildInvite(c.getPlayer().getGuildId(), c.getPlayer().getName()));
         return null;
+    }
+    
+    public void broadcastNameChanged() {
+        PlayerStorage ps = ChannelServer.getInstance(channel).getPlayerStorage();
+        
+        for (MapleGuildCharacter mgc : getMembers()) {
+            Player p = ps.getCharacterById(mgc.getId());
+            if (p == null /*|| !p.isLoggedinWorld()*/) continue;
+
+            OutPacket packet = GuildPackets.LoadGuildName(p);
+            p.getMap().broadcastMessage(p, packet);
+        }
+    }
+    
+    public void broadcastEmblemChanged() {
+        PlayerStorage ps = ChannelServer.getInstance(channel).getPlayerStorage();
+        
+        for (MapleGuildCharacter mgc : getMembers()) {
+            Player p = ps.getCharacterById(mgc.getId());
+            if (p == null /*|| !p.isLoggedinWorld()*/) continue;
+            
+            OutPacket packet = GuildPackets.LoadGuildIcon(p);
+            p.getMap().broadcastMessage(p, packet);
+        }
     }
 
    public static void displayGuildRanks(Client c, int npcid) {

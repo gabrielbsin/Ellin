@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package cashshop;
 
 import client.player.inventory.Item;
@@ -16,10 +10,6 @@ import provider.MapleDataProvider;
 import provider.MapleDataProviderFactory;
 import provider.MapleDataTool;
 
-/**
- * 
- * @author GabrielSin
- */
 public class CashItemFactory {
     private static Map<Integer, CashItem> items = new HashMap<>();
     private static Map<Integer, List<Integer>> packages = new HashMap<>();

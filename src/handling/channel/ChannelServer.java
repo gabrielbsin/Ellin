@@ -29,7 +29,11 @@ import handling.login.LoginServer;
 import community.MapleParty;
 import community.MaplePartyCharacter;
 import constants.GameConstants;
+import handling.coordinator.MapleMatchCheckerCoordinator;
 import handling.world.CheaterData;
+import handling.world.service.PartyService;
+import handling.world.worker.MerchantWorker;
+import handling.world.worker.ServerMessageWorker;
 import java.io.File;
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -42,15 +46,18 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
 import org.apache.mina.core.buffer.IoBuffer;
 import org.apache.mina.core.buffer.SimpleBufferAllocator;
 import org.apache.mina.core.filterchain.IoFilter;
@@ -66,6 +73,7 @@ import provider.MapleDataProviderFactory;
 import scripting.event.EventScriptManager;
 import server.expeditions.MapleExpedition;
 import server.expeditions.MapleExpeditionType;
+import server.maps.Field;
 import server.maps.FieldManager;
 import server.maps.object.AbstractMapleFieldObject;
 import server.minirooms.Merchant;
@@ -80,8 +88,10 @@ import server.transitions.Subway;
 import server.transitions.Trains;
 import tools.CollectionUtil;
 import tools.Pair;
+import tools.TimerTools.WorldTimer;
 import tools.locks.MonitoredLockType;
 import tools.locks.MonitoredReentrantLock;
+import tools.locks.MonitoredReentrantReadWriteLock;
 
 public class ChannelServer  {
     private final int channel;
@@ -114,8 +124,25 @@ public class ChannelServer  {
     private Map<Integer, Integer> owlSearched = new LinkedHashMap<>();
     private Lock owlLock = new MonitoredReentrantLock(MonitoredLockType.WORLD_OWL);
     
-    private final Map<Integer, Merchant> minirooms = new HashMap<>();
+    /*                      MERCHANTS                    */ 
     private Lock activeMerchantsLock = new MonitoredReentrantLock(MonitoredLockType.WORLD_MERCHS, true);
+    private ReentrantReadWriteLock merchantLock = new MonitoredReentrantReadWriteLock(MonitoredLockType.MERCHANT, true);
+    private ReadLock merchRlock = merchantLock.readLock();
+    private WriteLock merchWlock = merchantLock.writeLock();
+    
+    private Map<Integer, Merchant> hiredMerchants = new HashMap<>();
+    private Map<Integer, Pair<Merchant, Integer>> activeMerchants = new LinkedHashMap<>();
+    private ScheduledFuture<?> merchantSchedule;
+    private long merchantUpdate;
+    /******************************************************/ 
+    /*                     SERVER MESSAGE                 */ 
+    private Map<Integer, Integer> disabledServerMessages = new HashMap<>();   
+    private MonitoredReentrantLock srvMessagesLock = new MonitoredReentrantLock(MonitoredLockType.WORLD_SRVMESSAGES);
+    private ScheduledFuture<?> srvMessagesSchedule;
+    /******************************************************/ 
+    /*                     COORDINATOR                    */ 
+    private MapleMatchCheckerCoordinator matchChecker = new MapleMatchCheckerCoordinator();
+    /******************************************************/ 
     
     private Lock activePlayerShopsLock = new MonitoredReentrantLock(MonitoredLockType.WORLD_PSHOPS, true);
     private Map<Integer, PlayerShop> activePlayerShops = new LinkedHashMap<>();
@@ -156,6 +183,10 @@ public class ChannelServer  {
 
         loadTransitions(this);
         loadSearchedItems();
+        
+        WorldTimer tman = WorldTimer.getInstance();
+        merchantSchedule = tman.register(new MerchantWorker(this), 10 * 60 * 1000, 10 * 60 * 1000);
+        srvMessagesSchedule = tman.register(new ServerMessageWorker(this), 10 * 1000, 10 * 1000);
 
         for (MapleExpeditionType exped : MapleExpeditionType.values()) {
             expedType.add(exped);
@@ -191,12 +222,12 @@ public class ChannelServer  {
     public final void setShutdown() {
         this.shutdown = true;
         saveSearchedItems();
-        System.out.println("Canal " + channel + " está fechando e os comerciantes...");
+        System.out.println("Channel " + channel + " has set to shutdown and is closing Hired Merchants...");
     }
 
     public final void setFinishShutdown() {
         this.finishedShutdown = true;
-        System.out.println("Canal " + channel + " desligamento concluido.");
+        System.out.println("Channel " + channel + " has finished shutdown.");
     }
 
     public final boolean hasFinishedShutdown() {
@@ -207,65 +238,110 @@ public class ChannelServer  {
         return channel;
     }
     
-    public final void closeAllMerchant() {
-        activeMerchantsLock.lock();
-        try {
-            final Iterator<Merchant> merchants = minirooms.values().iterator();
-            while (merchants.hasNext()) {
-                merchants.next().forceClose();
-                merchants.remove();
-            }
-        } finally {
-            activeMerchantsLock.unlock();
-        }
-    }
-    
     public Map<Integer, Merchant> getHiredMerchants() {
-        return minirooms;
+        merchRlock.lock();
+        try {
+            return Collections.unmodifiableMap(hiredMerchants);
+        } finally {
+            merchRlock.unlock();
+        }
     }
 
     public void addHiredMerchant(int chrid, Merchant hm) {
-        activeMerchantsLock.lock();
+        merchWlock.lock();
         try {
-            minirooms.put(chrid, hm);
+            hiredMerchants.put(chrid, hm);
         } finally {
-            activeMerchantsLock.unlock();
+            merchWlock.unlock();
         }
     }
 
     public void removeHiredMerchant(int chrid) {
-        activeMerchantsLock.lock();
+        merchWlock.lock();
         try {        
-            minirooms.remove(chrid);
+            hiredMerchants.remove(chrid);
         } finally {
-           activeMerchantsLock.unlock();
+            merchWlock.unlock();
         }
     }
-    
-    public Merchant getHiredMerchant(int ownerid) {
+
+    public void registerHiredMerchant(Merchant hm) {
         activeMerchantsLock.lock();
         try {
-            return minirooms.get(ownerid);
+            int initProc;
+            if (System.currentTimeMillis() - merchantUpdate > 5 * 60 * 1000) initProc = 1;
+            else initProc = 0;
+            
+            activeMerchants.put(hm.getOwnerId(), new Pair<>(hm, initProc));
+        } finally {
+            activeMerchantsLock.unlock();
+        }
+    }
+
+    public void unregisterHiredMerchant(Merchant hm) {
+        activeMerchantsLock.lock();
+        try {
+            activeMerchants.remove(hm.getOwnerId());
         } finally {
             activeMerchantsLock.unlock();
         }
     }
     
-    public List<Merchant> getActiveMerchants() {
+    public void runHiredMerchantSchedule() {
+        Map<Integer, Pair<Merchant, Integer>> deployedMerchants;
+        activeMerchantsLock.lock();
+        try {
+            merchantUpdate = System.currentTimeMillis();
+            deployedMerchants = new LinkedHashMap<>(activeMerchants);
+        
+            for (Map.Entry<Integer, Pair<Merchant, Integer>> dm: deployedMerchants.entrySet()) {
+                int timeOn = dm.getValue().getRight();
+                Merchant hm = dm.getValue().getLeft();
+                
+                if (timeOn <= 144) {
+                    activeMerchants.put(hm.getOwnerId(), new Pair<>(dm.getValue().getLeft(), timeOn + 1));
+                } else {
+                    hm.forceClose();
+                    removeHiredMerchant(hm.getOwnerId());
+
+                    activeMerchants.remove(dm.getKey());
+                }
+            }
+        } finally {
+            activeMerchantsLock.unlock();
+        }
+    }
+    
+     public List<Merchant> getActiveMerchants() {
         List<Merchant> hmList = new ArrayList<>();
         activeMerchantsLock.lock();
         try {
-            for (Merchant hmp : minirooms.values()) {
-                if (hmp.isOpen()) {
-                    hmList.add(hmp);
+            for(Pair<Merchant, Integer> hmp : activeMerchants.values()) {
+                Merchant hm = hmp.getLeft();
+                if(hm.isOpen()) {
+                    hmList.add(hm);
                 }
             }
+            
             return hmList;
         } finally {
             activeMerchantsLock.unlock();
         }
     }
     
+    public Merchant getHiredMerchant(int ownerid) {
+        activeMerchantsLock.lock();
+        try {
+            if(activeMerchants.containsKey(ownerid)) {
+                return activeMerchants.get(ownerid).getLeft();
+            }
+            
+            return null;
+        } finally {
+            activeMerchantsLock.unlock();
+        }
+    }
+   
     public void registerPlayerShop(PlayerShop ps) {
         activePlayerShopsLock.lock();
         try {
@@ -306,7 +382,69 @@ public class ChannelServer  {
             activePlayerShopsLock.unlock();
         }
     }
-     
+    
+    public void resetDisabledServerMessages() {
+        srvMessagesLock.lock();
+        try {
+            disabledServerMessages.clear();
+        } finally {
+            srvMessagesLock.unlock();
+        }
+    }
+    
+    public boolean registerDisabledServerMessage(int chrid) {
+        srvMessagesLock.lock();
+        try {
+            boolean alreadyDisabled = disabledServerMessages.containsKey(chrid);
+            disabledServerMessages.put(chrid, 0);
+            
+            return alreadyDisabled;
+        } finally {
+            srvMessagesLock.unlock();
+        }
+    }
+    
+    public boolean unregisterDisabledServerMessage(int chrid) {
+        srvMessagesLock.lock();
+        try {
+            return disabledServerMessages.remove(chrid) != null;
+        } finally {
+            srvMessagesLock.unlock();
+        }
+    }
+    
+    public void runDisabledServerMessagesSchedule() {
+        List<Integer> toRemove = new LinkedList<>();
+        
+        srvMessagesLock.lock();
+        try {
+            for(Map.Entry<Integer, Integer> dsm : disabledServerMessages.entrySet()) {
+                int b = dsm.getValue();
+                if (b >= 4) {
+                    toRemove.add(dsm.getKey());
+                } else {
+                    disabledServerMessages.put(dsm.getKey(), ++b);
+                }
+            }
+            
+            for(Integer chrid : toRemove) {
+                disabledServerMessages.remove(chrid);
+            }
+        } finally {
+            srvMessagesLock.unlock();
+        }
+        
+        if (!toRemove.isEmpty()) {
+            for (Integer chrid : toRemove) {
+                Player p = players.getCharacterById(chrid);
+
+                if (p != null) {
+                    p.announce(PacketCreator.ServerMessage(serverMessage));
+                }
+            }
+        }
+    }
+    
     public static void loadTransitions(ChannelServer channel) {
         try {
             AirPlane airPlane = new AirPlane();
@@ -352,6 +490,21 @@ public class ChannelServer  {
             events.add(file.getName().substring(0, file.getName().length() - 3));
     	}
     	return events.toArray(new String[0]);
+    }
+    
+    public void removeMapPartyMembers(int partyid) {
+        MapleParty party = PartyService.getParty(partyid);
+        if (party == null) return;
+        
+        for (MaplePartyCharacter mpc : party.getMembers()) {
+            Player mc = mpc.getPlayer();
+            if (mc != null) {
+                Field map = mc.getMap();
+                if (map != null) {
+                    map.removeParty(partyid);
+                }
+            }
+        }
     }
                   
     public List<Player> getPartyMembers(MapleParty party) {
@@ -465,17 +618,27 @@ public class ChannelServer  {
             return;
         }
         
-        broadcastPacket(PacketCreator.ServerNotice(0, "Este canal será encerrado agora."));
+        if (merchantSchedule != null) {
+            merchantSchedule.cancel(false);
+            merchantSchedule = null;
+        }
+        
+        if (srvMessagesSchedule != null) {
+            srvMessagesSchedule.cancel(false);
+            srvMessagesSchedule = null;
+        }
+        
+        broadcastPacket(PacketCreator.ServerNotice(0, "This channel will now shut down."));
         shutdown = true;
 
-        System.out.println("Canal " + channel + ", salvando comerciantes...");
-        closeAllMerchant(); 
+        System.out.println("Channel " + channel + ", saving hired merchants...");
+        //closeAllMerchant(); TODO
 
-        System.out.println("Canal " + channel + ", salvando personagens...");
+        System.out.println("Channel " + channel + ", saving characters...");
 
         getPlayerStorage().disconnectAll();
 
-        System.out.println("Canal " + channel + ", desvinculado...");
+        System.out.println("Channel " + channel + ", unbinding...");
 
         acceptor.unbind();
         acceptor = null;
@@ -520,14 +683,24 @@ public class ChannelServer  {
         }
         return players;
     }
+    
+    public MapleMatchCheckerCoordinator getMatchCheckerCoordinator() {
+        return matchChecker;
+    }
+
 
     public int getConnectedClients() {
         return  getPlayerStorage().getAllCharacters().size();
     }
 	
+    public String getServerMessage() {
+        return serverMessage;
+    }
+    
     public void setServerMessage(String newMessage) {
         serverMessage = newMessage;
         broadcastPacket(PacketCreator.ServerMessage(serverMessage));
+        resetDisabledServerMessages();
     }
 
     public String getArrayString() {
@@ -635,21 +808,10 @@ public class ChannelServer  {
         this.mountExpRate = mountExpRate;
     }
 
-    /**
-     * This will return the collection of items that has been searched through the
-     * item Owl of Minerva
-     * 
-     * @return the Set<Entry<Integer, Integer>> mostSearchedItem
-    */
     public Set<Map.Entry<Integer, Integer>> getMostSearchedItem() {
         return mostSearchedItem.entrySet();
     }
 
-    /**
-     * This will return the top 10 items that have been sought after with owl
-     * 
-     * @return the ArrayListy<Integer> topResults
-    */
     public ConcurrentLinkedQueue<Integer> retrieveTopResults() {
         return topResults;
     }
@@ -666,12 +828,6 @@ public class ChannelServer  {
     	updateTopItemSearchResults();
     }
 	
-	
-    /**
-     * This will clear the current top 10 items 
-     * that were searched through Owl of Minerva 
-     * 
-    */
     public void updateTopItemSearchResults() {
         topResults.clear(); 
         ArrayList<Map.Entry<Integer, Integer>> entries = new ArrayList<>(mostSearchedItem.entrySet());
@@ -697,11 +853,6 @@ public class ChannelServer  {
         }
     }
 	
-    /**
-     * This loads all the items that was searched with Owl of Minerva
-     * from the database
-     * 
-    */
     public void loadSearchedItems() {
         Connection con = DatabaseConnection.getConnection();
         try {
@@ -720,11 +871,6 @@ public class ChannelServer  {
         }
     }
 
-    /**
-     * This saves all the items that was searched with Owl of Minerva
-     * to the database
-     * 
-    */
     public void saveSearchedItems() {
         Connection con = DatabaseConnection.getConnection();
         try {
@@ -742,12 +888,6 @@ public class ChannelServer  {
         }
     }
     
-    /**
-     * This inserts a new searched item that was searched with Owl of Minerva
-     * to the database
-     * 
-     * @param itemId
-    */
     public void insertSearchedItem(int itemId) {
         Connection con = DatabaseConnection.getConnection();
         try {
@@ -809,7 +949,7 @@ public class ChannelServer  {
     public List<Pair<PlayerShopItem, AbstractMapleFieldObject>> getAvailableItemBundles(int itemid) {
         List<Pair<PlayerShopItem, AbstractMapleFieldObject>> hmsAvailable = new ArrayList<>();
 
-        for (Merchant hm : getActiveMerchants()) {
+        for (Merchant hm :  getActiveMerchants()) {
             List<PlayerShopItem> itemBundles = hm.sendAvailableBundles(itemid);
 
             for(PlayerShopItem mpsi : itemBundles) {

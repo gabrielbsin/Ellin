@@ -17,6 +17,10 @@ import tools.Pair;
 import tools.locks.MonitoredLockType;
 import tools.locks.MonitoredReentrantLock;
 
+/**
+ * @author Matze
+ * Special thanks Ronan (HeavenMS)
+*/
 
 public class Inventory implements Iterable<Item> {
 
@@ -433,10 +437,6 @@ public class Inventory implements Iterable<Item> {
         return -1;
     }
     
-//    public Collection<Item> getItems() {
-//        return inventory.values();
-//    }
-//   
     public boolean isFullAfterSomeItems(int margin, int used) {
         lock.lock();
         try {

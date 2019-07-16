@@ -1,8 +1,3 @@
-/**
- * Ellin é um servidor privado de MapleStory
- * Baseado em um servidor GMS-Like na v.62
- */
-
 package client.player;
 
 import client.Client;
@@ -15,10 +10,9 @@ import server.SpeedQuizFactory.QuizEntry;
 import tools.Randomizer;
 
 /**
- * @brief SpeedQuiz
- * @author GabrielSin <gabrielsin@playellin.net>
- * @date   15/08/2018
+ * @author AuroX
  */
+
 public class SpeedQuiz {
 
     private final static int INITIAL_QUESTION = 50; 
@@ -62,8 +56,7 @@ public class SpeedQuiz {
         final QuizEntry random = entries.get(Randomizer.nextInt(entries.size()));
 
         this.answer = random.getAnswer();
-        //System.out.println(answer);
-
+        
         c.getSession().write(PacketCreator.GetSpeedQuiz(npc, random.getType(), random.getObjectId(), points, questionNo, TIME));
         cm.setLastMsg((byte) 6);
     }

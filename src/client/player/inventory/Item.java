@@ -187,7 +187,7 @@ public class Item implements Comparable<Item> {
             return null;
         }
         if (ring == null) {
-            ring = ItemRing.loadFromDb(getUniqueId());
+            ring = ItemRing.loadingRing(getUniqueId());
         }
         return ring;
     }

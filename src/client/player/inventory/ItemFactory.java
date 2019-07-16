@@ -13,10 +13,6 @@ import java.util.List;
 import server.itens.ItemInformationProvider;
 import tools.Pair;
 
-/**
- * GabrielSin
- */
-
 public enum ItemFactory {
     
     INVENTORY(1, false),
@@ -91,7 +87,7 @@ public enum ItemFactory {
                         equip.setExpiration(rs.getLong("expiration"));
                         if (equip.getUniqueId() > -1) {
                             if (ItemConstants.isEffectRing(rs.getInt("itemid"))) {
-                                ItemRing ring = ItemRing.loadFromDb(equip.getUniqueId());
+                                ItemRing ring = ItemRing.loadingRing(equip.getUniqueId());
                                 if (ring != null) {
                                     equip.setRing(ring);
                                 }
